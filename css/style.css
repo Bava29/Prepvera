@@ -40240,3 +40240,1073 @@ th {
     }
 
 }
+
+/* =========================================================
+   AUTH PAGES — PROPER RTL ALIGNMENT
+   LOGIN + REGISTER ONLY
+   ========================================================= */
+
+html[dir="rtl"] body.login-page {
+    direction: rtl !important;
+}
+
+/* Main auth layout */
+html[dir="rtl"] .auth-page {
+    direction: rtl !important;
+}
+
+/* Card */
+html[dir="rtl"] .auth-card {
+    direction: rtl !important;
+}
+
+/* Logo */
+html[dir="rtl"] .auth-logo {
+    direction: rtl !important;
+}
+
+/* Heading + description */
+html[dir="rtl"] .auth-heading {
+    direction: rtl !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .auth-heading span,
+html[dir="rtl"] .auth-heading h1,
+html[dir="rtl"] .auth-heading p {
+    direction: rtl !important;
+    text-align: center !important;
+}
+
+/* ---------------------------------------------------------
+   FORM
+--------------------------------------------------------- */
+
+html[dir="rtl"] .auth-form,
+html[dir="rtl"] .register-form {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .auth-form-group {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .auth-form-group>label {
+    display: block !important;
+    width: 100% !important;
+
+    direction: rtl !important;
+    text-align: right !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* ---------------------------------------------------------
+   INPUT BOX
+--------------------------------------------------------- */
+
+html[dir="rtl"] .auth-input {
+    direction: rtl !important;
+    position: relative !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    text-align: right !important;
+}
+
+/* Normal field icon → RIGHT */
+html[dir="rtl"] .auth-input>i:first-child {
+    position: absolute !important;
+
+    left: auto !important;
+    right: 16px !important;
+
+    margin: 0 !important;
+
+    pointer-events: none !important;
+}
+
+/* All inputs */
+html[dir="rtl"] .auth-input>input {
+    width: 100% !important;
+
+    direction: rtl !important;
+    text-align: right !important;
+
+    padding-left: 16px !important;
+    padding-right: 48px !important;
+
+    box-sizing: border-box !important;
+}
+
+/* Placeholder */
+html[dir="rtl"] .auth-input>input::placeholder {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* ---------------------------------------------------------
+   PASSWORD INPUT
+--------------------------------------------------------- */
+
+/* Password eye → LEFT */
+html[dir="rtl"] .auth-input .password-toggle {
+    position: absolute !important;
+
+    right: auto !important;
+    left: 8px !important;
+
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    z-index: 5 !important;
+}
+
+/* Password input needs space for eye */
+html[dir="rtl"] .auth-input:has(.password-toggle)>input {
+    padding-left: 50px !important;
+    padding-right: 48px !important;
+}
+
+/* ---------------------------------------------------------
+   TERMS & CONDITIONS
+--------------------------------------------------------- */
+
+html[dir="rtl"] .terms-option {
+    direction: rtl !important;
+
+    display: flex !important;
+    flex-direction: row-reverse !important;
+
+    align-items: flex-start !important;
+
+    justify-content: flex-start !important;
+
+    width: 100% !important;
+
+    text-align: right !important;
+}
+
+html[dir="rtl"] .terms-option input {
+    flex: 0 0 auto !important;
+
+    margin-left: 0 !important;
+    margin-right: 8px !important;
+}
+
+html[dir="rtl"] .terms-option span {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Terms links */
+html[dir="rtl"] .terms-option a {
+    direction: rtl !important;
+}
+
+/* ---------------------------------------------------------
+   SUBMIT BUTTON
+--------------------------------------------------------- */
+
+html[dir="rtl"] .auth-submit {
+    direction: rtl !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex-direction: row-reverse !important;
+
+    text-align: center !important;
+
+    gap: 10px !important;
+}
+
+/* Arrow goes to LEFT of text */
+html[dir="rtl"] .auth-submit i {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* ---------------------------------------------------------
+   DIVIDER
+--------------------------------------------------------- */
+
+html[dir="rtl"] .auth-divider {
+    direction: rtl !important;
+    text-align: center !important;
+}
+
+/* ---------------------------------------------------------
+   SOCIAL LOGIN
+--------------------------------------------------------- */
+
+html[dir="rtl"] .social-login {
+    direction: rtl !important;
+}
+
+html[dir="rtl"] .social-login-btn {
+    direction: rtl !important;
+}
+
+/* ---------------------------------------------------------
+   LOGIN / REGISTER BOTTOM LINK
+--------------------------------------------------------- */
+
+html[dir="rtl"] .auth-register {
+    direction: rtl !important;
+    text-align: center !important;
+}
+
+/* ---------------------------------------------------------
+   TOP DARK / RTL CONTROLS
+--------------------------------------------------------- */
+
+html[dir="rtl"] .auth-controls {
+    direction: rtl !important;
+}
+
+
+/* =========================================================
+   IMPORTANT — LTR REMAINS UNCHANGED
+   ========================================================= */
+
+html[dir="ltr"] body.login-page,
+html[dir="ltr"] .auth-page,
+html[dir="ltr"] .auth-card,
+html[dir="ltr"] .auth-form {
+    direction: ltr;
+}
+
+/* =====================================================
+   REGISTER RTL — TERMS + PASSWORD + BUTTON
+   ===================================================== */
+
+html[dir="rtl"] .terms-option {
+    width: 100% !important;
+
+    display: flex !important;
+    flex-direction: row-reverse !important;
+
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    direction: rtl !important;
+    text-align: right !important;
+
+    gap: 10px !important;
+}
+
+/* Checkbox */
+html[dir="rtl"] .terms-option input[type="checkbox"] {
+    order: 1 !important;
+
+    width: 20px !important;
+    height: 20px !important;
+
+    flex: 0 0 20px !important;
+
+    margin: 0 !important;
+}
+
+/* Terms text */
+html[dir="rtl"] .terms-option span,
+html[dir="rtl"] .terms-option label {
+    order: 2 !important;
+
+    direction: rtl !important;
+    text-align: right !important;
+
+    margin: 0 !important;
+}
+
+
+/* =====================================================
+   CONFIRM PASSWORD
+   ===================================================== */
+
+html[dir="rtl"] .auth-input {
+    direction: rtl !important;
+}
+
+/* Lock icon → RIGHT */
+html[dir="rtl"] .auth-input>i:first-child {
+    left: auto !important;
+    right: 18px !important;
+}
+
+/* Input text → RIGHT */
+html[dir="rtl"] .auth-input input {
+    direction: rtl !important;
+    text-align: right !important;
+
+    padding-left: 55px !important;
+    padding-right: 50px !important;
+}
+
+/* Eye icon → LEFT */
+html[dir="rtl"] .auth-input .password-toggle {
+    left: 15px !important;
+    right: auto !important;
+
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+
+    margin: 0 !important;
+}
+
+
+/* =====================================================
+   CREATE ACCOUNT BUTTON
+   ===================================================== */
+
+html[dir="rtl"] .auth-submit {
+    direction: rtl !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex-direction: row-reverse !important;
+
+    gap: 12px !important;
+
+    text-align: center !important;
+}
+
+html[dir="rtl"] .auth-submit i {
+    margin: 0 !important;
+}
+
+/* =========================================================
+   PREPVERA
+   EXAM PATH CARDS — FINAL RTL MIRROR OVERRIDE
+   ========================================================= */
+
+html[dir="rtl"] .exam-paths-section .exam-paths-grid {
+    direction: rtl !important;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+html[dir="rtl"] .exam-paths-section .exam-path-card {
+    position: relative !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 365px !important;
+
+    padding: 30px 27px !important;
+
+    direction: rtl !important;
+
+    text-align: right !important;
+
+    overflow: hidden !important;
+}
+
+
+/* =========================================================
+   NUMBER
+   LTR = RIGHT
+   RTL = LEFT
+========================================================= */
+
+html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-number {
+    position: absolute !important;
+
+    top: 5px !important;
+
+    left: 18px !important;
+    right: auto !important;
+
+    z-index: 1 !important;
+
+    margin: 0 !important;
+
+    direction: ltr !important;
+
+    pointer-events: none !important;
+
+    text-align: left !important;
+}
+
+
+/* =========================================================
+   ICON
+   RTL = RIGHT SIDE
+   Completely remove old flex positioning
+========================================================= */
+
+html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-icon {
+    position: absolute !important;
+
+    top: 30px !important;
+
+    right: 27px !important;
+    left: auto !important;
+
+    width: 58px !important;
+    height: 58px !important;
+
+    min-width: 58px !important;
+    min-height: 58px !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    z-index: 5 !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex: none !important;
+
+    align-self: auto !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-icon i {
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    direction: ltr !important;
+
+    transform: none !important;
+
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   CONTENT
+   RTL = RIGHT ALIGNED
+========================================================= */
+
+html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-content {
+
+    position: relative !important;
+
+    z-index: 3 !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    margin-top: auto !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+    direction: rtl !important;
+
+    text-align: right !important;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-content h3 {
+
+    width: 100% !important;
+
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+    text-align: right !important;
+
+    direction: rtl !important;
+
+    overflow-wrap: break-word !important;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-content p {
+
+    width: 100% !important;
+
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+    text-align: right !important;
+
+    direction: rtl !important;
+
+    overflow-wrap: break-word !important;
+}
+
+
+/* =========================================================
+   LINK
+========================================================= */
+
+html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-link {
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    flex-direction: row-reverse !important;
+
+    gap: 8px !important;
+
+    direction: rtl !important;
+
+    text-align: right !important;
+}
+
+
+/* =========================================================
+   LINK ARROW
+========================================================= */
+
+html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-link i {
+
+    direction: ltr !important;
+
+    transform: rotate(180deg) !important;
+
+    flex-shrink: 0 !important;
+}
+
+
+/* =========================================================
+   HOVER — DO NOT BREAK RTL POSITION
+========================================================= */
+
+html[dir="rtl"] .exam-paths-section .exam-path-card:hover .exam-path-icon {
+
+    top: 30px !important;
+
+    right: 27px !important;
+    left: auto !important;
+
+    transform: rotate(-8deg) !important;
+}
+
+
+/* =========================================================
+   HOVER ARROW
+========================================================= */
+
+html[dir="rtl"] .exam-paths-section .exam-path-card:hover .exam-path-link i {
+
+    transform: rotate(180deg) translateX(5px) !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-icon {
+
+        right: 27px !important;
+        left: auto !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .exam-paths-section .exam-path-card {
+
+        min-height: 340px !important;
+    }
+
+
+    html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-number {
+
+        left: 16px !important;
+        right: auto !important;
+    }
+
+
+    html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-icon {
+
+        top: 28px !important;
+
+        right: 24px !important;
+        left: auto !important;
+    }
+
+
+    html[dir="rtl"] .exam-paths-section .exam-path-card:hover .exam-path-icon {
+
+        top: 28px !important;
+
+        right: 24px !important;
+        left: auto !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 575px) {
+
+    html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-number {
+
+        left: 14px !important;
+    }
+
+
+    html[dir="rtl"] .exam-paths-section .exam-path-card .exam-path-icon {
+
+        right: 22px !important;
+    }
+
+}
+
+/* =========================================================
+   FINAL RTL — WHY PREPVERA FLOATING CARD
+   FORCE LEFT ALIGNMENT
+========================================================= */
+
+html[dir="rtl"] .why-prepvera-visual .visual-floating-card {
+    position: absolute !important;
+
+    /* FORCE LEFT */
+    left: 0 !important;
+    right: auto !important;
+
+    /* Keep below main card */
+    bottom: 0 !important;
+
+    /* Do NOT let RTL / flex change its position */
+    margin: 0 !important;
+    transform: none !important;
+
+    width: 245px !important;
+    max-width: 245px !important;
+
+    z-index: 10 !important;
+
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+
+/* Make the whole floating card stay on LEFT */
+html[dir="rtl"] .why-prepvera-visual {
+    position: relative !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    html[dir="rtl"] .why-prepvera-visual .visual-floating-card {
+        left: 0 !important;
+        right: auto !important;
+        bottom: 0 !important;
+
+        width: 225px !important;
+        max-width: 225px !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .why-prepvera-visual .visual-floating-card {
+        left: 0 !important;
+        right: auto !important;
+
+        bottom: -15px !important;
+
+        width: 220px !important;
+        max-width: 220px !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 575px) {
+
+    html[dir="rtl"] .why-prepvera-visual .visual-floating-card {
+        left: 0 !important;
+        right: auto !important;
+
+        bottom: -15px !important;
+
+        width: 200px !important;
+        max-width: 200px !important;
+    }
+
+}
+
+/* =========================================================
+   HOME 2 DASHBOARD — RTL FLOATING CARD
+   FORCE LEFT ALIGNMENT
+   ========================================================= */
+
+html[dir="rtl"] .home2-dashboard-visual .home2-dashboard-floating {
+    position: absolute !important;
+
+    /* REMOVE ALL RIGHT POSITIONING */
+    right: auto !important;
+
+    /* FORCE LEFT */
+    left: -20px !important;
+
+    /* KEEP SAME VERTICAL POSITION */
+    bottom: 30px !important;
+
+    /* Prevent RTL from changing the card itself */
+    transform: none !important;
+
+    margin: 0 !important;
+
+    z-index: 20 !important;
+}
+
+
+/* =========================================================
+   RTL — KEEP CARD CONTENT NORMAL
+   ========================================================= */
+
+html[dir="rtl"] .home2-dashboard-floating {
+    direction: rtl !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1199px) {
+
+    html[dir="rtl"] .home2-dashboard-visual .home2-dashboard-floating {
+        right: auto !important;
+        left: -15px !important;
+        bottom: 25px !important;
+        transform: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .home2-dashboard-visual .home2-dashboard-floating {
+        right: auto !important;
+        left: -10px !important;
+        bottom: 25px !important;
+        transform: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+    html[dir="rtl"] .home2-dashboard-visual .home2-dashboard-floating {
+        right: auto !important;
+        left: -3px !important;
+        bottom: 25px !important;
+        transform: none !important;
+    }
+
+}
+
+/* =========================================================
+   RTL — ONLY CENTER THE VERTICAL PATH LINE
+   DO NOT MOVE CIRCLES / ICONS / TEXT
+========================================================= */
+
+html[dir="rtl"] .courses-selection-path-line {
+    width: 1px !important;
+    height: 22px !important;
+
+    /* Reset LTR positioning */
+    margin-left: 0 !important;
+
+    /* 42px grid column → 38px circle
+       Center = 19px */
+    margin-right: 19px !important;
+
+    padding: 0 !important;
+
+    align-self: flex-start !important;
+
+    background: rgba(255, 255, 255, 0.18) !important;
+}
+
+/* =========================================================
+   RESULTS PAGE — RTL STAT ICON FIX
+   Move ONLY the bottom icons to LEFT
+   Prevent text/icon overlap
+========================================================= */
+
+html[dir="rtl"] .results-success-stat {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* ONLY ICON POSITION CHANGES */
+html[dir="rtl"] .results-success-stat>i {
+    position: absolute !important;
+
+    left: 22px !important;
+    right: auto !important;
+
+    bottom: 22px !important;
+
+    width: 40px !important;
+    height: 40px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+
+    z-index: 5 !important;
+
+    flex-shrink: 0 !important;
+}
+
+/* Keep paragraph away from the left icon */
+html[dir="rtl"] .results-success-stat>p {
+    max-width: calc(100% - 55px) !important;
+}
+
+/* Keep card text on its normal RTL side */
+html[dir="rtl"] .results-success-stat>span,
+html[dir="rtl"] .results-success-stat>strong,
+html[dir="rtl"] .results-success-stat>p {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+/* =========================================================
+   CONTACT PAGE — RTL PHONE INPUT
+========================================================= */
+
+html[dir="rtl"] #contactPhone {
+    direction: ltr !important;
+    text-align: right !important;
+
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+html[dir="rtl"] #contactPhone::placeholder {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* =========================================================
+   IPAD MINI — TESTIMONIAL CARDS
+   LAST CARD SAME SIZE + CENTERED
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .home2-testimonial-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 20px !important;
+        align-items: stretch !important;
+    }
+
+    .home2-testimonial-card {
+        width: 100% !important;
+        min-height: 205px !important;
+        height: 100% !important;
+    }
+
+    /* Third card */
+    .home2-testimonial-card:nth-child(3) {
+        grid-column: 1 / -1 !important;
+
+        width: calc((100% - 20px) / 2) !important;
+        height: 205px !important;
+
+        justify-self: center !important;
+    }
+}
+
+/* =========================================================
+   ONLY QUANTITATIVE APTITUDE CARD POSITION FIX
+   NOTHING ELSE IS CHANGED
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .home2-hero-visual .home2-live-card {
+        position: absolute !important;
+
+        /* move card below the image */
+        top: 95% !important;
+        bottom: auto !important;
+
+        /* center horizontally */
+        left: 50% !important;
+        right: auto !important;
+
+        transform: translateX(-65%) !important;
+
+        /* only add spacing from image */
+        margin-top: 15px !important;
+    }
+
+}
+
+/* =========================================================
+   IPAD PRO ONLY
+   HOME 2 - RIGHT LEARNING CARDS
+   BOTTOM TEXT SPACING FIX
+   ONLY THESE 2 CARDS ARE AFFECTED
+========================================================= */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .home2-learning-grid>.home2-learning-small {
+        min-height: 0 !important;
+    }
+
+    .home2-learning-grid>.home2-learning-small .home2-learning-small-content {
+        padding: 10px 20px 50px !important;
+    }
+
+    .home2-learning-grid>.home2-learning-small .home2-learning-small-content p {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+}
+
+/* =========================================================
+   HOME 2 FINAL CTA
+   IPAD PRO ONLY — BUTTON TEXT WRAP FIX
+   ONLY CTA BUTTONS ARE AFFECTED
+========================================================= */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .home2-cta-actions .home2-cta-primary,
+    .home2-cta-actions .home2-cta-secondary {
+        white-space: nowrap !important;
+        flex-wrap: nowrap !important;
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+
+        min-width: max-content !important;
+        width: auto !important;
+
+        flex-shrink: 0 !important;
+    }
+
+    .home2-cta-actions .home2-cta-primary i,
+    .home2-cta-actions .home2-cta-secondary i {
+        flex-shrink: 0 !important;
+    }
+
+}
+
+/* =========================================================
+   FACULTY SHOWCASE
+   IPAD PRO — CENTER ONLY LAST 2 CARDS
+   DO NOT CHANGE OTHER CARDS
+========================================================= */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .faculty-showcase-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 15px !important;
+    }
+
+    /* 7th card */
+    .faculty-showcase-grid>.faculty-showcase-card:nth-child(7) {
+        grid-column: 1 !important;
+        position: relative !important;
+        left: calc((100% + 15px) / 2) !important;
+        transform: none !important;
+    }
+
+    /* 8th card */
+    .faculty-showcase-grid>.faculty-showcase-card:nth-child(8) {
+        grid-column: 2 !important;
+        position: relative !important;
+        left: calc((100% + 15px) / 2) !important;
+        transform: none !important;
+    }
+
+}
+
+/* =========================================
+   MOBILE - REDUCE FEATURES COLUMN ONLY
+========================================= */
+
+@media (max-width: 767px) {
+
+    .plans-comparison-row {
+        grid-template-columns: 1.35fr repeat(3, 1fr) !important;
+    }
+
+}

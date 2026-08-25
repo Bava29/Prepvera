@@ -28787,3 +28787,2074 @@ html.dark-mode #dashboardMobileMenuToggle .fa-bars-staggered {
         color: #FFFFFF !important;
     }
 }
+
+/* =========================================================
+   DESKTOP ONLY — HIDE MOBILE MENU TOGGLE
+   Dark mode + light mode
+   Do not affect mobile/tablet
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .dashboard-mobile-menu-toggle,
+    html.dark-mode #dashboardMobileMenuToggle {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+
+}
+
+/* =========================================================
+   RTL — ROADMAP LINE ONLY
+========================================================= */
+
+html[dir="rtl"] .my-courses-roadmap-line {
+    left: auto !important;
+    right: 55px !important;
+}
+
+/* =========================================================
+   iPAD MINI — MY COURSES OVERVIEW
+   768px - 820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    /* Main content */
+    .dashboard-main {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .dashboard-content {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        padding: 28px 24px !important;
+
+        overflow-x: hidden !important;
+    }
+
+
+    /* =====================================================
+       SECTION
+    ===================================================== */
+
+    .my-courses-overview-section {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+
+    /* =====================================================
+       HEADING
+    ===================================================== */
+
+    .my-courses-overview-header {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        align-items: flex-start !important;
+
+        gap: 16px !important;
+    }
+
+    .my-courses-overview-header>div:first-child {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .my-courses-section-label {
+        font-size: 11px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .my-courses-overview-header h2 {
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+
+        margin-bottom: 8px !important;
+    }
+
+    .my-courses-overview-header p {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+
+    /* =====================================================
+       SEARCH
+    ===================================================== */
+
+    .my-courses-search {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        height: 44px !important;
+
+        flex-shrink: 0 !important;
+    }
+
+    .my-courses-search input {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        font-size: 14px !important;
+    }
+
+
+    /* =====================================================
+       SUMMARY — 4 EQUAL CARDS
+    ===================================================== */
+
+    .my-courses-summary {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr)) !important;
+
+        gap: 10px !important;
+
+        margin-top: 22px !important;
+    }
+
+
+    /* =====================================================
+       SUMMARY CARD
+    ===================================================== */
+
+    .my-courses-summary-card {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        min-height: 118px !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: flex-start !important;
+        justify-content: center !important;
+
+        gap: 9px !important;
+
+        padding: 14px !important;
+
+        border-radius: 12px !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* =====================================================
+       ICON
+    ===================================================== */
+
+    .my-courses-summary-icon {
+        width: 36px !important;
+        height: 36px !important;
+
+        min-width: 36px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        border-radius: 9px !important;
+
+        font-size: 14px !important;
+    }
+
+
+    /* =====================================================
+       CARD CONTENT
+    ===================================================== */
+
+    .my-courses-summary-card>div:last-child {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .my-courses-summary-card span {
+        width: 100% !important;
+
+        margin-bottom: 4px !important;
+
+        font-size: 9px !important;
+        line-height: 1.25 !important;
+
+        letter-spacing: 0.7px !important;
+
+        white-space: normal !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .my-courses-summary-card strong {
+        margin-bottom: 3px !important;
+
+        font-size: 25px !important;
+        line-height: 1 !important;
+    }
+
+    .my-courses-summary-card p {
+        width: 100% !important;
+
+        font-size: 11px !important;
+        line-height: 1.35 !important;
+    }
+}
+
+/* =========================================================
+   MY TESTS — TEST HISTORY
+   iPAD MINI RESPONSIVE FIX
+   768px - 820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    /* =========================================
+       HISTORY CARD
+    ========================================= */
+
+    .my-tests-history-card {
+        width: 100% !important;
+
+        margin-top: 18px !important;
+
+        padding: 20px !important;
+
+        border-radius: 16px !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* =========================================
+       HISTORY HEADING
+    ========================================= */
+
+    .my-tests-history-heading {
+        width: 100% !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        justify-content: space-between !important;
+
+        gap: 15px !important;
+
+        margin-bottom: 16px !important;
+    }
+
+    .my-tests-history-heading span {
+        margin-bottom: 5px !important;
+
+        font-size: 10px !important;
+
+        letter-spacing: 1.1px !important;
+    }
+
+    .my-tests-history-heading h3 {
+        font-size: 21px !important;
+
+        line-height: 1.2 !important;
+    }
+
+    .my-tests-history-heading a {
+        flex-shrink: 0 !important;
+
+        font-size: 12px !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    /* =========================================
+       HISTORY LIST
+    ========================================= */
+
+    .my-tests-history-list {
+        width: 100% !important;
+
+        overflow: hidden !important;
+
+        border-radius: 10px !important;
+    }
+
+
+    /* =========================================
+       HISTORY ROW
+    ========================================= */
+
+    .my-tests-history-row {
+        width: 100% !important;
+
+        display: grid !important;
+
+        /*
+           Icon | Test information | Score | Accuracy | Result | Arrow
+        */
+        grid-template-columns:
+            38px minmax(180px, 1.8fr) minmax(65px, 0.7fr) minmax(65px, 0.7fr) minmax(65px, 0.65fr) 12px !important;
+
+        align-items: center !important;
+
+        gap: 10px !important;
+
+        min-height: 78px !important;
+
+        padding: 10px 14px !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* =========================================
+       ICON
+    ========================================= */
+
+    .my-tests-history-icon {
+        width: 36px !important;
+        height: 36px !important;
+
+        min-width: 36px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        border-radius: 8px !important;
+
+        font-size: 13px !important;
+    }
+
+
+    /* =========================================
+       TEST NAME
+    ========================================= */
+
+    .my-tests-history-name {
+        min-width: 0 !important;
+
+        width: 100% !important;
+    }
+
+    .my-tests-history-name strong {
+        display: block !important;
+
+        width: 100% !important;
+
+        margin-bottom: 3px !important;
+
+        overflow: hidden !important;
+
+        font-size: 13px !important;
+
+        line-height: 1.35 !important;
+
+        text-overflow: ellipsis !important;
+
+        white-space: nowrap !important;
+    }
+
+    .my-tests-history-name span {
+        display: block !important;
+
+        width: 100% !important;
+
+        overflow: hidden !important;
+
+        font-size: 10px !important;
+
+        line-height: 1.35 !important;
+
+        text-overflow: ellipsis !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    /* =========================================
+       SCORE / ACCURACY
+    ========================================= */
+
+    .my-tests-history-stat {
+        min-width: 0 !important;
+    }
+
+    .my-tests-history-stat span {
+        display: block !important;
+
+        margin-bottom: 3px !important;
+
+        font-size: 8px !important;
+
+        line-height: 1.2 !important;
+
+        letter-spacing: 0.6px !important;
+    }
+
+    .my-tests-history-stat strong {
+        display: block !important;
+
+        font-size: 12px !important;
+
+        line-height: 1.2 !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    /* =========================================
+       RESULT BADGE
+    ========================================= */
+
+    .my-tests-result-good,
+    .my-tests-result-average {
+        justify-self: start !important;
+
+        padding: 5px 7px !important;
+
+        border-radius: 5px !important;
+
+        font-size: 9px !important;
+
+        line-height: 1 !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    /* =========================================
+       ARROW
+    ========================================= */
+
+    .my-tests-history-arrow {
+        justify-self: end !important;
+
+        font-size: 9px !important;
+
+        flex-shrink: 0 !important;
+    }
+
+}
+
+/* =========================================================
+   PREPVERA - iPAD MINI
+   STUDY MATERIALS RESPONSIVE FIX
+   768px - 820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+
+    /* =====================================================
+       GLOBAL CONTENT
+    ===================================================== */
+
+    .dashboard-content {
+        width: 100% !important;
+
+        padding: 28px 18px !important;
+
+        overflow-x: hidden !important;
+    }
+
+
+    /* =====================================================
+       SECTION 01
+       STUDY MATERIALS OVERVIEW
+    ===================================================== */
+
+    .study-materials-overview-section {
+        width: 100% !important;
+    }
+
+
+    /* -----------------------------------------
+       OVERVIEW HEADER
+    ----------------------------------------- */
+
+    .study-materials-overview-header {
+        width: 100% !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: flex-start !important;
+
+        gap: 14px !important;
+
+        margin-bottom: 20px !important;
+    }
+
+    .study-materials-overview-header>div:first-child {
+        width: 100% !important;
+
+        min-width: 0 !important;
+    }
+
+    .study-materials-overview-header h2 {
+        font-size: 27px !important;
+
+        line-height: 1.2 !important;
+
+        margin-bottom: 6px !important;
+    }
+
+    .study-materials-overview-header p {
+        max-width: 600px !important;
+
+        font-size: 13px !important;
+
+        line-height: 1.55 !important;
+
+        margin-bottom: 0 !important;
+    }
+
+
+    /* -----------------------------------------
+       SEARCH
+    ----------------------------------------- */
+
+    .study-materials-search {
+        width: 300px !important;
+
+        max-width: 100% !important;
+
+        margin-top: 0 !important;
+    }
+
+
+    /* =====================================================
+       QUICK STATS
+       2 + 1 CENTERED
+    ===================================================== */
+
+    .study-materials-stats {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px !important;
+
+        margin-bottom: 18px !important;
+    }
+
+
+    .study-materials-stat {
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        min-height: 70px !important;
+
+        padding: 13px 14px !important;
+    }
+
+
+    /* 3rd card — CENTER */
+
+    .study-materials-stat:nth-child(3) {
+        grid-column: 1 / -1 !important;
+
+        width: calc(50% - 5px) !important;
+
+        justify-self: center !important;
+    }
+
+
+    .study-materials-stat-icon {
+        width: 36px !important;
+        height: 36px !important;
+
+        min-width: 36px !important;
+
+        font-size: 13px !important;
+    }
+
+
+    .study-materials-stat strong {
+        font-size: 18px !important;
+
+        line-height: 1.1 !important;
+    }
+
+    .study-materials-stat span {
+        font-size: 9px !important;
+
+        line-height: 1.3 !important;
+    }
+
+
+    /* =====================================================
+       CATEGORY SECTION
+    ===================================================== */
+
+    .study-materials-category-section {
+        width: 100% !important;
+
+        margin-top: 16px !important;
+
+        padding: 18px !important;
+
+        border-radius: 13px !important;
+    }
+
+    .study-materials-category-heading {
+        margin-bottom: 14px !important;
+    }
+
+    .study-materials-category-heading h3 {
+        font-size: 20px !important;
+    }
+
+    .study-materials-category-list {
+        display: grid !important;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px !important;
+    }
+
+    .study-materials-category {
+        min-width: 0 !important;
+
+        padding: 13px !important;
+
+        gap: 10px !important;
+    }
+
+
+    /* =====================================================
+       SECTION 02
+       RECOMMENDED MATERIALS
+    ===================================================== */
+
+    .study-materials-recommended-section {
+        width: 100% !important;
+
+        margin-top: 0 !important;
+    }
+
+
+    /* -----------------------------------------
+       SECTION HEADING
+    ----------------------------------------- */
+
+    .study-materials-section-heading {
+        width: 100% !important;
+
+        display: flex !important;
+
+        flex-direction: row !important;
+
+        align-items: flex-end !important;
+
+        justify-content: space-between !important;
+
+        gap: 15px !important;
+
+        margin-bottom: 16px !important;
+    }
+
+    .study-materials-section-heading h2 {
+        font-size: 24px !important;
+
+        line-height: 1.2 !important;
+    }
+
+    .study-materials-view-link {
+        flex-shrink: 0 !important;
+
+        font-size: 11px !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    /* -----------------------------------------
+       MATERIAL LIST
+    ----------------------------------------- */
+
+    .study-materials-recommended-list {
+        width: 100% !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        gap: 10px !important;
+    }
+
+
+    /* =====================================================
+       MATERIAL CARD
+       4 COLUMNS → CLEAN iPAD LAYOUT
+    ===================================================== */
+
+    .study-material-item {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            42px minmax(0, 1fr) 75px 76px !important;
+
+        align-items: center !important;
+
+        gap: 10px !important;
+
+        min-height: 82px !important;
+
+        padding: 11px 13px !important;
+
+        border-radius: 10px !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* -----------------------------------------
+       MATERIAL ICON
+    ----------------------------------------- */
+
+    .study-material-icon {
+        width: 38px !important;
+        height: 38px !important;
+
+        min-width: 38px !important;
+
+        border-radius: 8px !important;
+
+        font-size: 13px !important;
+    }
+
+
+    /* -----------------------------------------
+       MATERIAL CONTENT
+    ----------------------------------------- */
+
+    .study-material-content {
+        min-width: 0 !important;
+
+        width: 100% !important;
+    }
+
+    .study-material-content>span {
+        display: block !important;
+
+        width: 100% !important;
+
+        margin-bottom: 3px !important;
+
+        overflow: hidden !important;
+
+        font-size: 7px !important;
+
+        line-height: 1.2 !important;
+
+        letter-spacing: 0.7px !important;
+
+        text-overflow: ellipsis !important;
+
+        white-space: nowrap !important;
+    }
+
+    .study-material-content h3 {
+        width: 100% !important;
+
+        margin-bottom: 3px !important;
+
+        overflow: hidden !important;
+
+        font-size: 12px !important;
+
+        line-height: 1.25 !important;
+
+        text-overflow: ellipsis !important;
+
+        white-space: nowrap !important;
+    }
+
+    .study-material-content p {
+        width: 100% !important;
+
+        margin: 0 !important;
+
+        overflow: hidden !important;
+
+        font-size: 9px !important;
+
+        line-height: 1.35 !important;
+
+        text-overflow: ellipsis !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    /* -----------------------------------------
+       FILE INFO
+    ----------------------------------------- */
+
+    .study-material-info {
+        min-width: 0 !important;
+
+        width: 100% !important;
+
+        text-align: right !important;
+    }
+
+    .study-material-info span {
+        display: block !important;
+
+        margin-bottom: 2px !important;
+
+        font-size: 9px !important;
+
+        line-height: 1.2 !important;
+
+        white-space: nowrap !important;
+    }
+
+    .study-material-info small {
+        display: block !important;
+
+        font-size: 7px !important;
+
+        line-height: 1.25 !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    /* -----------------------------------------
+       ACTIONS
+    ----------------------------------------- */
+
+    .study-material-actions {
+        width: 100% !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        justify-content: flex-end !important;
+
+        gap: 6px !important;
+
+        min-width: 0 !important;
+    }
+
+
+    .study-material-view {
+        min-height: 29px !important;
+
+        padding: 7px 9px !important;
+
+        display: inline-flex !important;
+
+        align-items: center !important;
+
+        justify-content: center !important;
+
+        gap: 4px !important;
+
+        font-size: 8px !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    .study-material-view i {
+        font-size: 8px !important;
+    }
+
+
+    .study-material-download {
+        width: 29px !important;
+
+        height: 29px !important;
+
+        min-width: 29px !important;
+
+        flex-shrink: 0 !important;
+
+        font-size: 8px !important;
+    }
+
+
+    /* =====================================================
+       SECTION 03
+       QUICK ACCESS
+    ===================================================== */
+
+    .study-materials-quick-section {
+        width: 100% !important;
+
+        margin-top: 0 !important;
+    }
+
+
+    .study-materials-quick-layout {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 12px !important;
+    }
+
+
+    .study-quick-resource {
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        min-height: 125px !important;
+
+        grid-template-columns:
+            40px minmax(0, 1fr) 18px !important;
+
+        gap: 10px !important;
+
+        padding: 15px !important;
+
+        border-radius: 12px !important;
+    }
+
+
+    .study-quick-resource-icon {
+        width: 40px !important;
+
+        height: 40px !important;
+
+        font-size: 13px !important;
+    }
+
+
+    .study-quick-resource-content {
+        min-width: 0 !important;
+    }
+
+
+    .study-quick-resource-content>span {
+        font-size: 7px !important;
+
+        letter-spacing: 0.8px !important;
+
+        margin-bottom: 4px !important;
+    }
+
+
+    .study-quick-resource-content h3 {
+        font-size: 13px !important;
+
+        line-height: 1.25 !important;
+
+        margin-bottom: 4px !important;
+    }
+
+
+    .study-quick-resource-content p {
+        margin: 0 !important;
+
+        font-size: 9px !important;
+
+        line-height: 1.4 !important;
+
+        display: -webkit-box !important;
+
+        -webkit-line-clamp: 2 !important;
+
+        -webkit-box-orient: vertical !important;
+
+        overflow: hidden !important;
+    }
+
+
+    .study-quick-resource-arrow {
+        font-size: 10px !important;
+
+        align-self: flex-start !important;
+    }
+
+
+    /* =====================================================
+       SECTION 04
+       RECENTLY VIEWED
+    ===================================================== */
+
+    .study-materials-recent-section {
+        width: 100% !important;
+    }
+
+
+    .study-materials-recent-list {
+        width: 100% !important;
+    }
+
+
+    .study-recent-item {
+        width: 100% !important;
+
+        min-width: 0 !important;
+    }
+
+
+    .study-recent-content {
+        min-width: 0 !important;
+    }
+
+
+    .study-recent-action {
+        flex-shrink: 0 !important;
+    }
+
+
+    /* =====================================================
+       LIBRARY CTA
+    ===================================================== */
+
+    .study-materials-library-cta {
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        gap: 15px !important;
+    }
+
+}
+
+/* =========================================================
+   iPAD MINI - RESULTS OVERALL PERFORMANCE
+   768px - 820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    /* =========================================
+       OVERALL SECTION
+    ========================================= */
+
+    .results-overall-section {
+        width: 100% !important;
+    }
+
+
+    /* =========================================
+       HEADER
+    ========================================= */
+
+    .results-overall-header {
+        width: 100% !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: flex-start !important;
+
+        gap: 12px !important;
+
+        margin-bottom: 0 !important;
+    }
+
+    .results-overall-header>div:first-child {
+        width: 100% !important;
+
+        min-width: 0 !important;
+    }
+
+    .results-eyebrow {
+        margin-bottom: 6px !important;
+
+        font-size: 9px !important;
+
+        letter-spacing: 1.3px !important;
+    }
+
+    .results-overall-header h2 {
+        margin-bottom: 7px !important;
+
+        font-size: 27px !important;
+
+        line-height: 1.15 !important;
+    }
+
+    .results-overall-header p {
+        max-width: 100% !important;
+
+        font-size: 12px !important;
+
+        line-height: 1.55 !important;
+
+        margin: 0 !important;
+    }
+
+
+    /* =========================================
+       PERIOD
+    ========================================= */
+
+    .results-period {
+        padding: 8px 11px !important;
+
+        font-size: 10px !important;
+
+        gap: 6px !important;
+    }
+
+    .results-period i {
+        font-size: 10px !important;
+    }
+
+
+    /* =========================================
+       OVERALL LAYOUT
+    ========================================= */
+
+    .results-overall-layout {
+        width: 100% !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        gap: 12px !important;
+
+        margin-top: 18px !important;
+    }
+
+
+    /* =========================================
+       SCORE CARD
+       RING + CONTENT SIDE BY SIDE
+    ========================================= */
+
+    .results-score-card {
+        width: 100% !important;
+
+        min-height: 255px !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            150px minmax(0, 1fr) !important;
+
+        align-items: center !important;
+
+        gap: 24px !important;
+
+        padding: 24px !important;
+
+        border-radius: 16px !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* =========================================
+       SCORE RING
+    ========================================= */
+
+    .results-score-ring {
+        width: 150px !important;
+
+        height: 150px !important;
+
+        min-height: 150px !important;
+
+        max-height: 150px !important;
+
+        flex-shrink: 0 !important;
+
+        align-self: center !important;
+    }
+
+    .results-score-ring::before {
+        inset: 10px !important;
+    }
+
+    .results-score-ring strong {
+        font-size: 40px !important;
+
+        line-height: 1 !important;
+    }
+
+    .results-score-ring span {
+        margin-top: 5px !important;
+
+        font-size: 10px !important;
+
+        letter-spacing: 0.7px !important;
+    }
+
+
+    /* =========================================
+       SCORE CONTENT
+    ========================================= */
+
+    .results-score-content {
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        padding: 0 !important;
+    }
+
+    .results-score-content>span {
+        display: block !important;
+
+        margin-bottom: 7px !important;
+
+        font-size: 9px !important;
+
+        line-height: 1.2 !important;
+
+        letter-spacing: 1px !important;
+    }
+
+    .results-score-content h3 {
+        margin-bottom: 8px !important;
+
+        font-size: 21px !important;
+
+        line-height: 1.2 !important;
+    }
+
+    .results-score-content>p {
+        margin-bottom: 14px !important;
+
+        font-size: 11px !important;
+
+        line-height: 1.55 !important;
+
+        max-width: 310px !important;
+    }
+
+
+    /* =========================================
+       SCORE TREND
+    ========================================= */
+
+    .results-score-trend {
+        gap: 5px !important;
+
+        align-items: center !important;
+    }
+
+    .results-score-trend i {
+        font-size: 10px !important;
+    }
+
+    .results-score-trend span {
+        font-size: 11px !important;
+
+        line-height: 1.2 !important;
+    }
+
+    .results-score-trend small {
+        width: 100% !important;
+
+        margin-left: 15px !important;
+
+        font-size: 9px !important;
+
+        line-height: 1.3 !important;
+    }
+
+
+    /* =========================================
+       KEY STATS
+       2 x 2
+    ========================================= */
+
+    .results-key-stats {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px !important;
+    }
+
+
+    .results-key-stat {
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        min-height: 82px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        gap: 10px !important;
+
+        padding: 13px !important;
+
+        border-radius: 10px !important;
+    }
+
+
+    .results-stat-icon {
+        width: 36px !important;
+
+        height: 36px !important;
+
+        min-width: 36px !important;
+
+        border-radius: 8px !important;
+
+        font-size: 12px !important;
+    }
+
+
+    .results-key-stat>div:last-child {
+        min-width: 0 !important;
+    }
+
+
+    .results-key-stat span {
+        margin-bottom: 3px !important;
+
+        font-size: 8px !important;
+
+        line-height: 1.2 !important;
+
+        letter-spacing: 0.7px !important;
+
+        white-space: nowrap !important;
+
+        overflow: hidden !important;
+
+        text-overflow: ellipsis !important;
+    }
+
+
+    .results-key-stat strong {
+        margin-bottom: 3px !important;
+
+        font-size: 19px !important;
+
+        line-height: 1 !important;
+    }
+
+
+    .results-key-stat small {
+        font-size: 9px !important;
+
+        line-height: 1.3 !important;
+
+        display: block !important;
+
+        overflow: hidden !important;
+
+        text-overflow: ellipsis !important;
+
+        white-space: nowrap !important;
+    }
+
+}
+
+/* =========================================================
+   iPAD MINI — NEXT MILESTONE / NEXT GOAL
+   768px - 820px ONLY
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    /* =========================================
+       MAIN CARD
+    ========================================= */
+
+    .results-next-goal-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        min-height: 0 !important;
+
+        padding: 20px !important;
+
+        box-sizing: border-box !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* =========================================
+       TOP AREA
+    ========================================= */
+
+    .results-next-goal-top {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            minmax(0, 1fr) 46px !important;
+
+        align-items: start !important;
+
+        justify-content: space-between !important;
+
+        gap: 16px !important;
+
+        margin: 0 0 22px !important;
+
+        min-width: 0 !important;
+    }
+
+
+    /* =========================================
+       TITLE CONTENT
+    ========================================= */
+
+    .results-next-goal-top>div:first-child {
+        min-width: 0 !important;
+
+        width: 100% !important;
+    }
+
+    .results-next-goal-top>div:first-child>span {
+        display: block !important;
+
+        margin: 0 0 6px !important;
+
+        font-size: 9px !important;
+
+        line-height: 1.2 !important;
+
+        letter-spacing: 1px !important;
+    }
+
+    .results-next-goal-top h3 {
+        margin: 0 !important;
+
+        font-size: 19px !important;
+
+        line-height: 1.25 !important;
+
+        white-space: normal !important;
+
+        overflow-wrap: break-word !important;
+    }
+
+
+    /* =========================================
+       TARGET ICON
+       FIXES THE 90px HEIGHT BUG
+    ========================================= */
+
+    .results-goal-icon {
+        width: 46px !important;
+        height: 46px !important;
+
+        min-width: 46px !important;
+        min-height: 46px !important;
+
+        max-width: 46px !important;
+        max-height: 46px !important;
+
+        padding: 0 !important;
+        margin: 0 !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        align-self: start !important;
+
+        flex: 0 0 46px !important;
+
+        box-sizing: border-box !important;
+
+        border-radius: 10px !important;
+
+        font-size: 15px !important;
+
+        overflow: hidden !important;
+    }
+
+    .results-goal-icon i,
+    .results-goal-icon svg {
+        width: auto !important;
+        height: auto !important;
+
+        max-width: 16px !important;
+        max-height: 16px !important;
+
+        margin: 0 !important;
+
+        display: block !important;
+    }
+
+
+    /* =========================================
+       PROGRESS
+    ========================================= */
+
+    .results-goal-progress {
+        width: 100% !important;
+
+        min-width: 0 !important;
+    }
+
+    .results-goal-progress-head {
+        width: 100% !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        justify-content: space-between !important;
+
+        gap: 10px !important;
+
+        margin-bottom: 7px !important;
+    }
+
+    .results-goal-progress-head span {
+        font-size: 9px !important;
+
+        line-height: 1.3 !important;
+    }
+
+    .results-goal-progress-head strong {
+        font-size: 10px !important;
+
+        white-space: nowrap !important;
+    }
+
+    .results-goal-bar {
+        width: 100% !important;
+
+        height: 6px !important;
+
+        border-radius: 20px !important;
+    }
+
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+
+    .results-goal-footer {
+        width: 100% !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        justify-content: space-between !important;
+
+        gap: 12px !important;
+
+        margin-top: 14px !important;
+    }
+
+    .results-goal-footer>span {
+        min-width: 0 !important;
+
+        font-size: 9px !important;
+
+        line-height: 1.4 !important;
+    }
+
+
+    /* =========================================
+       TAKE A TEST BUTTON
+    ========================================= */
+
+    .results-goal-button {
+        flex-shrink: 0 !important;
+
+        display: inline-flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 6px !important;
+
+        min-height: 34px !important;
+
+        padding: 8px 11px !important;
+
+        font-size: 10px !important;
+
+        line-height: 1 !important;
+
+        white-space: nowrap !important;
+
+        border-radius: 6px !important;
+    }
+
+    .results-goal-button i {
+        font-size: 9px !important;
+    }
+
+}
+
+/* =========================================================
+   iPAD MINI — LIVE CLASS PROGRESS
+   768px - 820px ONLY
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    /* -----------------------------------------
+       SECTION
+    ----------------------------------------- */
+
+    .live-class-progress-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+
+    /* -----------------------------------------
+       MAIN LAYOUT
+       Attendance + Stats side by side
+    ----------------------------------------- */
+
+    .live-class-progress-layout {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            minmax(0, 1fr) minmax(0, 1fr) !important;
+
+        gap: 12px !important;
+
+        align-items: stretch !important;
+
+        min-width: 0 !important;
+    }
+
+
+    /* -----------------------------------------
+       ATTENDANCE CARD
+    ----------------------------------------- */
+
+    .live-class-attendance-card {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        min-height: 230px !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: flex-start !important;
+        justify-content: center !important;
+
+        gap: 16px !important;
+
+        padding: 20px !important;
+
+        border-radius: 15px !important;
+
+        box-sizing: border-box !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* -----------------------------------------
+       ATTENDANCE CIRCLE
+    ----------------------------------------- */
+
+    .live-class-attendance-circle {
+        width: 98px !important;
+        height: 98px !important;
+
+        min-width: 98px !important;
+        min-height: 98px !important;
+
+        flex: 0 0 98px !important;
+
+        margin: 0 !important;
+    }
+
+    .live-class-attendance-circle::before {
+        inset: 7px !important;
+    }
+
+    .live-class-attendance-circle strong {
+        font-size: 25px !important;
+    }
+
+    .live-class-attendance-circle span {
+        margin-top: 4px !important;
+
+        font-size: 8px !important;
+
+        letter-spacing: 0.8px !important;
+    }
+
+
+    /* -----------------------------------------
+       ATTENDANCE CONTENT
+    ----------------------------------------- */
+
+    .live-class-attendance-content {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        min-width: 0 !important;
+    }
+
+    .live-class-attendance-content>span {
+        margin-bottom: 5px !important;
+
+        font-size: 9px !important;
+
+        letter-spacing: 1px !important;
+    }
+
+    .live-class-attendance-content h3 {
+        margin: 0 0 7px !important;
+
+        font-size: 18px !important;
+
+        line-height: 1.25 !important;
+
+        white-space: normal !important;
+    }
+
+    .live-class-attendance-content p {
+        margin: 0 !important;
+
+        font-size: 12px !important;
+
+        line-height: 1.55 !important;
+
+        max-width: 100% !important;
+    }
+
+
+    /* -----------------------------------------
+       STAT GRID
+    ----------------------------------------- */
+
+    .live-class-progress-stats {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px !important;
+
+        align-items: stretch !important;
+    }
+
+
+    /* -----------------------------------------
+       STAT CARDS
+    ----------------------------------------- */
+
+    .live-class-progress-stat {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        min-height: 0 !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        gap: 10px !important;
+
+        padding: 14px !important;
+
+        border-radius: 11px !important;
+
+        box-sizing: border-box !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* -----------------------------------------
+       STAT ICON
+    ----------------------------------------- */
+
+    .live-class-progress-stat-icon {
+        width: 38px !important;
+        height: 38px !important;
+
+        min-width: 38px !important;
+        min-height: 38px !important;
+
+        flex: 0 0 38px !important;
+
+        border-radius: 8px !important;
+
+        font-size: 12px !important;
+    }
+
+
+    /* -----------------------------------------
+       STAT CONTENT
+    ----------------------------------------- */
+
+    .live-class-progress-stat>div:last-child {
+        min-width: 0 !important;
+
+        overflow: hidden !important;
+    }
+
+    .live-class-progress-stat span {
+        margin-bottom: 3px !important;
+
+        font-size: 8px !important;
+
+        letter-spacing: 0.7px !important;
+
+        white-space: nowrap !important;
+    }
+
+    .live-class-progress-stat strong {
+        margin-bottom: 3px !important;
+
+        font-size: 21px !important;
+
+        line-height: 1 !important;
+    }
+
+    .live-class-progress-stat small {
+        display: block !important;
+
+        font-size: 9px !important;
+
+        line-height: 1.3 !important;
+
+        white-space: normal !important;
+    }
+
+
+    /* -----------------------------------------
+       CTA
+    ----------------------------------------- */
+
+    .live-class-progress-cta {
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        gap: 11px !important;
+
+        margin-top: 12px !important;
+
+        padding: 14px !important;
+
+        box-sizing: border-box !important;
+
+        border-radius: 11px !important;
+
+        overflow: hidden !important;
+    }
+
+    .live-class-progress-cta-icon {
+        width: 38px !important;
+        height: 38px !important;
+
+        min-width: 38px !important;
+        min-height: 38px !important;
+
+        flex: 0 0 38px !important;
+
+        border-radius: 8px !important;
+
+        font-size: 12px !important;
+    }
+
+    .live-class-progress-cta>div:nth-child(2) {
+        min-width: 0 !important;
+        flex: 1 !important;
+    }
+
+    .live-class-progress-cta span {
+        margin-bottom: 3px !important;
+
+        font-size: 8px !important;
+    }
+
+    .live-class-progress-cta h3 {
+        font-size: 14px !important;
+
+        line-height: 1.3 !important;
+
+        white-space: normal !important;
+    }
+
+    .live-class-progress-cta-button {
+        flex-shrink: 0 !important;
+
+        padding: 9px 11px !important;
+
+        font-size: 9px !important;
+
+        white-space: nowrap !important;
+
+        gap: 5px !important;
+    }
+
+}
+
+/* =========================================================
+   iPAD MINI — SCHEDULE OVERVIEW
+   CENTER LAST CARD
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    .schedule-overview-grid {
+        display: grid !important;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 12px !important;
+
+        width: 100% !important;
+    }
+
+    /* 3rd / Last card — center */
+    .schedule-overview-grid .schedule-overview-card:nth-child(3) {
+        grid-column: 1 / -1 !important;
+
+        justify-self: center !important;
+
+        width: calc(50% - 6px) !important;
+
+        max-width: none !important;
+    }
+
+    .schedule-overview-card {
+        min-width: 0 !important;
+        width: 100% !important;
+
+        padding: 18px !important;
+    }
+
+}
+
+/* =========================================================
+   iPAD MINI — FACULTY IMAGE LEFT ALIGN
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    .doubt-faculty-visual {
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+    }
+
+    .doubt-faculty-orbit {
+        left: 0 !important;
+        margin-left: 20px !important;
+        transform: translateY(-50%) !important;
+    }
+
+    .doubt-faculty-help-badge {
+        right: auto !important;
+        left: 20px !important;
+        transform: none !important;
+    }
+
+}
+
+/* =========================================================
+   iPAD MINI + iPAD PRO
+   HEADER — TITLE NEXT TO MENU TOGGLE
+   768px - 1199px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    /* Header items stay in one row */
+    .dashboard-header {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+
+        gap: 12px !important;
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    /* Menu toggle */
+    .dashboard-mobile-menu-toggle {
+        display: flex !important;
+
+        flex-shrink: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Heading immediately after menu */
+    .dashboard-header-left {
+        display: flex !important;
+        align-items: center !important;
+
+        flex: 0 0 auto !important;
+        width: auto !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .dashboard-header-left h1 {
+        margin: 0 !important;
+        white-space: nowrap !important;
+    }
+
+    /* Push notification/settings/profile to right */
+    .dashboard-header-right {
+        margin-left: auto !important;
+
+        display: flex !important;
+        align-items: center !important;
+
+        flex-shrink: 0 !important;
+    }
+
+}
