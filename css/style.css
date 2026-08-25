@@ -41310,3 +41310,475 @@ html[dir="rtl"] #contactPhone::placeholder {
     }
 
 }
+
+/* =========================================
+   HOME 2 HERO LABEL - DARK MODE VISIBILITY
+========================================= */
+
+html.dark-mode .home2-hero .home2-hero-label {
+    color: #E8DCC8 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    -webkit-text-fill-color: #E8DCC8 !important;
+    text-shadow: none !important;
+}
+
+/* =========================================================
+   iPAD MINI - FULL COMPARISON TABLE / NO HORIZONTAL SCROLL
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Remove horizontal scrolling */
+    .plans-comparison-table-wrap {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+
+        border-radius: 18px !important;
+    }
+
+    .plans-comparison-table-wrap::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+
+    /* Make complete table fit inside iPad Mini */
+    .plans-comparison-table {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+
+
+    /* 4 equal columns */
+    .plans-comparison-row {
+        grid-template-columns: 1.55fr repeat(3, 1fr) !important;
+
+        width: 100% !important;
+        min-width: 0 !important;
+
+        min-height: 64px !important;
+    }
+
+
+    /* Cell spacing */
+    .plans-comparison-row>div {
+        min-width: 0 !important;
+
+        padding: 13px 10px !important;
+
+        font-size: 12px !important;
+
+        line-height: 1.35 !important;
+
+        overflow: hidden;
+    }
+
+
+    /* Feature names */
+    .plans-comparison-row>div:first-child {
+        padding-left: 14px !important;
+        padding-right: 10px !important;
+
+        justify-content: flex-start !important;
+
+        white-space: normal !important;
+    }
+
+
+    /* Header */
+    .plans-comparison-header {
+        min-height: 62px !important;
+    }
+
+    .plans-comparison-header>div {
+        padding: 12px 8px !important;
+
+        font-size: 11px !important;
+
+        letter-spacing: 1px !important;
+    }
+
+    .plans-comparison-header>div:not(:first-child) {
+        font-size: 12px !important;
+    }
+
+
+    /* Normal text */
+    .plans-comparison-row>div {
+        white-space: normal !important;
+    }
+
+
+    /* Icons */
+    .plans-comparison-row i {
+        font-size: 11px !important;
+    }
+
+
+    /* Limited / Unlimited */
+    .comparison-limited,
+    .plans-comparison-pro strong,
+    .plans-comparison-row strong {
+        font-size: 11px !important;
+        white-space: nowrap !important;
+    }
+
+
+    /* Bottom buttons */
+    .plans-comparison-actions {
+        min-height: 64px !important;
+    }
+
+    .plans-comparison-actions>div {
+        padding: 10px 7px !important;
+    }
+
+    .plans-comparison-actions a {
+        padding: 8px 10px !important;
+
+        font-size: 10px !important;
+
+        white-space: nowrap !important;
+    }
+
+}
+
+/* =========================================================
+   iPAD PRO / TABLET
+   RESULTS STAT TEXT - ICON SPACING FIX
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .results-success-stat {
+        padding: 24px !important;
+    }
+
+    .results-success-stat p {
+        max-width: none !important;
+        padding-right: 52px !important;
+    }
+
+    .results-success-stat>i {
+        right: 20px !important;
+        bottom: 20px !important;
+
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+}
+
+/* =========================================================
+   MOBILE - MOVE FOCUS AREA CARD BELOW MAIN CARD
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .why-prepvera-visual {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        gap: 20px !important;
+
+        min-height: auto !important;
+        padding-bottom: 0 !important;
+    }
+
+    .why-prepvera-visual .visual-main-card {
+        position: relative !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .why-prepvera-visual .visual-floating-card,
+    html[dir="rtl"] .why-prepvera-visual .visual-floating-card {
+        position: relative !important;
+
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        top: auto !important;
+
+        transform: none !important;
+        margin: 0 !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        z-index: 2 !important;
+
+        direction: ltr !important;
+        text-align: left !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .why-prepvera-visual .visual-floating-card,
+    html[dir="rtl"] .why-prepvera-visual .visual-floating-card {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-top: 5px !important;
+    }
+
+}
+
+/* =========================================================
+   FINAL CTA - MOBILE OVERLAP FIX
+   ONLY CTA SECTION
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .final-cta-section .final-cta-visual {
+        position: relative !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        gap: 20px !important;
+
+        padding-bottom: 0 !important;
+    }
+
+    /* Main CTA card */
+    .final-cta-section .cta-main-card {
+        position: relative !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        transform: none !important;
+
+        width: 195px !important;
+        min-height: 245px !important;
+
+        margin: 0 !important;
+
+        z-index: 2 !important;
+    }
+
+    /* Floating CTA card -> BELOW main card */
+    .final-cta-section .cta-floating-card {
+        position: relative !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        transform: none !important;
+
+        width: 180px !important;
+        min-height: 82px !important;
+
+        margin: 0 !important;
+
+        z-index: 3 !important;
+    }
+
+    /* Keep decorative circles behind everything */
+    .final-cta-section .cta-circle {
+        z-index: 0 !important;
+        pointer-events: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 399px) {
+
+    .final-cta-section .final-cta-visual {
+        gap: 18px !important;
+    }
+
+    .final-cta-section .cta-main-card {
+        width: 180px !important;
+        min-height: 225px !important;
+    }
+
+    .final-cta-section .cta-floating-card {
+        width: 165px !important;
+        min-height: 78px !important;
+    }
+
+}
+
+/* =========================================================
+   HOME 2 PATH CTA - MOBILE COLLAPSE FIX
+   ONLY THIS CTA
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .home2-path-cta {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+
+        gap: 24px !important;
+
+        margin-top: 40px !important;
+        padding: 28px 22px !important;
+
+        box-sizing: border-box !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* CTA TEXT */
+
+    .home2-path-cta-content {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        min-width: 0 !important;
+
+        flex: 0 0 auto !important;
+
+        position: relative !important;
+        z-index: 2 !important;
+    }
+
+    .home2-path-cta-content span {
+        display: block !important;
+
+        margin-bottom: 8px !important;
+    }
+
+    .home2-path-cta-content h3 {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        font-size: 24px !important;
+        line-height: 1.35 !important;
+
+        overflow-wrap: normal !important;
+        word-break: normal !important;
+    }
+
+
+    /* CTA BUTTONS */
+
+    .home2-path-cta-actions {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+
+        gap: 12px !important;
+
+        flex: 0 0 auto !important;
+
+        position: relative !important;
+        z-index: 3 !important;
+    }
+
+
+    .home2-path-cta-actions .btn {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        min-width: 0 !important;
+
+        min-height: 46px !important;
+
+        padding: 11px 16px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        white-space: normal !important;
+        text-align: center !important;
+
+        flex: 0 0 auto !important;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 399px) {
+
+    .home2-path-cta {
+        gap: 20px !important;
+
+        margin-top: 32px !important;
+
+        padding: 25px 18px !important;
+    }
+
+    .home2-path-cta-content h3 {
+        font-size: 22px !important;
+    }
+
+    .home2-path-cta-actions {
+        gap: 10px !important;
+    }
+
+    .home2-path-cta-actions .btn {
+        min-height: 44px !important;
+
+        padding: 10px 14px !important;
+
+        font-size: 14px !important;
+    }
+
+}
+
+/* =========================================
+   FEES PAGE - MOBILE PRICING CARD SPACING
+========================================= */
+
+@media (max-width: 767px) {
+
+    .plans-pricing-grid {
+        row-gap: 24px !important;
+    }
+
+}

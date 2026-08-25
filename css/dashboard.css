@@ -30858,3 +30858,109 @@ html[dir="rtl"] .my-courses-roadmap-line {
     }
 
 }
+
+/* =========================================================
+   iPAD MINI + iPAD PRO
+   MENU TOGGLE ↔ PAGE HEADING GAP
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .dashboard-header-left {
+        display: flex !important;
+        align-items: center !important;
+        gap: 18px !important;
+    }
+
+    .dashboard-header-left .dashboard-mobile-menu-toggle {
+        flex-shrink: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .dashboard-header-left>div {
+        min-width: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .dashboard-header-left h1 {
+        margin-left: 0 !important;
+    }
+
+}
+
+/* =========================================
+   MOBILE - RESULTS CARD GAP FIX
+========================================= */
+
+@media (max-width: 767px) {
+
+    .results-subject-layout {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 28px !important;
+    }
+
+    .results-subject-list {
+        width: 100% !important;
+        margin: 0 0 28px 0 !important;
+    }
+
+    .results-performance-insight {
+        width: 100% !important;
+        margin: 0 !important;
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+    }
+
+}
+
+/* =========================================================
+   MOBILE DASHBOARD HEADER / SIDEBAR PROFILE REORDER
+   0px - 767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* Keep the profile out of the opened sidebar on mobile */
+    .dashboard-sidebar .dashboard-mobile-profile {
+        display: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Keep the avatar in the mobile header, but only show the image */
+    .dashboard-header-right .dashboard-profile {
+        display: flex !important;
+        align-items: center !important;
+        gap: 0 !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+        border-left: 0 !important;
+        flex-shrink: 0 !important;
+    }
+
+    .dashboard-header-right .dashboard-profile-image {
+        width: 36px !important;
+        height: 36px !important;
+    }
+
+    .dashboard-header-right .dashboard-profile-info {
+        display: none !important;
+    }
+
+    /* Preserve comfortable menu spacing while making room naturally */
+    .dashboard-sidebar {
+        overflow: hidden !important;
+    }
+
+    .dashboard-navigation {
+        overflow: hidden !important;
+    }
+
+    .dashboard-mobile-actions {
+        display: flex !important;
+        margin-top: 0 !important;
+    }
+
+}
