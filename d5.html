@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Prepvera</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+     STUDENT DASHBOARD
+========================================= -->
+
+    <div class="student-dashboard">
+
+
+        <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+        <aside class="dashboard-sidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="dashboard-logo">
+
+                <a href="index.html">
+
+                    <img src="images/logo-light.png" alt="Prepvera" class="dashboard-logo-image">
+
+                </a>
+
+            </div>
+
+            <!-- MOBILE MENU HEADER -->
+
+            <div class="dashboard-mobile-close">
+
+                <button type="button" class="dashboard-mobile-menu-close" id="dashboardMobileMenuClose"
+                    aria-label="Close dashboard menu">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+            <!-- NAVIGATION -->
+
+            <nav class="dashboard-navigation">
+
+
+                <!-- OVERVIEW -->
+
+                <div class="dashboard-nav-group">
+
+                    <span class="dashboard-nav-label">
+                        STUDENT PORTAL
+                    </span>
+
+
+                    <a href="dashboard.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a href="d2.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span>
+                            My Courses
+                        </span>
+
+                    </a>
+
+
+                    <a href="d3.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-clipboard-check"></i>
+
+                        <span>
+                            My Tests
+                        </span>
+
+                    </a>
+
+
+                    <a href="d4.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>
+                            Study Materials
+                        </span>
+
+                    </a>
+
+
+                    <a href="d5.html" class="dashboard-nav-link active">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        <span>
+                            Results
+                        </span>
+
+                    </a>
+
+                    <a href="d6.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-video"></i>
+
+                        <span>
+                            Live Classes
+                        </span>
+
+                    </a>
+
+
+                    <a href="d7.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <span>
+                            Schedule
+                        </span>
+
+                    </a>
+
+
+                    <a href="d8.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>
+                            Doubts
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="dashboard-mobile-actions">
+
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="dashboard-header-action" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+            </div>
+
+            <!-- MOBILE PROFILE -->
+
+            <div class="dashboard-mobile-profile">
+
+                <div class="dashboard-profile-image">
+
+                    <img src="images/student-profile.jpg" alt="Student profile">
+
+                </div>
+
+                <div class="dashboard-profile-info">
+
+                    <strong>
+                        Ananya R.
+                    </strong>
+
+                    <span>
+                        SSC Aspirant
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- LOGOUT -->
+
+            <div class="dashboard-logout">
+
+                <a href="javascript:void(0);" id="logoutTrigger">
+
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- =================================
+             FIXED HEADER
+        ================================== -->
+
+            <header class="dashboard-header">
+
+
+                <!-- LEFT -->
+
+                <div class="dashboard-header-left">
+
+                    <button type="button" class="dashboard-mobile-menu-toggle" id="dashboardMobileMenuToggle"
+                        aria-label="Open dashboard menu" aria-expanded="false">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <h1>
+                            My Results
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="dashboard-header-right">
+
+
+                    <!-- NOTIFICATION -->
+
+                    <button class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- SETTINGS -->
+
+                    <button class="dashboard-header-action" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- DARK MODE -->
+
+                    <button class="dashboard-header-action" aria-label="Dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+
+                    <button class="dashboard-header-action" aria-label="RTL mode">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+
+                    <!-- PROFILE -->
+
+                    <div class="dashboard-profile">
+
+                        <div class="dashboard-profile-image">
+
+                            <img src="images/student-profile.jpg" alt="Student profile">
+
+                        </div>
+
+                        <div class="dashboard-profile-info">
+
+                            <strong>
+                                Ananya R.
+                            </strong>
+
+                            <span>
+                                SSC Aspirant
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+             PAGE CONTENT
+        ================================== -->
+
+            <div class="dashboard-content">
+
+                <!-- =========================================
+     RESULTS - SECTION 01
+     OVERALL PERFORMANCE
+========================================= -->
+
+                <section class="results-overall-section">
+
+                    <!-- Header -->
+
+                    <div class="results-overall-header">
+
+                        <div>
+
+                            <span class="results-eyebrow">
+                                YOUR PERFORMANCE
+                            </span>
+
+                            <h2>
+                                Overall Results
+                            </h2>
+
+                            <p>
+                                A quick look at your overall preparation and
+                                performance across completed tests.
+                            </p>
+
+                        </div>
+
+                        <div class="results-period">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <span>
+                                August 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         PERFORMANCE CONTENT
+    ====================================== -->
+
+                    <div class="results-overall-layout">
+
+
+                        <!-- =================================
+             MAIN SCORE
+        ================================== -->
+
+                        <div class="results-score-card">
+
+                            <div class="results-score-ring">
+
+                                <div>
+
+                                    <strong>
+                                        82
+                                    </strong>
+
+                                    <span>
+                                        OVERALL
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="results-score-content">
+
+                                <span>
+                                    OVERALL PERFORMANCE
+                                </span>
+
+                                <h3>
+                                    Great Progress!
+                                </h3>
+
+                                <p>
+                                    Your performance is improving steadily.
+                                    Keep practising regularly to reach the next level.
+                                </p>
+
+                                <div class="results-score-trend">
+
+                                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                                    <span>
+                                        8.2% improvement
+                                    </span>
+
+                                    <small>
+                                        compared to last month
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             KEY STATS
+        ================================== -->
+
+                        <div class="results-key-stats">
+
+
+                            <!-- Tests -->
+
+                            <div class="results-key-stat">
+
+                                <div class="results-stat-icon">
+
+                                    <i class="fa-solid fa-file-circle-check"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        TESTS COMPLETED
+                                    </span>
+
+                                    <strong>
+                                        18
+                                    </strong>
+
+                                    <small>
+                                        +4 this month
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Average -->
+
+                            <div class="results-key-stat">
+
+                                <div class="results-stat-icon">
+
+                                    <i class="fa-solid fa-chart-line"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        AVERAGE SCORE
+                                    </span>
+
+                                    <strong>
+                                        82%
+                                    </strong>
+
+                                    <small>
+                                        Across all tests
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Best -->
+
+                            <div class="results-key-stat">
+
+                                <div class="results-stat-icon">
+
+                                    <i class="fa-solid fa-trophy"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        BEST SCORE
+                                    </span>
+
+                                    <strong>
+                                        94%
+                                    </strong>
+
+                                    <small>
+                                        Full Mock Test 04
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Rank -->
+
+                            <div class="results-key-stat">
+
+                                <div class="results-stat-icon">
+
+                                    <i class="fa-solid fa-ranking-star"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        BEST RANK
+                                    </span>
+
+                                    <strong>
+                                        #128
+                                    </strong>
+
+                                    <small>
+                                        Among test participants
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     RESULTS - SECTION 02
+     SUBJECT-WISE PERFORMANCE
+========================================= -->
+
+                <section class="results-subject-section">
+
+                    <div class="results-section-heading">
+
+                        <div>
+
+                            <span>
+                                SUBJECT PERFORMANCE
+                            </span>
+
+                            <h2>
+                                How You Performed
+                            </h2>
+
+                            <p>
+                                See your strengths and the areas that need
+                                a little more attention.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="results-subject-layout">
+
+
+                        <!-- =================================
+             SUBJECT PERFORMANCE LIST
+        ================================== -->
+
+                        <div class="results-subject-list">
+
+
+                            <!-- QUANTITATIVE -->
+
+                            <div class="results-subject-row">
+
+                                <div class="results-subject-icon">
+
+                                    <i class="fa-solid fa-calculator"></i>
+
+                                </div>
+
+
+                                <div class="results-subject-name">
+
+                                    <strong>
+                                        Quantitative Aptitude
+                                    </strong>
+
+                                    <span>
+                                        69% accuracy
+                                    </span>
+
+                                </div>
+
+
+                                <div class="results-subject-progress">
+
+                                    <div class="results-subject-progress-head">
+
+                                        <span>
+                                            Performance
+                                        </span>
+
+                                        <strong>
+                                            69%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="results-subject-bar">
+
+                                        <span style="width: 69%;"></span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <span class="results-subject-status needs-work">
+                                    Needs Focus
+                                </span>
+
+                            </div>
+
+
+                            <!-- REASONING -->
+
+                            <div class="results-subject-row">
+
+                                <div class="results-subject-icon">
+
+                                    <i class="fa-solid fa-puzzle-piece"></i>
+
+                                </div>
+
+
+                                <div class="results-subject-name">
+
+                                    <strong>
+                                        Logical Reasoning
+                                    </strong>
+
+                                    <span>
+                                        86% accuracy
+                                    </span>
+
+                                </div>
+
+
+                                <div class="results-subject-progress">
+
+                                    <div class="results-subject-progress-head">
+
+                                        <span>
+                                            Performance
+                                        </span>
+
+                                        <strong>
+                                            86%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="results-subject-bar">
+
+                                        <span style="width: 86%;"></span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <span class="results-subject-status strong">
+                                    Strong
+                                </span>
+
+                            </div>
+
+
+                            <!-- ENGLISH -->
+
+                            <div class="results-subject-row">
+
+                                <div class="results-subject-icon">
+
+                                    <i class="fa-solid fa-language"></i>
+
+                                </div>
+
+
+                                <div class="results-subject-name">
+
+                                    <strong>
+                                        English Language
+                                    </strong>
+
+                                    <span>
+                                        91% accuracy
+                                    </span>
+
+                                </div>
+
+
+                                <div class="results-subject-progress">
+
+                                    <div class="results-subject-progress-head">
+
+                                        <span>
+                                            Performance
+                                        </span>
+
+                                        <strong>
+                                            91%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="results-subject-bar">
+
+                                        <span style="width: 91%;"></span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <span class="results-subject-status excellent">
+                                    Excellent
+                                </span>
+
+                            </div>
+
+
+                            <!-- GENERAL AWARENESS -->
+
+                            <div class="results-subject-row">
+
+                                <div class="results-subject-icon">
+
+                                    <i class="fa-solid fa-globe"></i>
+
+                                </div>
+
+
+                                <div class="results-subject-name">
+
+                                    <strong>
+                                        General Awareness
+                                    </strong>
+
+                                    <span>
+                                        74% accuracy
+                                    </span>
+
+                                </div>
+
+
+                                <div class="results-subject-progress">
+
+                                    <div class="results-subject-progress-head">
+
+                                        <span>
+                                            Performance
+                                        </span>
+
+                                        <strong>
+                                            74%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="results-subject-bar">
+
+                                        <span style="width: 74%;"></span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <span class="results-subject-status average">
+                                    Improving
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             PERFORMANCE INSIGHT
+        ================================== -->
+
+                        <div class="results-performance-insight">
+
+                            <div class="results-insight-icon">
+
+                                <i class="fa-solid fa-lightbulb"></i>
+
+                            </div>
+
+
+                            <span>
+                                PERFORMANCE INSIGHT
+                            </span>
+
+                            <h3>
+                                Your strongest subject is English
+                            </h3>
+
+                            <p>
+                                You're performing consistently well in English
+                                and Reasoning. Focus a little more on Quantitative
+                                Aptitude to improve your overall score.
+                            </p>
+
+
+                            <div class="results-insight-highlight">
+
+                                <div>
+
+                                    <span>
+                                        STRONGEST
+                                    </span>
+
+                                    <strong>
+                                        English · 91%
+                                    </strong>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        FOCUS AREA
+                                    </span>
+
+                                    <strong>
+                                        Quantitative · 69%
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <a href="practice.html" class="results-insight-button">
+
+                                Improve Your Score
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     RESULTS - SECTION 03
+     RECENT RESULTS
+========================================= -->
+
+                <section class="results-recent-section">
+
+                    <div class="results-section-heading">
+
+                        <div>
+
+                            <span>
+                                RECENT PERFORMANCE
+                            </span>
+
+                            <h2>
+                                Recent Results
+                            </h2>
+
+                            <p>
+                                Review your latest test scores, accuracy and rankings.
+                            </p>
+
+                        </div>
+
+                        <a href="test-history.html" class="results-view-all">
+
+                            View Full History
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="results-history-card">
+
+                        <!-- Table Header -->
+
+                        <div class="results-history-header">
+
+                            <span>
+                                TEST
+                            </span>
+
+                            <span>
+                                DATE
+                            </span>
+
+                            <span>
+                                SCORE
+                            </span>
+
+                            <span>
+                                ACCURACY
+                            </span>
+
+                            <span>
+                                RANK
+                            </span>
+
+                            <span>
+                                RESULT
+                            </span>
+
+                        </div>
+
+
+                        <!-- Result 01 -->
+
+                        <a href="test-result.html" class="results-history-row">
+
+                            <div class="results-test-name">
+
+                                <div class="results-test-icon">
+
+                                    <i class="fa-solid fa-clipboard-check"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        SSC CGL Full Mock Test 04
+                                    </strong>
+
+                                    <span>
+                                        Full Mock Test
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span class="results-date">
+                                22 Aug 2026
+                            </span>
+
+                            <strong class="results-score">
+                                87 / 100
+                            </strong>
+
+                            <span class="results-accuracy">
+                                91%
+                            </span>
+
+                            <span class="results-rank">
+                                #128
+                            </span>
+
+                            <span class="results-status excellent">
+                                Excellent
+                            </span>
+
+                            <i class="fa-solid fa-chevron-right results-row-arrow"></i>
+
+                        </a>
+
+
+                        <!-- Result 02 -->
+
+                        <a href="test-result.html" class="results-history-row">
+
+                            <div class="results-test-name">
+
+                                <div class="results-test-icon">
+
+                                    <i class="fa-solid fa-calculator"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Quantitative Aptitude — Test 08
+                                    </strong>
+
+                                    <span>
+                                        Subject Test
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span class="results-date">
+                                20 Aug 2026
+                            </span>
+
+                            <strong class="results-score">
+                                74 / 100
+                            </strong>
+
+                            <span class="results-accuracy">
+                                78%
+                            </span>
+
+                            <span class="results-rank">
+                                #342
+                            </span>
+
+                            <span class="results-status good">
+                                Good
+                            </span>
+
+                            <i class="fa-solid fa-chevron-right results-row-arrow"></i>
+
+                        </a>
+
+
+                        <!-- Result 03 -->
+
+                        <a href="test-result.html" class="results-history-row">
+
+                            <div class="results-test-name">
+
+                                <div class="results-test-icon">
+
+                                    <i class="fa-solid fa-puzzle-piece"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Reasoning Practice Test 06
+                                    </strong>
+
+                                    <span>
+                                        Subject Test
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span class="results-date">
+                                18 Aug 2026
+                            </span>
+
+                            <strong class="results-score">
+                                81 / 100
+                            </strong>
+
+                            <span class="results-accuracy">
+                                86%
+                            </span>
+
+                            <span class="results-rank">
+                                #215
+                            </span>
+
+                            <span class="results-status excellent">
+                                Excellent
+                            </span>
+
+                            <i class="fa-solid fa-chevron-right results-row-arrow"></i>
+
+                        </a>
+
+
+                        <!-- Result 04 -->
+
+                        <a href="test-result.html" class="results-history-row">
+
+                            <div class="results-test-name">
+
+                                <div class="results-test-icon">
+
+                                    <i class="fa-solid fa-language"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        English Language Test 09
+                                    </strong>
+
+                                    <span>
+                                        Subject Test
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span class="results-date">
+                                16 Aug 2026
+                            </span>
+
+                            <strong class="results-score">
+                                91 / 100
+                            </strong>
+
+                            <span class="results-accuracy">
+                                94%
+                            </span>
+
+                            <span class="results-rank">
+                                #76
+                            </span>
+
+                            <span class="results-status excellent">
+                                Excellent
+                            </span>
+
+                            <i class="fa-solid fa-chevron-right results-row-arrow"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     RESULTS - SECTION 04
+     ACHIEVEMENTS & NEXT GOAL
+========================================= -->
+
+                <section class="results-achievements-section">
+
+                    <div class="results-section-heading">
+
+                        <div>
+
+                            <span>
+                                YOUR PROGRESS
+                            </span>
+
+                            <h2>
+                                Achievements & Next Goal
+                            </h2>
+
+                            <p>
+                                Celebrate your progress and keep moving towards
+                                your next milestone.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="results-achievements-layout">
+
+
+                        <!-- =================================
+             ACHIEVEMENT
+        ================================== -->
+
+                        <div class="results-achievement-card">
+
+                            <div class="results-achievement-icon">
+
+                                <i class="fa-solid fa-trophy"></i>
+
+                            </div>
+
+                            <div class="results-achievement-content">
+
+                                <span>
+                                    BEST PERFORMANCE
+                                </span>
+
+                                <h3>
+                                    Top 10% Performer
+                                </h3>
+
+                                <p>
+                                    You scored higher than 90% of students
+                                    in your recent mock tests.
+                                </p>
+
+                            </div>
+
+                            <div class="results-achievement-score">
+
+                                <strong>
+                                    94%
+                                </strong>
+
+                                <span>
+                                    Best Score
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             NEXT GOAL
+        ================================== -->
+
+                        <div class="results-next-goal-card">
+
+                            <div class="results-next-goal-top">
+
+                                <div>
+
+                                    <span>
+                                        NEXT MILESTONE
+                                    </span>
+
+                                    <h3>
+                                        Reach 90% Overall Score
+                                    </h3>
+
+                                </div>
+
+                                <div class="results-goal-icon">
+
+                                    <i class="fa-solid fa-bullseye"></i>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="results-goal-progress">
+
+                                <div class="results-goal-progress-head">
+
+                                    <span>
+                                        Current Progress
+                                    </span>
+
+                                    <strong>
+                                        82% / 90%
+                                    </strong>
+
+                                </div>
+
+                                <div class="results-goal-bar">
+
+                                    <span style="width: 91%;"></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="results-goal-footer">
+
+                                <span>
+                                    Just 8% more to reach your goal.
+                                </span>
+
+                                <a href="my-tests.html" class="results-goal-button">
+
+                                    Take a Test
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- MOBILE MENU OVERLAY -->
+
+    <div class="dashboard-mobile-overlay" id="dashboardMobileOverlay">
+    </div>
+
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION POPUP
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-overlay"></div>
+
+
+        <div class="logout-modal-box">
+
+            <!-- Icon -->
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="logout-modal-content">
+
+                <h3>
+                    Logout from Prepvera?
+                </h3>
+
+                <p>
+                    Are you sure you want to logout from your
+                    student dashboard?
+                </p>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="logoutCancel">
+
+                    No, Stay
+
+                </button>
+
+
+                <button type="button" class="logout-confirm-btn" id="logoutConfirm">
+
+                    Yes, Logout
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JS -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

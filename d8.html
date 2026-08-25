@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Prepvera</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+     STUDENT DASHBOARD
+========================================= -->
+
+    <div class="student-dashboard">
+
+
+        <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+        <aside class="dashboard-sidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="dashboard-logo">
+
+                <a href="index.html">
+
+                    <img src="images/logo-light.png" alt="Prepvera" class="dashboard-logo-image">
+
+                </a>
+
+            </div>
+
+            <!-- MOBILE MENU HEADER -->
+
+            <div class="dashboard-mobile-close">
+
+                <button type="button" class="dashboard-mobile-menu-close" id="dashboardMobileMenuClose"
+                    aria-label="Close dashboard menu">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+            <!-- NAVIGATION -->
+
+            <nav class="dashboard-navigation">
+
+
+                <!-- OVERVIEW -->
+
+                <div class="dashboard-nav-group">
+
+                    <span class="dashboard-nav-label">
+                        STUDENT PORTAL
+                    </span>
+
+
+                    <a href="dashboard.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a href="d2.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span>
+                            My Courses
+                        </span>
+
+                    </a>
+
+
+                    <a href="d3.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-clipboard-check"></i>
+
+                        <span>
+                            My Tests
+                        </span>
+
+                    </a>
+
+
+                    <a href="d4.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>
+                            Study Materials
+                        </span>
+
+                    </a>
+
+
+                    <a href="d5.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        <span>
+                            Results
+                        </span>
+
+                    </a>
+
+                    <a href="d6.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-video"></i>
+
+                        <span>
+                            Live Classes
+                        </span>
+
+                    </a>
+
+
+                    <a href="d7.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <span>
+                            Schedule
+                        </span>
+
+                    </a>
+
+
+                    <a href="d8.html" class="dashboard-nav-link active">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>
+                            Doubts
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="dashboard-mobile-actions">
+
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="dashboard-header-action" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+            </div>
+
+            <!-- MOBILE PROFILE -->
+
+            <div class="dashboard-mobile-profile">
+
+                <div class="dashboard-profile-image">
+
+                    <img src="images/student-profile.jpg" alt="Student profile">
+
+                </div>
+
+                <div class="dashboard-profile-info">
+
+                    <strong>
+                        Ananya R.
+                    </strong>
+
+                    <span>
+                        SSC Aspirant
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- LOGOUT -->
+
+            <div class="dashboard-logout">
+
+                <a href="javascript:void(0);" id="logoutTrigger">
+
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- =================================
+             FIXED HEADER
+        ================================== -->
+
+            <header class="dashboard-header">
+
+                <button type="button" class="dashboard-mobile-menu-toggle" id="dashboardMobileMenuToggle"
+                    aria-label="Open dashboard menu" aria-expanded="false">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+
+                <!-- LEFT -->
+
+                <div class="dashboard-header-left">
+
+                    <div>
+
+                        <h1>
+                            Doubts
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="dashboard-header-right">
+
+
+                    <!-- NOTIFICATION -->
+
+                    <button class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- SETTINGS -->
+
+                    <button class="dashboard-header-action" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- DARK MODE -->
+
+                    <button class="dashboard-header-action" aria-label="Dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+
+                    <button class="dashboard-header-action" aria-label="RTL mode">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+
+                    <!-- PROFILE -->
+
+                    <div class="dashboard-profile">
+
+                        <div class="dashboard-profile-image">
+
+                            <img src="images/student-profile.jpg" alt="Student profile">
+
+                        </div>
+
+                        <div class="dashboard-profile-info">
+
+                            <strong>
+                                Ananya R.
+                            </strong>
+
+                            <span>
+                                SSC Aspirant
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+             PAGE CONTENT
+        ================================== -->
+
+            <div class="dashboard-content">
+
+                <!-- =========================================
+     DOUBTS - SECTION 01
+     ASK YOUR DOUBT
+========================================= -->
+
+                <section class="doubt-ask-section">
+
+                    <div class="doubt-section-heading">
+
+                        <div>
+
+                            <span>
+                                GET HELP
+                            </span>
+
+                            <h2>
+                                Ask Your Doubt
+                            </h2>
+
+                            <p>
+                                Stuck on a concept? Ask your doubt and get
+                                guidance to understand it better.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="doubt-ask-layout">
+
+
+                        <!-- =================================
+             DOUBT FORM
+        ================================== -->
+
+                        <div class="doubt-form-card">
+
+                            <div class="doubt-form-top">
+
+                                <div class="doubt-form-icon">
+
+                                    <i class="fa-solid fa-circle-question"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        NEW DOUBT
+                                    </span>
+
+                                    <h3>
+                                        What are you stuck with?
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Subject -->
+
+                            <div class="doubt-form-group">
+
+                                <label for="doubt-subject">
+                                    Subject
+                                </label>
+
+                                <select id="doubt-subject">
+
+                                    <option value="">
+                                        Select a subject
+                                    </option>
+
+                                    <option>
+                                        Quantitative Aptitude
+                                    </option>
+
+                                    <option>
+                                        Logical Reasoning
+                                    </option>
+
+                                    <option>
+                                        English Language
+                                    </option>
+
+                                    <option>
+                                        General Awareness
+                                    </option>
+
+                                    <option>
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Topic -->
+
+                            <div class="doubt-form-group">
+
+                                <label for="doubt-topic">
+                                    Topic
+                                </label>
+
+                                <input type="text" id="doubt-topic" placeholder="e.g. Number System">
+
+                            </div>
+
+
+                            <!-- Doubt -->
+
+                            <div class="doubt-form-group">
+
+                                <div class="doubt-label-row">
+
+                                    <label for="doubt-message">
+                                        Describe your doubt
+                                    </label>
+
+                                    <span>
+                                        0 / 500
+                                    </span>
+
+                                </div>
+
+                                <textarea id="doubt-message" rows="6"
+                                    placeholder="Explain your question or paste the problem you're having trouble with..."></textarea>
+
+                            </div>
+
+
+                            <!-- Attachment -->
+
+                            <div class="doubt-attachment">
+
+                                <button type="button" class="doubt-attachment-button">
+
+                                    <i class="fa-solid fa-paperclip"></i>
+
+                                    Attach Question
+
+                                </button>
+
+                                <span>
+                                    JPG, PNG or PDF
+                                </span>
+
+                            </div>
+
+
+                            <!-- Submit -->
+
+                            <button type="button" class="doubt-submit-button">
+
+                                Ask Doubt
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- =================================
+             AI ASSISTANT
+        ================================== -->
+
+                        <aside class="doubt-ai-card">
+
+                            <div class="doubt-ai-header">
+
+                                <div class="doubt-ai-avatar">
+                                    <img src="images/ai-assistant.png" alt="AI Study Assistant">
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        PREPVERA AI
+                                    </span>
+
+                                    <h3>
+                                        AI Study Assistant
+                                    </h3>
+
+                                </div>
+
+                                <span class="doubt-ai-online">
+                                    <span></span>
+                                    Online
+                                </span>
+
+                            </div>
+
+
+                            <div class="doubt-ai-body">
+
+                                <div class="doubt-ai-message">
+
+                                    <div class="doubt-ai-small-avatar">
+                                        AI
+                                    </div>
+
+                                    <div>
+
+                                        <p>
+                                            Hi! I'm your study assistant.
+                                            Ask me about concepts, formulas,
+                                            shortcuts or practice questions.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="doubt-ai-suggestions">
+
+                                    <span>
+                                        TRY ASKING
+                                    </span>
+
+                                    <button type="button">
+                                        Explain percentages simply
+                                    </button>
+
+                                    <button type="button">
+                                        Help me solve this problem
+                                    </button>
+
+                                    <button type="button">
+                                        Give me a reasoning shortcut
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="doubt-ai-input">
+
+                                <input type="text" placeholder="Ask AI Assistant...">
+
+                                <button type="button">
+
+                                    <i class="fa-solid fa-arrow-up"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <p class="doubt-ai-note">
+                                AI can make mistakes. Verify important answers.
+                            </p>
+
+                        </aside>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================================
+     DOUBTS - SECTION 02
+     RECENT DOUBTS
+========================================= -->
+
+                <section class="doubt-recent-section">
+
+                    <div class="doubt-section-heading">
+
+                        <div>
+
+                            <span>
+                                YOUR QUESTIONS
+                            </span>
+
+                            <h2>
+                                Recent Doubts
+                            </h2>
+
+                            <p>
+                                Continue a previous question or review the answers
+                                you've already received.
+                            </p>
+
+                        </div>
+
+                        <a href="doubt-history.html" class="doubt-view-all">
+
+                            View All Doubts
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="doubt-recent-layout">
+
+
+                        <!-- =================================
+             DOUBT 01
+        ================================== -->
+
+                        <a href="doubt-details.html" class="doubt-recent-item">
+
+                            <div class="doubt-recent-number">
+                                01
+                            </div>
+
+                            <div class="doubt-recent-content">
+
+                                <div class="doubt-recent-meta">
+
+                                    <span>
+                                        QUANTITATIVE APTITUDE
+                                    </span>
+
+                                    <small>
+                                        24 Aug 2026
+                                    </small>
+
+                                </div>
+
+                                <h3>
+                                    How do I solve this percentage problem using shortcuts?
+                                </h3>
+
+                                <p>
+                                    I am getting a different answer when using the
+                                    percentage formula...
+                                </p>
+
+                            </div>
+
+                            <div class="doubt-recent-status answered">
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Answered
+
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right doubt-recent-arrow"></i>
+
+                        </a>
+
+
+                        <!-- =================================
+             DOUBT 02
+        ================================== -->
+
+                        <a href="doubt-details.html" class="doubt-recent-item">
+
+                            <div class="doubt-recent-number">
+                                02
+                            </div>
+
+                            <div class="doubt-recent-content">
+
+                                <div class="doubt-recent-meta">
+
+                                    <span>
+                                        LOGICAL REASONING
+                                    </span>
+
+                                    <small>
+                                        23 Aug 2026
+                                    </small>
+
+                                </div>
+
+                                <h3>
+                                    Can you explain the pattern in this coding question?
+                                </h3>
+
+                                <p>
+                                    I understood the first two steps but couldn't
+                                    identify the final pattern...
+                                </p>
+
+                            </div>
+
+                            <div class="doubt-recent-status answered">
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Answered
+
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right doubt-recent-arrow"></i>
+
+                        </a>
+
+
+                        <!-- =================================
+             DOUBT 03
+        ================================== -->
+
+                        <a href="doubt-details.html" class="doubt-recent-item">
+
+                            <div class="doubt-recent-number">
+                                03
+                            </div>
+
+                            <div class="doubt-recent-content">
+
+                                <div class="doubt-recent-meta">
+
+                                    <span>
+                                        ENGLISH LANGUAGE
+                                    </span>
+
+                                    <small>
+                                        22 Aug 2026
+                                    </small>
+
+                                </div>
+
+                                <h3>
+                                    Which rule should I use for this sentence correction?
+                                </h3>
+
+                                <p>
+                                    I am confused between subject-verb agreement
+                                    and tense usage in this question...
+                                </p>
+
+                            </div>
+
+                            <div class="doubt-recent-status pending">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                Pending
+
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right doubt-recent-arrow"></i>
+
+                        </a>
+
+
+                        <!-- =================================
+             DOUBT 04
+        ================================== -->
+
+                        <a href="doubt-details.html" class="doubt-recent-item">
+
+                            <div class="doubt-recent-number">
+                                04
+                            </div>
+
+                            <div class="doubt-recent-content">
+
+                                <div class="doubt-recent-meta">
+
+                                    <span>
+                                        GENERAL AWARENESS
+                                    </span>
+
+                                    <small>
+                                        20 Aug 2026
+                                    </small>
+
+                                </div>
+
+                                <h3>
+                                    What is the easiest way to remember important dates?
+                                </h3>
+
+                                <p>
+                                    Looking for a simple method to revise important
+                                    historical events...
+                                </p>
+
+                            </div>
+
+                            <div class="doubt-recent-status answered">
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Answered
+
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right doubt-recent-arrow"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     DOUBTS - SECTION 03
+     FACULTY SUPPORT
+========================================= -->
+
+                <section class="doubt-faculty-section">
+
+                    <div class="doubt-faculty-card">
+
+
+                        <!-- =================================
+             LEFT CONTENT
+        ================================== -->
+
+                        <div class="doubt-faculty-content">
+
+                            <span>
+                                NEED MORE HELP?
+                            </span>
+
+                            <h2>
+                                Get Personal Help from Your Faculty
+                            </h2>
+
+                            <p>
+                                If AI guidance isn't enough, send your question
+                                to the right faculty and get a detailed explanation
+                                from an expert.
+                            </p>
+
+
+                            <div class="doubt-faculty-features">
+
+                                <div>
+
+                                    <i class="fa-solid fa-user-check"></i>
+
+                                    <span>
+                                        Subject Experts
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <i class="fa-solid fa-message"></i>
+
+                                    <span>
+                                        Detailed Answers
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <i class="fa-solid fa-clock"></i>
+
+                                    <span>
+                                        Response Tracking
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <a href="ask-faculty.html" class="doubt-faculty-button">
+
+                                Ask a Faculty
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <!-- =================================
+             FACULTY VISUAL
+        ================================== -->
+
+                        <div class="doubt-faculty-visual">
+
+                            <div class="doubt-faculty-orbit">
+
+                                <div class="doubt-faculty-avatar main">
+
+                                    <img src="images/faculty-arjun.jpg" alt="Faculty">
+
+                                </div>
+
+                                <div class="doubt-faculty-avatar avatar-one">
+
+                                    <img src="images/faculty-meera.jpg" alt="Faculty">
+
+                                </div>
+
+                                <div class="doubt-faculty-avatar avatar-two">
+
+                                    <img src="images/faculty-rahul.jpg" alt="Faculty">
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="doubt-faculty-help-badge">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Faculty Support
+                                    </strong>
+
+                                    <span>
+                                        Available for your doubts
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- MOBILE MENU OVERLAY -->
+
+    <div class="dashboard-mobile-overlay" id="dashboardMobileOverlay">
+    </div>
+
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION POPUP
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-overlay"></div>
+
+
+        <div class="logout-modal-box">
+
+            <!-- Icon -->
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="logout-modal-content">
+
+                <h3>
+                    Logout from Prepvera?
+                </h3>
+
+                <p>
+                    Are you sure you want to logout from your
+                    student dashboard?
+                </p>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="logoutCancel">
+
+                    No, Stay
+
+                </button>
+
+
+                <button type="button" class="logout-confirm-btn" id="logoutConfirm">
+
+                    Yes, Logout
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JS -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

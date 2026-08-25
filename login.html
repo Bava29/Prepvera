@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Prepvera</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="login-page">
+
+    <!-- =========================================
+     LOGIN PAGE
+========================================= -->
+
+    <section class="auth-page">
+
+        <!-- =====================================
+         TOP CONTROLS
+    ====================================== -->
+
+        <div class="auth-controls">
+
+            <!-- Dark Mode -->
+
+            <button type="button" class="auth-control" id="themeToggle" aria-label="Toggle dark mode">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+
+            <!-- RTL -->
+
+            <button type="button" class="auth-control" id="rtlToggle" aria-label="Toggle RTL">
+
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================
+         LOGIN CARD
+    ====================================== -->
+
+        <div class="auth-card">
+
+
+            <!-- Logo -->
+
+            <a href="index.html" class="auth-logo">
+
+                <img src="images/logo.png" alt="Prepvera">
+
+            </a>
+
+
+            <!-- Heading -->
+
+            <div class="auth-heading">
+
+                <span>
+                    WELCOME BACK
+                </span>
+
+                <h1>
+                    Sign In To Prepvera
+                </h1>
+
+                <p>
+                    Continue your preparation journey
+                    and keep moving toward your goal.
+                </p>
+
+            </div>
+
+
+            <!-- =================================
+             LOGIN FORM
+        ================================= -->
+
+            <form action="#" method="post" class="auth-form">
+
+
+                <!-- Email -->
+
+                <div class="auth-form-group">
+
+                    <label for="loginEmail">
+                        Email Address
+                    </label>
+
+                    <div class="auth-input">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input type="email" id="loginEmail" name="email" placeholder="Enter your email address"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Password -->
+
+                <div class="auth-form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <div class="auth-input">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter your password"
+                            required>
+
+                        <button type="button" class="password-toggle" aria-label="Show password">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Remember + Forgot -->
+
+                <div class="auth-options">
+
+                    <label class="remember-option">
+
+                        <input type="checkbox" name="remember">
+
+                        <span>
+                            Remember me
+                        </span>
+
+                    </label>
+
+
+                    <a href="forgot-password.html" class="forgot-link">
+
+                        Forgot Password?
+
+                    </a>
+
+                </div>
+
+
+                <!-- Login Button -->
+
+                <button type="submit" class="auth-submit">
+
+                    Login
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+
+            <!-- =================================
+             DIVIDER
+        ================================= -->
+
+            <div class="auth-divider">
+
+                <span>
+                    Or continue with
+                </span>
+
+            </div>
+
+
+            <!-- =================================
+             SOCIAL LOGIN
+        ================================= -->
+
+            <div class="social-login">
+
+                <a href="#" class="social-login-btn" aria-label="Continue with Google">
+
+                    <img src="images/google-logo.svg" alt="Google">
+
+                </a>
+
+                <a href="#" class="social-login-btn" aria-label="Continue with Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+                <a href="#" class="social-login-btn" aria-label="Continue with Apple">
+
+                    <i class="fa-brands fa-apple"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- =================================
+             REGISTER
+        ================================= -->
+
+            <div class="auth-register">
+
+                <span>
+                    Don't have an account?
+                </span>
+
+                <a href="register.html">
+                    Create Account
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

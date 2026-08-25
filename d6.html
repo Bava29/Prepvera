@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Prepvera</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+     STUDENT DASHBOARD
+========================================= -->
+
+    <div class="student-dashboard">
+
+
+        <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+        <aside class="dashboard-sidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="dashboard-logo">
+
+                <a href="index.html">
+
+                    <img src="images/logo-light.png" alt="Prepvera" class="dashboard-logo-image">
+
+                </a>
+
+            </div>
+
+            <!-- MOBILE MENU HEADER -->
+
+            <div class="dashboard-mobile-close">
+
+                <button type="button" class="dashboard-mobile-menu-close" id="dashboardMobileMenuClose"
+                    aria-label="Close dashboard menu">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+            <!-- NAVIGATION -->
+
+            <nav class="dashboard-navigation">
+
+
+                <!-- OVERVIEW -->
+
+                <div class="dashboard-nav-group">
+
+                    <span class="dashboard-nav-label">
+                        STUDENT PORTAL
+                    </span>
+
+
+                    <a href="dashboard.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a href="d2.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span>
+                            My Courses
+                        </span>
+
+                    </a>
+
+
+                    <a href="d3.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-clipboard-check"></i>
+
+                        <span>
+                            My Tests
+                        </span>
+
+                    </a>
+
+
+                    <a href="d4.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>
+                            Study Materials
+                        </span>
+
+                    </a>
+
+
+                    <a href="d5.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        <span>
+                            Results
+                        </span>
+
+                    </a>
+
+                    <a href="d6.html" class="dashboard-nav-link active">
+
+                        <i class="fa-solid fa-video"></i>
+
+                        <span>
+                            Live Classes
+                        </span>
+
+                    </a>
+
+
+                    <a href="d7.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <span>
+                            Schedule
+                        </span>
+
+                    </a>
+
+
+                    <a href="d8.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>
+                            Doubts
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="dashboard-mobile-actions">
+
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="dashboard-header-action" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+            </div>
+
+            <!-- MOBILE PROFILE -->
+
+            <div class="dashboard-mobile-profile">
+
+                <div class="dashboard-profile-image">
+
+                    <img src="images/student-profile.jpg" alt="Student profile">
+
+                </div>
+
+                <div class="dashboard-profile-info">
+
+                    <strong>
+                        Ananya R.
+                    </strong>
+
+                    <span>
+                        SSC Aspirant
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- LOGOUT -->
+
+            <div class="dashboard-logout">
+
+                <a href="javascript:void(0);" id="logoutTrigger">
+
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- =================================
+             FIXED HEADER
+        ================================== -->
+
+            <header class="dashboard-header">
+
+
+                <!-- LEFT -->
+
+                <div class="dashboard-header-left">
+
+                    <button type="button" class="dashboard-mobile-menu-toggle" id="dashboardMobileMenuToggle"
+                        aria-label="Open dashboard menu" aria-expanded="false">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <h1>
+                            Live Classes
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="dashboard-header-right">
+
+
+                    <!-- NOTIFICATION -->
+
+                    <button class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- SETTINGS -->
+
+                    <button class="dashboard-header-action" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- DARK MODE -->
+
+                    <button class="dashboard-header-action" aria-label="Dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+
+                    <button class="dashboard-header-action" aria-label="RTL mode">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+
+                    <!-- PROFILE -->
+
+                    <div class="dashboard-profile">
+
+                        <div class="dashboard-profile-image">
+
+                            <img src="images/student-profile.jpg" alt="Student profile">
+
+                        </div>
+
+                        <div class="dashboard-profile-info">
+
+                            <strong>
+                                Ananya R.
+                            </strong>
+
+                            <span>
+                                SSC Aspirant
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+             PAGE CONTENT
+        ================================== -->
+
+            <div class="dashboard-content">
+
+                <!-- =========================================
+     LIVE CLASSES - SECTION 01
+     UPCOMING LIVE CLASS
+========================================= -->
+
+                <section class="live-class-upcoming-section">
+
+                    <div class="live-class-section-heading">
+
+                        <div>
+
+                            <span>
+                                LIVE LEARNING
+                            </span>
+
+                            <h2>
+                                Your Next Live Class
+                            </h2>
+
+                            <p>
+                                Join your upcoming session and learn directly
+                                from your faculty.
+                            </p>
+
+                        </div>
+
+                        <a href="d7.html" class="live-class-schedule-link">
+
+                            View Full Schedule
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =====================================
+         UPCOMING CLASS
+    ====================================== -->
+
+                    <div class="live-class-featured">
+
+                        <!-- Left Content -->
+
+                        <div class="live-class-featured-content">
+
+                            <div class="live-class-featured-top">
+
+                                <span class="live-class-live-badge">
+
+                                    <span class="live-class-live-dot"></span>
+
+                                    LIVE CLASS
+
+                                </span>
+
+                                <span class="live-class-subject">
+                                    QUANTITATIVE APTITUDE
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Number System — Concepts & Shortcuts
+                            </h3>
+
+
+                            <p class="live-class-description">
+                                Learn important number system concepts,
+                                shortcuts and exam-focused problem-solving
+                                techniques in this interactive live session.
+                            </p>
+
+
+                            <!-- Class Details -->
+
+                            <div class="live-class-details">
+
+                                <div class="live-class-detail">
+
+                                    <div class="live-class-detail-icon">
+
+                                        <i class="fa-regular fa-calendar"></i>
+
+                                    </div>
+
+                                    <div>
+
+                                        <span>
+                                            DATE
+                                        </span>
+
+                                        <strong>
+                                            Today, 24 Aug 2026
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="live-class-detail">
+
+                                    <div class="live-class-detail-icon">
+
+                                        <i class="fa-regular fa-clock"></i>
+
+                                    </div>
+
+                                    <div>
+
+                                        <span>
+                                            TIME
+                                        </span>
+
+                                        <strong>
+                                            07:00 PM – 08:00 PM
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="live-class-detail">
+
+                                    <div class="live-class-detail-icon">
+
+                                        <i class="fa-solid fa-hourglass-half"></i>
+
+                                    </div>
+
+                                    <div>
+
+                                        <span>
+                                            DURATION
+                                        </span>
+
+                                        <strong>
+                                            60 Minutes
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Faculty -->
+
+                            <div class="live-class-faculty">
+
+                                <div class="live-class-faculty-avatar">
+                                    <img src="images/faculty-arjun.jpg" alt="Arjun Kumar">
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        YOUR FACULTY
+                                    </span>
+
+                                    <strong>
+                                        Arjun Kumar
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Right Side -->
+
+                        <div class="live-class-featured-side">
+
+                            <div class="live-class-countdown">
+
+                                <span>
+                                    CLASS STARTS IN
+                                </span>
+
+                                <strong>
+                                    02 : 14 : 36
+                                </strong>
+
+                                <small>
+                                    Hours &nbsp; Minutes &nbsp; Seconds
+                                </small>
+
+                            </div>
+
+
+                            <div class="live-class-side-divider"></div>
+
+
+                            <div class="live-class-seat-info">
+
+                                <i class="fa-solid fa-users"></i>
+
+                                <span>
+                                    184 students are enrolled
+                                </span>
+
+                            </div>
+
+
+                            <a href="#" class="live-class-join-button">
+
+                                Join Class
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+
+                            <p class="live-class-note">
+                                The join button will become active
+                                when the class starts.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     LIVE CLASSES - SECTION 02
+     TODAY'S CLASS SCHEDULE
+========================================= -->
+
+                <section class="live-class-today-section">
+
+                    <div class="live-class-section-heading">
+
+                        <div>
+
+                            <span>
+                                TODAY'S SCHEDULE
+                            </span>
+
+                            <h2>
+                                Classes for Today
+                            </h2>
+
+                            <p>
+                                Keep track of today's live sessions and join them on time.
+                            </p>
+
+                        </div>
+
+                        <a href="d7.html" class="live-class-schedule-link">
+
+                            Full Schedule
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="live-class-today-list">
+
+
+                        <!-- =================================
+             CLASS 01 - UPCOMING
+        ================================== -->
+
+                        <div class="live-class-schedule-item">
+
+                            <div class="live-class-time">
+
+                                <strong>
+                                    07:00
+                                </strong>
+
+                                <span>
+                                    PM
+                                </span>
+
+                            </div>
+
+
+                            <div class="live-class-timeline">
+
+                                <span></span>
+
+                            </div>
+
+
+                            <div class="live-class-schedule-content">
+
+                                <div class="live-class-schedule-top">
+
+                                    <span class="live-class-schedule-subject">
+                                        QUANTITATIVE APTITUDE
+                                    </span>
+
+                                    <span class="live-class-status upcoming">
+                                        UPCOMING
+                                    </span>
+
+                                </div>
+
+                                <h3>
+                                    Number System — Concepts & Shortcuts
+                                </h3>
+
+                                <div class="live-class-schedule-meta">
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        60 Minutes
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-user"></i>
+                                        Arjun Kumar
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <a href="#" class="live-class-schedule-action">
+
+                                Join
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <!-- =================================
+             CLASS 02 - UPCOMING
+        ================================== -->
+
+                        <div class="live-class-schedule-item">
+
+                            <div class="live-class-time">
+
+                                <strong>
+                                    09:00
+                                </strong>
+
+                                <span>
+                                    PM
+                                </span>
+
+                            </div>
+
+
+                            <div class="live-class-timeline">
+
+                                <span></span>
+
+                            </div>
+
+
+                            <div class="live-class-schedule-content">
+
+                                <div class="live-class-schedule-top">
+
+                                    <span class="live-class-schedule-subject">
+                                        ENGLISH LANGUAGE
+                                    </span>
+
+                                    <span class="live-class-status upcoming">
+                                        UPCOMING
+                                    </span>
+
+                                </div>
+
+                                <h3>
+                                    Error Detection & Sentence Correction
+                                </h3>
+
+                                <div class="live-class-schedule-meta">
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        60 Minutes
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-user"></i>
+                                        Meera Sharma
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <a href="#" class="live-class-schedule-action">
+
+                                Join
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <!-- =================================
+             CLASS 03 - LATER
+        ================================== -->
+
+                        <div class="live-class-schedule-item">
+
+                            <div class="live-class-time">
+
+                                <strong>
+                                    10:30
+                                </strong>
+
+                                <span>
+                                    PM
+                                </span>
+
+                            </div>
+
+
+                            <div class="live-class-timeline">
+
+                                <span></span>
+
+                            </div>
+
+
+                            <div class="live-class-schedule-content">
+
+                                <div class="live-class-schedule-top">
+
+                                    <span class="live-class-schedule-subject">
+                                        GENERAL AWARENESS
+                                    </span>
+
+                                    <span class="live-class-status upcoming">
+                                        UPCOMING
+                                    </span>
+
+                                </div>
+
+                                <h3>
+                                    Weekly Current Affairs Discussion
+                                </h3>
+
+                                <div class="live-class-schedule-meta">
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        45 Minutes
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-user"></i>
+                                        Rahul Menon
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <a href="#" class="live-class-schedule-action">
+
+                                Join
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     LIVE CLASSES - SECTION 03
+     RECORDED CLASSES
+========================================= -->
+
+                <section class="live-recorded-section">
+
+                    <div class="live-class-section-heading">
+
+                        <div>
+
+                            <span>
+                                CATCH UP ANYTIME
+                            </span>
+
+                            <h2>
+                                Recorded Classes
+                            </h2>
+
+                            <p>
+                                Missed a live session? Continue learning from the recordings.
+                            </p>
+
+                        </div>
+
+                        <a href="#" class="live-class-schedule-link">
+
+                            View All Recordings
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="live-recorded-list">
+
+
+                        <!-- =================================
+             RECORDING 01
+        ================================== -->
+
+                        <a href="#" class="live-recorded-item">
+
+                            <div class="live-recorded-thumbnail">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                <span>
+                                    58:24
+                                </span>
+
+                            </div>
+
+
+                            <div class="live-recorded-content">
+
+                                <span>
+                                    QUANTITATIVE APTITUDE
+                                </span>
+
+                                <h3>
+                                    Number System — Concepts & Shortcuts
+                                </h3>
+
+                                <p>
+                                    Arjun Kumar · Recorded 24 Aug 2026
+                                </p>
+
+                            </div>
+
+
+                            <div class="live-recorded-action">
+
+                                <span>
+                                    Watch
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+
+                        </a>
+
+
+                        <!-- =================================
+             RECORDING 02
+        ================================== -->
+
+                        <a href="#" class="live-recorded-item">
+
+                            <div class="live-recorded-thumbnail">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                <span>
+                                    51:12
+                                </span>
+
+                            </div>
+
+
+                            <div class="live-recorded-content">
+
+                                <span>
+                                    LOGICAL REASONING
+                                </span>
+
+                                <h3>
+                                    Coding & Decoding — Practice Session
+                                </h3>
+
+                                <p>
+                                    Meera Sharma · Recorded 22 Aug 2026
+                                </p>
+
+                            </div>
+
+
+                            <div class="live-recorded-action">
+
+                                <span>
+                                    Watch
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+
+                        </a>
+
+
+                        <!-- =================================
+             RECORDING 03
+        ================================== -->
+
+                        <a href="#" class="live-recorded-item">
+
+                            <div class="live-recorded-thumbnail">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                <span>
+                                    46:38
+                                </span>
+
+                            </div>
+
+
+                            <div class="live-recorded-content">
+
+                                <span>
+                                    ENGLISH LANGUAGE
+                                </span>
+
+                                <h3>
+                                    Error Detection & Sentence Correction
+                                </h3>
+
+                                <p>
+                                    Priya Nair · Recorded 21 Aug 2026
+                                </p>
+
+                            </div>
+
+
+                            <div class="live-recorded-action">
+
+                                <span>
+                                    Watch
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+
+                        </a>
+
+
+                        <!-- =================================
+             RECORDING 04
+        ================================== -->
+
+                        <a href="#" class="live-recorded-item">
+
+                            <div class="live-recorded-thumbnail">
+
+                                <i class="fa-solid fa-play"></i>
+
+                                <span>
+                                    42:15
+                                </span>
+
+                            </div>
+
+
+                            <div class="live-recorded-content">
+
+                                <span>
+                                    GENERAL AWARENESS
+                                </span>
+
+                                <h3>
+                                    Weekly Current Affairs Discussion
+                                </h3>
+
+                                <p>
+                                    Rahul Menon · Recorded 20 Aug 2026
+                                </p>
+
+                            </div>
+
+
+                            <div class="live-recorded-action">
+
+                                <span>
+                                    Watch
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     LIVE CLASSES - SECTION 04
+     CLASS PROGRESS
+========================================= -->
+
+                <section class="live-class-progress-section">
+
+                    <div class="live-class-section-heading">
+
+                        <div>
+
+                            <span>
+                                YOUR PARTICIPATION
+                            </span>
+
+                            <h2>
+                                Class Progress
+                            </h2>
+
+                            <p>
+                                Keep track of your live class attendance and participation.
+                            </p>
+
+                        </div>
+
+                        <a href="class-history.html" class="live-class-schedule-link">
+
+                            View Class History
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="live-class-progress-layout">
+
+
+                        <!-- =================================
+             ATTENDANCE
+        ================================== -->
+
+                        <div class="live-class-attendance-card">
+
+                            <div class="live-class-attendance-circle">
+
+                                <div>
+
+                                    <strong>
+                                        88%
+                                    </strong>
+
+                                    <span>
+                                        ATTENDANCE
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="live-class-attendance-content">
+
+                                <span>
+                                    GREAT CONSISTENCY
+                                </span>
+
+                                <h3>
+                                    You're keeping up well!
+                                </h3>
+
+                                <p>
+                                    Attend a few more upcoming sessions to maintain
+                                    your learning momentum.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             CLASS STATS
+        ================================== -->
+
+                        <div class="live-class-progress-stats">
+
+                            <div class="live-class-progress-stat">
+
+                                <div class="live-class-progress-stat-icon">
+
+                                    <i class="fa-solid fa-video"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        ATTENDED
+                                    </span>
+
+                                    <strong>
+                                        22
+                                    </strong>
+
+                                    <small>
+                                        Live classes
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="live-class-progress-stat">
+
+                                <div class="live-class-progress-stat-icon">
+
+                                    <i class="fa-solid fa-calendar-check"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        UPCOMING
+                                    </span>
+
+                                    <strong>
+                                        06
+                                    </strong>
+
+                                    <small>
+                                        Scheduled classes
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="live-class-progress-stat">
+
+                                <div class="live-class-progress-stat-icon missed">
+
+                                    <i class="fa-solid fa-calendar-xmark"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        MISSED
+                                    </span>
+
+                                    <strong>
+                                        03
+                                    </strong>
+
+                                    <small>
+                                        Recordings available
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="live-class-progress-stat">
+
+                                <div class="live-class-progress-stat-icon">
+
+                                    <i class="fa-solid fa-clock"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        LEARNING TIME
+                                    </span>
+
+                                    <strong>
+                                        24h
+                                    </strong>
+
+                                    <small>
+                                        This month
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         SIMPLE CTA
+    ====================================== -->
+
+                    <div class="live-class-progress-cta">
+
+                        <div class="live-class-progress-cta-icon">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                KEEP LEARNING
+                            </span>
+
+                            <h3>
+                                Don't miss your next live session.
+                            </h3>
+
+                        </div>
+
+                        <a href="class-schedule.html" class="live-class-progress-cta-button">
+
+                            View Schedule
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- MOBILE MENU OVERLAY -->
+
+    <div class="dashboard-mobile-overlay" id="dashboardMobileOverlay">
+    </div>
+
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION POPUP
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-overlay"></div>
+
+
+        <div class="logout-modal-box">
+
+            <!-- Icon -->
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="logout-modal-content">
+
+                <h3>
+                    Logout from Prepvera?
+                </h3>
+
+                <p>
+                    Are you sure you want to logout from your
+                    student dashboard?
+                </p>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="logoutCancel">
+
+                    No, Stay
+
+                </button>
+
+
+                <button type="button" class="logout-confirm-btn" id="logoutConfirm">
+
+                    Yes, Logout
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JS -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

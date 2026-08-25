@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Prepvera</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+     STUDENT DASHBOARD
+========================================= -->
+
+    <div class="student-dashboard">
+
+
+        <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+        <aside class="dashboard-sidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="dashboard-logo">
+
+                <a href="index.html">
+
+                    <img src="images/logo-light.png" alt="Prepvera" class="dashboard-logo-image">
+
+                </a>
+
+            </div>
+
+            <!-- MOBILE MENU HEADER -->
+
+            <div class="dashboard-mobile-close">
+
+                <button type="button" class="dashboard-mobile-menu-close" id="dashboardMobileMenuClose"
+                    aria-label="Close dashboard menu">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+            <!-- NAVIGATION -->
+
+            <nav class="dashboard-navigation">
+
+
+                <!-- OVERVIEW -->
+
+                <div class="dashboard-nav-group">
+
+                    <span class="dashboard-nav-label">
+                        STUDENT PORTAL
+                    </span>
+
+
+                    <a href="dashboard.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a href="d2.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span>
+                            My Courses
+                        </span>
+
+                    </a>
+
+
+                    <a href="d3.html" class="dashboard-nav-link active">
+
+                        <i class="fa-solid fa-clipboard-check"></i>
+
+                        <span>
+                            My Tests
+                        </span>
+
+                    </a>
+
+
+                    <a href="d4.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>
+                            Study Materials
+                        </span>
+
+                    </a>
+
+
+                    <a href="d5.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        <span>
+                            Results
+                        </span>
+
+                    </a>
+
+                    <a href="d6.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-video"></i>
+
+                        <span>
+                            Live Classes
+                        </span>
+
+                    </a>
+
+
+                    <a href="d7.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <span>
+                            Schedule
+                        </span>
+
+                    </a>
+
+
+                    <a href="d8.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>
+                            Doubts
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="dashboard-mobile-actions">
+
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="dashboard-header-action" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+            </div>
+
+            <!-- MOBILE PROFILE -->
+
+            <div class="dashboard-mobile-profile">
+
+                <div class="dashboard-profile-image">
+
+                    <img src="images/student-profile.jpg" alt="Student profile">
+
+                </div>
+
+                <div class="dashboard-profile-info">
+
+                    <strong>
+                        Ananya R.
+                    </strong>
+
+                    <span>
+                        SSC Aspirant
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- LOGOUT -->
+
+            <div class="dashboard-logout">
+
+                <a href="javascript:void(0);" id="logoutTrigger">
+
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- =================================
+             FIXED HEADER
+        ================================== -->
+
+            <header class="dashboard-header">
+
+
+                <!-- LEFT -->
+
+                <div class="dashboard-header-left">
+
+                    <button type="button" class="dashboard-mobile-menu-toggle" id="dashboardMobileMenuToggle"
+                        aria-label="Open dashboard menu" aria-expanded="false">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <h1>
+                            My Tests
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="dashboard-header-right">
+
+
+                    <!-- NOTIFICATION -->
+
+                    <button class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- SETTINGS -->
+
+                    <button class="dashboard-header-action" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- DARK MODE -->
+
+                    <button class="dashboard-header-action" aria-label="Dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+
+                    <button class="dashboard-header-action" aria-label="RTL mode">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+
+                    <!-- PROFILE -->
+
+                    <div class="dashboard-profile">
+
+                        <div class="dashboard-profile-image">
+
+                            <img src="images/student-profile.jpg" alt="Student profile">
+
+                        </div>
+
+                        <div class="dashboard-profile-info">
+
+                            <strong>
+                                Ananya R.
+                            </strong>
+
+                            <span>
+                                SSC Aspirant
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+             PAGE CONTENT
+        ================================== -->
+
+            <div class="dashboard-content">
+
+
+                <!-- =========================================
+     MY TESTS - SECTION 01
+     TEST OVERVIEW
+========================================= -->
+
+                <section class="my-tests-overview-section">
+
+                    <div class="my-tests-overview-header">
+
+                        <div>
+
+                            <span class="my-tests-section-label">
+                                TEST CENTER
+                            </span>
+
+                            <h2>
+                                My Tests
+                            </h2>
+
+                            <p>
+                                Practice smarter, track your performance and
+                                stay ready for your next exam.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Search -->
+
+                        <div class="my-tests-search">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <input type="text" placeholder="Search tests...">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         TEST SUMMARY
+    ====================================== -->
+
+                    <div class="my-tests-summary-grid">
+
+
+                        <!-- Available -->
+
+                        <div class="my-tests-summary-card">
+
+                            <div class="my-tests-summary-icon">
+
+                                <i class="fa-solid fa-clipboard-list"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    AVAILABLE TESTS
+                                </span>
+
+                                <strong>
+                                    24
+                                </strong>
+
+                                <p>
+                                    Ready to attempt
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Completed -->
+
+                        <div class="my-tests-summary-card">
+
+                            <div class="my-tests-summary-icon">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    COMPLETED
+                                </span>
+
+                                <strong>
+                                    18
+                                </strong>
+
+                                <p>
+                                    Tests attempted
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Average -->
+
+                        <div class="my-tests-summary-card">
+
+                            <div class="my-tests-summary-icon">
+
+                                <i class="fa-solid fa-chart-line"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    AVERAGE SCORE
+                                </span>
+
+                                <strong>
+                                    82%
+                                </strong>
+
+                                <p>
+                                    Across all tests
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Best -->
+
+                        <div class="my-tests-summary-card my-tests-summary-highlight">
+
+                            <div class="my-tests-summary-icon">
+
+                                <i class="fa-solid fa-trophy"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    BEST SCORE
+                                </span>
+
+                                <strong>
+                                    94%
+                                </strong>
+
+                                <p>
+                                    Your highest score
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         FILTER BAR
+    ====================================== -->
+
+                    <div class="my-tests-filter-bar">
+
+                        <div class="my-tests-filter-left">
+
+                            <span>
+                                FILTER BY
+                            </span>
+
+
+                            <button class="my-tests-filter active">
+                                All Tests
+                            </button>
+
+                            <button class="my-tests-filter">
+                                Mock Tests
+                            </button>
+
+                            <button class="my-tests-filter">
+                                Subject Tests
+                            </button>
+
+                            <button class="my-tests-filter">
+                                Live Tests
+                            </button>
+
+                        </div>
+
+
+                        <button class="my-tests-sort">
+
+                            Latest First
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     MY TESTS - SECTION 02
+     TESTS READY FOR YOU
+========================================= -->
+
+                <section class="my-tests-available-section">
+
+                    <div class="my-tests-section-heading">
+
+                        <div>
+
+                            <span>
+                                READY TO ATTEMPT
+                            </span>
+
+                            <h2>
+                                Tests Ready for You
+                            </h2>
+
+                        </div>
+
+                        <a href="all-tests.html" class="my-tests-view-link">
+
+                            View All Tests
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =====================================
+         FEATURED TEST
+    ====================================== -->
+
+                    <div class="my-tests-featured-test">
+
+                        <div class="my-tests-featured-content">
+
+                            <div class="my-tests-featured-top">
+
+                                <span class="my-tests-featured-badge">
+                                    RECOMMENDED FOR YOU
+                                </span>
+
+                                <span class="my-tests-difficulty">
+                                    INTERMEDIATE
+                                </span>
+
+                            </div>
+
+
+                            <span class="my-tests-test-category">
+                                SSC CGL · FULL MOCK
+                            </span>
+
+                            <h3>
+                                SSC CGL Full Mock Test — 05
+                            </h3>
+
+                            <p>
+                                Test your complete preparation with an exam-style
+                                mock covering Quantitative Aptitude, Reasoning,
+                                English and General Awareness.
+                            </p>
+
+
+                            <div class="my-tests-test-details">
+
+                                <div>
+
+                                    <i class="fa-regular fa-file-lines"></i>
+
+                                    <span>
+                                        100 Questions
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <i class="fa-regular fa-clock"></i>
+
+                                    <span>
+                                        60 Minutes
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <i class="fa-solid fa-trophy"></i>
+
+                                    <span>
+                                        200 Marks
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="my-tests-featured-footer">
+
+                                <div>
+
+                                    <span>
+                                        YOUR LAST MOCK SCORE
+                                    </span>
+
+                                    <strong>
+                                        87%
+                                    </strong>
+
+                                </div>
+
+                                <a href="test-instructions.html" class="my-tests-start-button">
+
+                                    Start Test
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="my-tests-featured-visual">
+
+                            <div class="my-tests-visual-circle">
+
+                                <i class="fa-solid fa-clipboard-check"></i>
+
+                            </div>
+
+                            <span>
+                                MOCK 05
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         QUICK TESTS
+    ====================================== -->
+
+                    <div class="my-tests-quick-grid">
+
+
+                        <!-- SUBJECT TEST -->
+
+                        <article class="my-tests-quick-card">
+
+                            <div class="my-tests-quick-top">
+
+                                <div class="my-tests-quick-icon">
+                                    <i class="fa-solid fa-calculator"></i>
+                                </div>
+
+                                <span>
+                                    SUBJECT TEST
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Quantitative Aptitude
+                            </h3>
+
+                            <p>
+                                Number System & Arithmetic
+                            </p>
+
+                            <div class="my-tests-quick-meta">
+
+                                <span>
+                                    30 Questions
+                                </span>
+
+                                <span>
+                                    20 Min
+                                </span>
+
+                            </div>
+
+                            <a href="test-instructions.html">
+
+                                Start Test
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </article>
+
+
+                        <!-- REASONING -->
+
+                        <article class="my-tests-quick-card">
+
+                            <div class="my-tests-quick-top">
+
+                                <div class="my-tests-quick-icon">
+                                    <i class="fa-solid fa-puzzle-piece"></i>
+                                </div>
+
+                                <span>
+                                    SUBJECT TEST
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Logical Reasoning
+                            </h3>
+
+                            <p>
+                                Coding & Decoding
+                            </p>
+
+                            <div class="my-tests-quick-meta">
+
+                                <span>
+                                    25 Questions
+                                </span>
+
+                                <span>
+                                    18 Min
+                                </span>
+
+                            </div>
+
+                            <a href="test-instructions.html">
+
+                                Start Test
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </article>
+
+
+                        <!-- ENGLISH -->
+
+                        <article class="my-tests-quick-card">
+
+                            <div class="my-tests-quick-top">
+
+                                <div class="my-tests-quick-icon">
+                                    <i class="fa-solid fa-language"></i>
+                                </div>
+
+                                <span>
+                                    SUBJECT TEST
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                English Language
+                            </h3>
+
+                            <p>
+                                Grammar & Error Detection
+                            </p>
+
+                            <div class="my-tests-quick-meta">
+
+                                <span>
+                                    30 Questions
+                                </span>
+
+                                <span>
+                                    20 Min
+                                </span>
+
+                            </div>
+
+                            <a href="test-instructions.html">
+
+                                Start Test
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </article>
+
+
+                        <!-- GENERAL AWARENESS -->
+
+                        <article class="my-tests-quick-card">
+
+                            <div class="my-tests-quick-top">
+
+                                <div class="my-tests-quick-icon">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+
+                                <span>
+                                    SUBJECT TEST
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                General Awareness
+                            </h3>
+
+                            <p>
+                                Current Affairs & Static GK
+                            </p>
+
+                            <div class="my-tests-quick-meta">
+
+                                <span>
+                                    25 Questions
+                                </span>
+
+                                <span>
+                                    15 Min
+                                </span>
+
+                            </div>
+
+                            <a href="test-instructions.html">
+
+                                Start Test
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     MY TESTS - SECTION 03
+     RECENT TEST PERFORMANCE
+========================================= -->
+
+                <section class="my-tests-performance-section">
+
+                    <div class="my-tests-section-heading">
+
+                        <div>
+
+                            <span>
+                                YOUR PERFORMANCE
+                            </span>
+
+                            <h2>
+                                Recent Test Results
+                            </h2>
+
+                        </div>
+
+                        <a href="test-history.html" class="my-tests-view-link">
+
+                            View Test History
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="my-tests-performance-layout">
+
+
+                        <!-- =================================
+             PERFORMANCE SUMMARY
+        ================================== -->
+
+                        <div class="my-tests-performance-summary">
+
+                            <div class="my-tests-performance-summary-head">
+
+                                <div>
+
+                                    <span>
+                                        LAST 30 DAYS
+                                    </span>
+
+                                    <h3>
+                                        Performance Snapshot
+                                    </h3>
+
+                                </div>
+
+                                <div class="my-tests-performance-trend">
+
+                                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                                    <span>
+                                        +8.2%
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Score -->
+
+                            <div class="my-tests-average-score">
+
+                                <div class="my-tests-score-ring">
+
+                                    <div>
+
+                                        <strong>
+                                            82
+                                        </strong>
+
+                                        <span>
+                                            AVG
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="my-tests-score-content">
+
+                                    <strong>
+                                        Great progress!
+                                    </strong>
+
+                                    <p>
+                                        Your average score has improved
+                                        compared with your previous attempts.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Stats -->
+
+                            <div class="my-tests-performance-stats">
+
+                                <div>
+
+                                    <strong>
+                                        18
+                                    </strong>
+
+                                    <span>
+                                        Tests Taken
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        91%
+                                    </strong>
+
+                                    <span>
+                                        Accuracy
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        06
+                                    </strong>
+
+                                    <span>
+                                        Top Ranks
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             SUBJECT PERFORMANCE
+        ================================== -->
+
+                        <div class="my-tests-subject-performance">
+
+                            <div class="my-tests-subject-heading">
+
+                                <div>
+
+                                    <span>
+                                        SUBJECT BREAKDOWN
+                                    </span>
+
+                                    <h3>
+                                        Your Strong Areas
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- English -->
+
+                            <div class="my-tests-subject-item">
+
+                                <div class="my-tests-subject-info">
+
+                                    <div>
+
+                                        <strong>
+                                            English
+                                        </strong>
+
+                                        <span>
+                                            Excellent
+                                        </span>
+
+                                    </div>
+
+                                    <strong>
+                                        91%
+                                    </strong>
+
+                                </div>
+
+                                <div class="my-tests-subject-bar">
+
+                                    <span style="width: 91%;"></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Reasoning -->
+
+                            <div class="my-tests-subject-item">
+
+                                <div class="my-tests-subject-info">
+
+                                    <div>
+
+                                        <strong>
+                                            Reasoning
+                                        </strong>
+
+                                        <span>
+                                            Strong
+                                        </span>
+
+                                    </div>
+
+                                    <strong>
+                                        86%
+                                    </strong>
+
+                                </div>
+
+                                <div class="my-tests-subject-bar">
+
+                                    <span style="width: 86%;"></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- General Awareness -->
+
+                            <div class="my-tests-subject-item">
+
+                                <div class="my-tests-subject-info">
+
+                                    <div>
+
+                                        <strong>
+                                            General Awareness
+                                        </strong>
+
+                                        <span class="my-tests-needs-work">
+                                            Improve
+                                        </span>
+
+                                    </div>
+
+                                    <strong>
+                                        74%
+                                    </strong>
+
+                                </div>
+
+                                <div class="my-tests-subject-bar">
+
+                                    <span style="width: 74%;"></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Quantitative -->
+
+                            <div class="my-tests-subject-item">
+
+                                <div class="my-tests-subject-info">
+
+                                    <div>
+
+                                        <strong>
+                                            Quantitative Aptitude
+                                        </strong>
+
+                                        <span class="my-tests-needs-work">
+                                            Improve
+                                        </span>
+
+                                    </div>
+
+                                    <strong>
+                                        69%
+                                    </strong>
+
+                                </div>
+
+                                <div class="my-tests-subject-bar">
+
+                                    <span style="width: 69%;"></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <a href="practice.html" class="my-tests-improve-link">
+
+                                Practice Weak Areas
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         RECENT TEST HISTORY
+    ====================================== -->
+
+                    <div class="my-tests-history-card">
+
+                        <div class="my-tests-history-heading">
+
+                            <div>
+
+                                <span>
+                                    LATEST ATTEMPTS
+                                </span>
+
+                                <h3>
+                                    Test History
+                                </h3>
+
+                            </div>
+
+                            <a href="test-history.html">
+                                See All
+                            </a>
+
+                        </div>
+
+
+                        <div class="my-tests-history-list">
+
+
+                            <!-- TEST 01 -->
+
+                            <a href="test-result.html" class="my-tests-history-row">
+
+                                <div class="my-tests-history-icon">
+
+                                    <i class="fa-solid fa-file-circle-check"></i>
+
+                                </div>
+
+                                <div class="my-tests-history-name">
+
+                                    <strong>
+                                        SSC CGL Full Mock Test 04
+                                    </strong>
+
+                                    <span>
+                                        Full Mock · 22 Aug 2026
+                                    </span>
+
+                                </div>
+
+                                <div class="my-tests-history-stat">
+
+                                    <span>
+                                        SCORE
+                                    </span>
+
+                                    <strong>
+                                        87 / 100
+                                    </strong>
+
+                                </div>
+
+                                <div class="my-tests-history-stat">
+
+                                    <span>
+                                        ACCURACY
+                                    </span>
+
+                                    <strong>
+                                        91%
+                                    </strong>
+
+                                </div>
+
+                                <span class="my-tests-result-good">
+                                    Excellent
+                                </span>
+
+                                <i class="fa-solid fa-chevron-right my-tests-history-arrow"></i>
+
+                            </a>
+
+
+                            <!-- TEST 02 -->
+
+                            <a href="test-result.html" class="my-tests-history-row">
+
+                                <div class="my-tests-history-icon">
+
+                                    <i class="fa-solid fa-calculator"></i>
+
+                                </div>
+
+                                <div class="my-tests-history-name">
+
+                                    <strong>
+                                        Quantitative Aptitude — Test 08
+                                    </strong>
+
+                                    <span>
+                                        Subject Test · 20 Aug 2026
+                                    </span>
+
+                                </div>
+
+                                <div class="my-tests-history-stat">
+
+                                    <span>
+                                        SCORE
+                                    </span>
+
+                                    <strong>
+                                        74 / 100
+                                    </strong>
+
+                                </div>
+
+                                <div class="my-tests-history-stat">
+
+                                    <span>
+                                        ACCURACY
+                                    </span>
+
+                                    <strong>
+                                        78%
+                                    </strong>
+
+                                </div>
+
+                                <span class="my-tests-result-average">
+                                    Good
+                                </span>
+
+                                <i class="fa-solid fa-chevron-right my-tests-history-arrow"></i>
+
+                            </a>
+
+
+                            <!-- TEST 03 -->
+
+                            <a href="test-result.html" class="my-tests-history-row">
+
+                                <div class="my-tests-history-icon">
+
+                                    <i class="fa-solid fa-puzzle-piece"></i>
+
+                                </div>
+
+                                <div class="my-tests-history-name">
+
+                                    <strong>
+                                        Reasoning Practice Test 06
+                                    </strong>
+
+                                    <span>
+                                        Subject Test · 18 Aug 2026
+                                    </span>
+
+                                </div>
+
+                                <div class="my-tests-history-stat">
+
+                                    <span>
+                                        SCORE
+                                    </span>
+
+                                    <strong>
+                                        81 / 100
+                                    </strong>
+
+                                </div>
+
+                                <div class="my-tests-history-stat">
+
+                                    <span>
+                                        ACCURACY
+                                    </span>
+
+                                    <strong>
+                                        86%
+                                    </strong>
+
+                                </div>
+
+                                <span class="my-tests-result-good">
+                                    Excellent
+                                </span>
+
+                                <i class="fa-solid fa-chevron-right my-tests-history-arrow"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================================
+     MY TESTS - SECTION 04
+     PRACTICE & IMPROVEMENT CENTER
+========================================= -->
+
+                <section class="my-tests-improvement-section">
+
+                    <div class="my-tests-section-heading">
+
+                        <div>
+
+                            <span>
+                                SMART PRACTICE
+                            </span>
+
+                            <h2>
+                                Practice Where It Matters
+                            </h2>
+
+                        </div>
+
+                        <a href="practice.html" class="my-tests-view-link">
+
+                            Open Practice Center
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="my-tests-improvement-layout">
+
+
+                        <!-- =================================
+             WEAK AREA
+        ================================== -->
+
+                        <div class="my-tests-weak-area">
+
+                            <div class="my-tests-improvement-label">
+
+                                <i class="fa-solid fa-bullseye"></i>
+
+                                <span>
+                                    FOCUS AREA
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Quantitative Aptitude
+                            </h3>
+
+                            <p>
+                                Your current accuracy is lower here.
+                                A little more focused practice can make
+                                a big difference.
+                            </p>
+
+
+                            <div class="my-tests-weak-progress">
+
+                                <div>
+
+                                    <span>
+                                        Current Accuracy
+                                    </span>
+
+                                    <strong>
+                                        69%
+                                    </strong>
+
+                                </div>
+
+                                <div class="my-tests-weak-progress-bar">
+
+                                    <span style="width: 69%;"></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="my-tests-focus-topics">
+
+                                <span>
+                                    FOCUS ON
+                                </span>
+
+                                <div>
+
+                                    <span>
+                                        Number System
+                                    </span>
+
+                                    <span>
+                                        Arithmetic
+                                    </span>
+
+                                    <span>
+                                        Percentage
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <a href="practice.html" class="my-tests-practice-button">
+
+                                Start Focus Practice
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <!-- =================================
+             PRACTICE OPTIONS
+        ================================== -->
+
+                        <div class="my-tests-practice-options">
+
+                            <div class="my-tests-practice-heading">
+
+                                <span>
+                                    QUICK PRACTICE
+                                </span>
+
+                                <h3>
+                                    Choose Your Practice
+                                </h3>
+
+                            </div>
+
+
+                            <div class="my-tests-practice-grid">
+
+
+                                <!-- OPTION 01 -->
+
+                                <a href="previous-year-papers.html" class="my-tests-practice-card">
+
+                                    <div class="my-tests-practice-icon">
+
+                                        <i class="fa-solid fa-file-circle-question"></i>
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Previous Year Papers
+                                        </strong>
+
+                                        <span>
+                                            Practice real exam questions
+                                        </span>
+
+                                    </div>
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+
+                                <!-- OPTION 02 -->
+
+                                <a href="speed-test.html" class="my-tests-practice-card">
+
+                                    <div class="my-tests-practice-icon">
+
+                                        <i class="fa-solid fa-bolt"></i>
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Speed Practice
+                                        </strong>
+
+                                        <span>
+                                            Improve solving speed
+                                        </span>
+
+                                    </div>
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+
+                                <!-- OPTION 03 -->
+
+                                <a href="question-bank.html" class="my-tests-practice-card">
+
+                                    <div class="my-tests-practice-icon">
+
+                                        <i class="fa-solid fa-layer-group"></i>
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Question Bank
+                                        </strong>
+
+                                        <span>
+                                            Practise topic-wise questions
+                                        </span>
+
+                                    </div>
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+
+                                <!-- OPTION 04 -->
+
+                                <a href="daily-challenge.html" class="my-tests-practice-card">
+
+                                    <div class="my-tests-practice-icon">
+
+                                        <i class="fa-solid fa-fire"></i>
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Daily Challenge
+                                        </strong>
+
+                                        <span>
+                                            Solve today's challenge
+                                        </span>
+
+                                    </div>
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         PRACTICE CTA
+    ====================================== -->
+
+                    <div class="my-tests-practice-cta">
+
+                        <div class="my-tests-practice-cta-icon">
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                        </div>
+
+
+                        <div class="my-tests-practice-cta-content">
+
+                            <span>
+                                YOUR NEXT STEP
+                            </span>
+
+                            <h3>
+                                Turn Practice Into Progress
+                            </h3>
+
+                            <p>
+                                Take a focused test today and see how much
+                                your score improves.
+                            </p>
+
+                        </div>
+
+
+                        <a href="practice.html" class="my-tests-cta-button">
+
+                            Practice Now
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- MOBILE MENU OVERLAY -->
+
+    <div class="dashboard-mobile-overlay" id="dashboardMobileOverlay">
+    </div>
+
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION POPUP
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-overlay"></div>
+
+
+        <div class="logout-modal-box">
+
+            <!-- Icon -->
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="logout-modal-content">
+
+                <h3>
+                    Logout from Prepvera?
+                </h3>
+
+                <p>
+                    Are you sure you want to logout from your
+                    student dashboard?
+                </p>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="logoutCancel">
+
+                    No, Stay
+
+                </button>
+
+
+                <button type="button" class="logout-confirm-btn" id="logoutConfirm">
+
+                    Yes, Logout
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JS -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

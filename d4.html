@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Prepvera</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+     STUDENT DASHBOARD
+========================================= -->
+
+    <div class="student-dashboard">
+
+
+        <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+        <aside class="dashboard-sidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="dashboard-logo">
+
+                <a href="index.html">
+
+                    <img src="images/logo-light.png" alt="Prepvera" class="dashboard-logo-image">
+
+                </a>
+
+            </div>
+
+            <!-- MOBILE MENU HEADER -->
+
+            <div class="dashboard-mobile-close">
+
+                <button type="button" class="dashboard-mobile-menu-close" id="dashboardMobileMenuClose"
+                    aria-label="Close dashboard menu">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+            <!-- NAVIGATION -->
+
+            <nav class="dashboard-navigation">
+
+
+                <!-- OVERVIEW -->
+
+                <div class="dashboard-nav-group">
+
+                    <span class="dashboard-nav-label">
+                        STUDENT PORTAL
+                    </span>
+
+
+                    <a href="dashboard.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a href="d2.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span>
+                            My Courses
+                        </span>
+
+                    </a>
+
+
+                    <a href="d3.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-clipboard-check"></i>
+
+                        <span>
+                            My Tests
+                        </span>
+
+                    </a>
+
+
+                    <a href="d4.html" class="dashboard-nav-link active">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>
+                            Study Materials
+                        </span>
+
+                    </a>
+
+
+                    <a href="d5.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        <span>
+                            Results
+                        </span>
+
+                    </a>
+
+                    <a href="d6.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-video"></i>
+
+                        <span>
+                            Live Classes
+                        </span>
+
+                    </a>
+
+
+                    <a href="d7.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <span>
+                            Schedule
+                        </span>
+
+                    </a>
+
+
+                    <a href="d8.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>
+                            Doubts
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="dashboard-mobile-actions">
+
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="dashboard-header-action" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+            </div>
+
+            <!-- MOBILE PROFILE -->
+
+            <div class="dashboard-mobile-profile">
+
+                <div class="dashboard-profile-image">
+
+                    <img src="images/student-profile.jpg" alt="Student profile">
+
+                </div>
+
+                <div class="dashboard-profile-info">
+
+                    <strong>
+                        Ananya R.
+                    </strong>
+
+                    <span>
+                        SSC Aspirant
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- LOGOUT -->
+
+            <div class="dashboard-logout">
+
+                <a href="javascript:void(0);" id="logoutTrigger">
+
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- =================================
+             FIXED HEADER
+        ================================== -->
+
+            <header class="dashboard-header">
+
+
+                <!-- LEFT -->
+
+                <div class="dashboard-header-left">
+
+                    <button type="button" class="dashboard-mobile-menu-toggle" id="dashboardMobileMenuToggle"
+                        aria-label="Open dashboard menu" aria-expanded="false">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <h1>
+                            Study Materials
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="dashboard-header-right">
+
+
+                    <!-- NOTIFICATION -->
+
+                    <button class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- SETTINGS -->
+
+                    <button class="dashboard-header-action" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- DARK MODE -->
+
+                    <button class="dashboard-header-action" aria-label="Dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+
+                    <button class="dashboard-header-action" aria-label="RTL mode">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+
+                    <!-- PROFILE -->
+
+                    <div class="dashboard-profile">
+
+                        <div class="dashboard-profile-image">
+
+                            <img src="images/student-profile.jpg" alt="Student profile">
+
+                        </div>
+
+                        <div class="dashboard-profile-info">
+
+                            <strong>
+                                Ananya R.
+                            </strong>
+
+                            <span>
+                                SSC Aspirant
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+             PAGE CONTENT
+        ================================== -->
+
+            <div class="dashboard-content">
+
+                <!-- =========================================
+     STUDY MATERIALS - SECTION 01
+     MATERIALS OVERVIEW
+========================================= -->
+
+                <section class="study-materials-overview-section">
+
+                    <!-- Header -->
+
+                    <div class="study-materials-overview-header">
+
+                        <div>
+
+                            <span class="study-materials-eyebrow">
+                                STUDY LIBRARY
+                            </span>
+
+                            <h2>
+                                Study Materials
+                            </h2>
+
+                            <p>
+                                Find notes, question papers and revision resources
+                                to support your preparation.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Search -->
+
+                        <div class="study-materials-search">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <input type="text" placeholder="Search study materials...">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         QUICK STATS
+    ====================================== -->
+
+                    <div class="study-materials-stats">
+
+                        <div class="study-materials-stat">
+
+                            <div class="study-materials-stat-icon">
+
+                                <i class="fa-regular fa-file-lines"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    126
+                                </strong>
+
+                                <span>
+                                    Study Materials
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="study-materials-stat">
+
+                            <div class="study-materials-stat-icon">
+
+                                <i class="fa-solid fa-book-open"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    48
+                                </strong>
+
+                                <span>
+                                    Revision Notes
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="study-materials-stat">
+
+                            <div class="study-materials-stat-icon">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    12
+                                </strong>
+
+                                <span>
+                                    Recently Added
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         MATERIAL CATEGORIES
+    ====================================== -->
+
+                    <div class="study-materials-category-section">
+
+                        <div class="study-materials-category-heading">
+
+                            <div>
+
+                                <span>
+                                    BROWSE BY TYPE
+                                </span>
+
+                                <h3>
+                                    Find What You Need
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="study-materials-category-list">
+
+
+                            <!-- Notes -->
+
+                            <a href="study-notes.html" class="study-materials-category">
+
+                                <div class="study-materials-category-icon">
+
+                                    <i class="fa-solid fa-book"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Study Notes
+                                    </strong>
+
+                                    <span>
+                                        48 resources
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+
+                            <!-- Question Papers -->
+
+                            <a href="previous-year-papers.html" class="study-materials-category">
+
+                                <div class="study-materials-category-icon">
+
+                                    <i class="fa-solid fa-file-circle-question"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Previous Year Papers
+                                    </strong>
+
+                                    <span>
+                                        32 resources
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+
+                            <!-- Formula Sheets -->
+
+                            <a href="formula-sheets.html" class="study-materials-category">
+
+                                <div class="study-materials-category-icon">
+
+                                    <i class="fa-solid fa-calculator"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Formula Sheets
+                                    </strong>
+
+                                    <span>
+                                        18 resources
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+
+                            <!-- Current Affairs -->
+
+                            <a href="current-affairs.html" class="study-materials-category">
+
+                                <div class="study-materials-category-icon">
+
+                                    <i class="fa-solid fa-newspaper"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Current Affairs
+                                    </strong>
+
+                                    <span>
+                                        28 resources
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     STUDY MATERIALS - SECTION 02
+     RECOMMENDED MATERIALS
+========================================= -->
+
+                <section class="study-materials-recommended-section">
+
+                    <div class="study-materials-section-heading">
+
+                        <div>
+
+                            <span>
+                                FOR YOUR PREPARATION
+                            </span>
+
+                            <h2>
+                                Recommended Materials
+                            </h2>
+
+                        </div>
+
+                        <a href="all-materials.html" class="study-materials-view-link">
+
+                            View All
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="study-materials-recommended-list">
+
+
+                        <!-- =================================
+             MATERIAL 01
+        ================================== -->
+
+                        <article class="study-material-item">
+
+                            <div class="study-material-icon pdf">
+
+                                <i class="fa-solid fa-file-pdf"></i>
+
+                            </div>
+
+
+                            <div class="study-material-content">
+
+                                <span>
+                                    PDF · QUANTITATIVE APTITUDE
+                                </span>
+
+                                <h3>
+                                    Arithmetic Short Notes
+                                </h3>
+
+                                <p>
+                                    Important formulas and shortcuts for quick revision.
+                                </p>
+
+                            </div>
+
+
+                            <div class="study-material-info">
+
+                                <span>
+                                    4.8 MB
+                                </span>
+
+                                <small>
+                                    Updated today
+                                </small>
+
+                            </div>
+
+
+                            <div class="study-material-actions">
+
+                                <a href="#" class="study-material-view">
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                    View
+
+                                </a>
+
+                                <a href="#" class="study-material-download" download>
+
+                                    <i class="fa-solid fa-download"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- =================================
+             MATERIAL 02
+        ================================== -->
+
+                        <article class="study-material-item">
+
+                            <div class="study-material-icon notes">
+
+                                <i class="fa-solid fa-book-open"></i>
+
+                            </div>
+
+
+                            <div class="study-material-content">
+
+                                <span>
+                                    NOTES · REASONING
+                                </span>
+
+                                <h3>
+                                    Logical Reasoning Revision Guide
+                                </h3>
+
+                                <p>
+                                    Key concepts, tricks and frequently asked patterns.
+                                </p>
+
+                            </div>
+
+
+                            <div class="study-material-info">
+
+                                <span>
+                                    3.2 MB
+                                </span>
+
+                                <small>
+                                    Updated yesterday
+                                </small>
+
+                            </div>
+
+
+                            <div class="study-material-actions">
+
+                                <a href="#" class="study-material-view">
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                    View
+
+                                </a>
+
+                                <a href="#" class="study-material-download" download>
+
+                                    <i class="fa-solid fa-download"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- =================================
+             MATERIAL 03
+        ================================== -->
+
+                        <article class="study-material-item">
+
+                            <div class="study-material-icon paper">
+
+                                <i class="fa-solid fa-file-lines"></i>
+
+                            </div>
+
+
+                            <div class="study-material-content">
+
+                                <span>
+                                    QUESTION PAPER · SSC CGL
+                                </span>
+
+                                <h3>
+                                    SSC CGL Previous Year Paper 2025
+                                </h3>
+
+                                <p>
+                                    Full previous year paper with answer key.
+                                </p>
+
+                            </div>
+
+
+                            <div class="study-material-info">
+
+                                <span>
+                                    6.4 MB
+                                </span>
+
+                                <small>
+                                    Added 2 days ago
+                                </small>
+
+                            </div>
+
+
+                            <div class="study-material-actions">
+
+                                <a href="#" class="study-material-view">
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                    View
+
+                                </a>
+
+                                <a href="#" class="study-material-download" download>
+
+                                    <i class="fa-solid fa-download"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- =================================
+             MATERIAL 04
+        ================================== -->
+
+                        <article class="study-material-item">
+
+                            <div class="study-material-icon current">
+
+                                <i class="fa-solid fa-newspaper"></i>
+
+                            </div>
+
+
+                            <div class="study-material-content">
+
+                                <span>
+                                    CURRENT AFFAIRS · AUGUST
+                                </span>
+
+                                <h3>
+                                    Monthly Current Affairs Capsule
+                                </h3>
+
+                                <p>
+                                    Important national and international events for exams.
+                                </p>
+
+                            </div>
+
+
+                            <div class="study-material-info">
+
+                                <span>
+                                    5.1 MB
+                                </span>
+
+                                <small>
+                                    Updated 3 days ago
+                                </small>
+
+                            </div>
+
+
+                            <div class="study-material-actions">
+
+                                <a href="#" class="study-material-view">
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                    View
+
+                                </a>
+
+                                <a href="#" class="study-material-download" download>
+
+                                    <i class="fa-solid fa-download"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================================
+     STUDY MATERIALS - SECTION 03
+     QUICK ACCESS
+========================================= -->
+
+                <section class="study-materials-quick-section">
+
+                    <div class="study-materials-section-heading">
+
+                        <div>
+
+                            <span>
+                                QUICK ACCESS
+                            </span>
+
+                            <h2>
+                                Resources You May Need
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="study-materials-quick-layout">
+
+
+                        <!-- =================================
+             PREVIOUS YEAR PAPERS
+        ================================== -->
+
+                        <a href="previous-year-papers.html" class="study-quick-resource">
+
+                            <div class="study-quick-resource-icon">
+
+                                <i class="fa-solid fa-file-circle-question"></i>
+
+                            </div>
+
+                            <div class="study-quick-resource-content">
+
+                                <span>
+                                    PRACTICE
+                                </span>
+
+                                <h3>
+                                    Previous Year Papers
+                                </h3>
+
+                                <p>
+                                    Solve real exam papers and understand
+                                    previous question patterns.
+                                </p>
+
+                            </div>
+
+                            <div class="study-quick-resource-arrow">
+
+                                <i class="fa-solid fa-arrow-up-right"></i>
+
+                            </div>
+
+                        </a>
+
+
+                        <!-- =================================
+             REVISION NOTES
+        ================================== -->
+
+                        <a href="revision-notes.html" class="study-quick-resource">
+
+                            <div class="study-quick-resource-icon">
+
+                                <i class="fa-solid fa-book-open"></i>
+
+                            </div>
+
+                            <div class="study-quick-resource-content">
+
+                                <span>
+                                    REVISION
+                                </span>
+
+                                <h3>
+                                    Quick Revision Notes
+                                </h3>
+
+                                <p>
+                                    Refresh important concepts before your
+                                    next test or revision session.
+                                </p>
+
+                            </div>
+
+                            <div class="study-quick-resource-arrow">
+
+                                <i class="fa-solid fa-arrow-up-right"></i>
+
+                            </div>
+
+                        </a>
+
+
+                        <!-- =================================
+             FORMULA SHEETS
+        ================================== -->
+
+                        <a href="formula-sheets.html" class="study-quick-resource">
+
+                            <div class="study-quick-resource-icon">
+
+                                <i class="fa-solid fa-calculator"></i>
+
+                            </div>
+
+                            <div class="study-quick-resource-content">
+
+                                <span>
+                                    QUICK REFERENCE
+                                </span>
+
+                                <h3>
+                                    Formula Sheets
+                                </h3>
+
+                                <p>
+                                    Keep essential formulas and shortcuts
+                                    ready for quick reference.
+                                </p>
+
+                            </div>
+
+                            <div class="study-quick-resource-arrow">
+
+                                <i class="fa-solid fa-arrow-up-right"></i>
+
+                            </div>
+
+                        </a>
+
+
+                        <!-- =================================
+             CURRENT AFFAIRS
+        ================================== -->
+
+                        <a href="current-affairs.html" class="study-quick-resource">
+
+                            <div class="study-quick-resource-icon">
+
+                                <i class="fa-solid fa-newspaper"></i>
+
+                            </div>
+
+                            <div class="study-quick-resource-content">
+
+                                <span>
+                                    UPDATED
+                                </span>
+
+                                <h3>
+                                    Current Affairs
+                                </h3>
+
+                                <p>
+                                    Stay updated with important events
+                                    relevant to competitive exams.
+                                </p>
+
+                            </div>
+
+                            <div class="study-quick-resource-arrow">
+
+                                <i class="fa-solid fa-arrow-up-right"></i>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     STUDY MATERIALS - SECTION 04
+     RECENTLY VIEWED
+========================================= -->
+
+                <section class="study-materials-recent-section">
+
+                    <div class="study-materials-section-heading">
+
+                        <div>
+
+                            <span>
+                                PICK UP WHERE YOU LEFT OFF
+                            </span>
+
+                            <h2>
+                                Recently Viewed
+                            </h2>
+
+                        </div>
+
+                        <a href="material-history.html" class="study-materials-view-link">
+
+                            View History
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="study-materials-recent-list">
+
+
+                        <!-- MATERIAL 01 -->
+
+                        <a href="#" class="study-recent-item">
+
+                            <div class="study-recent-icon">
+
+                                <i class="fa-solid fa-book-open"></i>
+
+                            </div>
+
+
+                            <div class="study-recent-content">
+
+                                <span>
+                                    QUANTITATIVE APTITUDE
+                                </span>
+
+                                <h3>
+                                    Arithmetic Short Notes
+                                </h3>
+
+                                <p>
+                                    Last opened 15 minutes ago
+                                </p>
+
+                            </div>
+
+
+                            <div class="study-recent-action">
+
+                                <span>
+                                    Continue Reading
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+
+                        </a>
+
+
+                        <!-- MATERIAL 02 -->
+
+                        <a href="#" class="study-recent-item">
+
+                            <div class="study-recent-icon">
+
+                                <i class="fa-solid fa-file-lines"></i>
+
+                            </div>
+
+
+                            <div class="study-recent-content">
+
+                                <span>
+                                    SSC CGL
+                                </span>
+
+                                <h3>
+                                    Previous Year Paper 2025
+                                </h3>
+
+                                <p>
+                                    Last opened yesterday
+                                </p>
+
+                            </div>
+
+
+                            <div class="study-recent-action">
+
+                                <span>
+                                    Open Paper
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+
+                        </a>
+
+
+                        <!-- MATERIAL 03 -->
+
+                        <a href="#" class="study-recent-item">
+
+                            <div class="study-recent-icon">
+
+                                <i class="fa-solid fa-newspaper"></i>
+
+                            </div>
+
+
+                            <div class="study-recent-content">
+
+                                <span>
+                                    CURRENT AFFAIRS
+                                </span>
+
+                                <h3>
+                                    August Current Affairs Capsule
+                                </h3>
+
+                                <p>
+                                    Last opened 2 days ago
+                                </p>
+
+                            </div>
+
+
+                            <div class="study-recent-action">
+
+                                <span>
+                                    Continue Reading
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =====================================
+         SIMPLE CTA
+    ====================================== -->
+
+                    <div class="study-materials-library-cta">
+
+                        <div class="study-materials-library-cta-icon">
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                NEED SOMETHING ELSE?
+                            </span>
+
+                            <h3>
+                                Explore the Complete Study Library
+                            </h3>
+
+                        </div>
+
+
+                        <a href="all-materials.html" class="study-materials-library-cta-button">
+
+                            Browse Library
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- MOBILE MENU OVERLAY -->
+
+    <div class="dashboard-mobile-overlay" id="dashboardMobileOverlay">
+    </div>
+
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION POPUP
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-overlay"></div>
+
+
+        <div class="logout-modal-box">
+
+            <!-- Icon -->
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="logout-modal-content">
+
+                <h3>
+                    Logout from Prepvera?
+                </h3>
+
+                <p>
+                    Are you sure you want to logout from your
+                    student dashboard?
+                </p>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="logoutCancel">
+
+                    No, Stay
+
+                </button>
+
+
+                <button type="button" class="logout-confirm-btn" id="logoutConfirm">
+
+                    Yes, Logout
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JS -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

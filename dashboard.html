@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Prepvera</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+     STUDENT DASHBOARD
+========================================= -->
+
+    <div class="student-dashboard">
+
+
+        <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+        <aside class="dashboard-sidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="dashboard-logo">
+
+                <a href="index.html">
+
+                    <img src="images/logo-light.png" alt="Prepvera" class="dashboard-logo-image">
+
+                </a>
+
+            </div>
+
+
+            <!-- MOBILE MENU HEADER -->
+
+            <div class="dashboard-mobile-close">
+
+                <button type="button" class="dashboard-mobile-menu-close" id="dashboardMobileMenuClose"
+                    aria-label="Close dashboard menu">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="dashboard-navigation">
+
+
+                <!-- OVERVIEW -->
+
+                <div class="dashboard-nav-group">
+
+                    <span class="dashboard-nav-label">
+                        STUDENT PORTAL
+                    </span>
+
+
+                    <a href="dashboard.html" class="dashboard-nav-link active">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a href="d2.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span>
+                            My Courses
+                        </span>
+
+                    </a>
+
+
+                    <a href="d3.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-clipboard-check"></i>
+
+                        <span>
+                            My Tests
+                        </span>
+
+                    </a>
+
+
+                    <a href="d4.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>
+                            Study Materials
+                        </span>
+
+                    </a>
+
+
+                    <a href="d5.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        <span>
+                            Results
+                        </span>
+
+                    </a>
+
+                    <a href="d6.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-video"></i>
+
+                        <span>
+                            Live Classes
+                        </span>
+
+                    </a>
+
+
+                    <a href="d7.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <span>
+                            Schedule
+                        </span>
+
+                    </a>
+
+
+                    <a href="d8.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>
+                            Doubts
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="dashboard-mobile-actions">
+
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="dashboard-header-action" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+            </div>
+
+            <!-- MOBILE PROFILE -->
+
+            <div class="dashboard-mobile-profile">
+
+                <div class="dashboard-profile-image">
+
+                    <img src="images/student-profile.jpg" alt="Student profile">
+
+                </div>
+
+                <div class="dashboard-profile-info">
+
+                    <strong>
+                        Ananya R.
+                    </strong>
+
+                    <span>
+                        SSC Aspirant
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- LOGOUT -->
+
+            <div class="dashboard-logout">
+
+                <a href="javascript:void(0);" id="logoutTrigger">
+
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- =================================
+             FIXED HEADER
+        ================================== -->
+
+            <header class="dashboard-header">
+
+
+                <!-- LEFT -->
+
+                <div class="dashboard-header-left">
+
+                    <button type="button" class="dashboard-mobile-menu-toggle" id="dashboardMobileMenuToggle"
+                        aria-label="Open dashboard menu" aria-expanded="false">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                    <div>
+
+                        <h1>
+                            Dashboard
+                        </h1>
+
+                        <p class="dashboard-header-welcome">
+                            Welcome back, Ananya.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="dashboard-header-right">
+
+
+                    <!-- NOTIFICATION -->
+
+                    <button class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- SETTINGS -->
+
+                    <button class="dashboard-header-action" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- DARK MODE -->
+
+                    <button class="dashboard-header-action" aria-label="Dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+
+                    <button class="dashboard-header-action" aria-label="RTL mode">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+
+                    <!-- PROFILE -->
+
+                    <div class="dashboard-profile">
+
+                        <div class="dashboard-profile-image">
+
+                            <img src="images/student-profile.jpg" alt="Student profile">
+
+                        </div>
+
+                        <div class="dashboard-profile-info">
+
+                            <strong>
+                                Ananya R.
+                            </strong>
+
+                            <span>
+                                SSC Aspirant
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+             PAGE CONTENT
+        ================================== -->
+
+            <div class="dashboard-content">
+
+                <!-- =========================================
+     DASHBOARD - SECTION 01
+     WELCOME & LEARNING PROGRESS
+========================================= -->
+
+                <section class="dashboard-overview-section">
+
+                    <div class="dashboard-overview-top">
+
+                        <div class="dashboard-overview-welcome">
+
+                            <span class="dashboard-section-label">
+                                YOUR LEARNING SPACE
+                            </span>
+
+                            <h2>
+                                Welcome back, Ananya.
+                            </h2>
+
+                            <p>
+                                You're making steady progress. Keep your momentum
+                                going and complete today's learning goals.
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashboard-study-streak">
+
+                            <div class="dashboard-streak-icon">
+                                <i class="fa-solid fa-fire"></i>
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    CURRENT STREAK
+                                </span>
+
+                                <strong>
+                                    12 Days
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Progress Cards -->
+
+                    <div class="dashboard-progress-grid">
+
+
+                        <!-- Overall Progress -->
+
+                        <div class="dashboard-progress-card">
+
+                            <div class="dashboard-progress-card-top">
+
+                                <div>
+
+                                    <span>
+                                        OVERALL PROGRESS
+                                    </span>
+
+                                    <strong>
+                                        68%
+                                    </strong>
+
+                                </div>
+
+                                <div class="dashboard-progress-icon">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-progress-bar">
+
+                                <span style="width: 68%;"></span>
+
+                            </div>
+
+
+                            <p>
+                                34 of 50 learning milestones completed
+                            </p>
+
+                        </div>
+
+
+                        <!-- Lessons -->
+
+                        <div class="dashboard-progress-card">
+
+                            <div class="dashboard-progress-card-top">
+
+                                <div>
+
+                                    <span>
+                                        LESSONS COMPLETED
+                                    </span>
+
+                                    <strong>
+                                        42
+                                    </strong>
+
+                                </div>
+
+                                <div class="dashboard-progress-icon">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-mini-progress">
+
+                                <div>
+                                    <span style="width: 72%;"></span>
+                                </div>
+
+                                <strong>
+                                    72%
+                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                16 lessons remaining this month
+                            </p>
+
+                        </div>
+
+
+                        <!-- Tests -->
+
+                        <div class="dashboard-progress-card">
+
+                            <div class="dashboard-progress-card-top">
+
+                                <div>
+
+                                    <span>
+                                        TESTS COMPLETED
+                                    </span>
+
+                                    <strong>
+                                        18
+                                    </strong>
+
+                                </div>
+
+                                <div class="dashboard-progress-icon">
+                                    <i class="fa-solid fa-clipboard-check"></i>
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-mini-progress">
+
+                                <div>
+                                    <span style="width: 60%;"></span>
+                                </div>
+
+                                <strong>
+                                    60%
+                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                12 tests remaining in your plan
+                            </p>
+
+                        </div>
+
+
+                        <!-- Study Time -->
+
+                        <div class="dashboard-progress-card">
+
+                            <div class="dashboard-progress-card-top">
+
+                                <div>
+
+                                    <span>
+                                        STUDY TIME
+                                    </span>
+
+                                    <strong>
+                                        28h
+                                    </strong>
+
+                                </div>
+
+                                <div class="dashboard-progress-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-mini-progress">
+
+                                <div>
+                                    <span style="width: 78%;"></span>
+                                </div>
+
+                                <strong>
+                                    78%
+                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                4h 20m studied this week
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     DASHBOARD - SECTION 02
+     CONTINUE LEARNING
+========================================= -->
+
+                <section class="dashboard-learning-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span>
+                                KEEP LEARNING
+                            </span>
+
+                            <h2>
+                                Continue Learning
+                            </h2>
+
+                        </div>
+
+                        <a href="my-courses.html" class="dashboard-view-link">
+
+                            View All Courses
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="dashboard-learning-layout">
+
+
+                        <!-- =================================
+             MAIN COURSE
+        ================================== -->
+
+                        <article class="dashboard-current-course">
+
+                            <div class="dashboard-course-image">
+
+                                <img src="images/dashboard-course.jpg" alt="SSC Complete Preparation">
+
+                                <span class="dashboard-course-tag">
+                                    IN PROGRESS
+                                </span>
+
+                            </div>
+
+
+                            <div class="dashboard-course-content">
+
+                                <span class="dashboard-course-category">
+                                    SSC CGL · COMPLETE PREPARATION
+                                </span>
+
+                                <h3>
+                                    SSC CGL Complete Preparation
+                                </h3>
+
+                                <p>
+                                    Build your preparation with structured classes,
+                                    practice tests and exam-focused study materials.
+                                </p>
+
+
+                                <div class="dashboard-course-progress">
+
+                                    <div class="dashboard-course-progress-top">
+
+                                        <span>
+                                            Course Progress
+                                        </span>
+
+                                        <strong>
+                                            68%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="dashboard-course-progress-bar">
+
+                                        <span style="width: 68%;"></span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="dashboard-course-meta">
+
+                                    <span>
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        42 / 62 Lessons
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        18h 40m remaining
+                                    </span>
+
+                                </div>
+
+
+                                <a href="course-details.html" class="dashboard-continue-button">
+
+                                    Continue Learning
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- =================================
+             RECENTLY ACCESSED
+        ================================== -->
+
+                        <div class="dashboard-recent-learning">
+
+                            <div class="dashboard-recent-heading">
+
+                                <h3>
+                                    Recently Accessed
+                                </h3>
+
+                                <a href="my-courses.html">
+                                    See all
+                                </a>
+
+                            </div>
+
+
+                            <!-- Course 01 -->
+
+                            <a href="course-details.html" class="dashboard-recent-item">
+
+                                <div class="dashboard-recent-icon">
+                                    <i class="fa-solid fa-calculator"></i>
+                                </div>
+
+                                <div class="dashboard-recent-info">
+
+                                    <strong>
+                                        Quantitative Aptitude
+                                    </strong>
+
+                                    <span>
+                                        Number System · Lesson 08
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-chevron-right dashboard-recent-arrow"></i>
+
+                            </a>
+
+
+                            <!-- Course 02 -->
+
+                            <a href="course-details.html" class="dashboard-recent-item">
+
+                                <div class="dashboard-recent-icon">
+                                    <i class="fa-solid fa-language"></i>
+                                </div>
+
+                                <div class="dashboard-recent-info">
+
+                                    <strong>
+                                        English Language
+                                    </strong>
+
+                                    <span>
+                                        Error Detection · Lesson 12
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-chevron-right dashboard-recent-arrow"></i>
+
+                            </a>
+
+
+                            <!-- Course 03 -->
+
+                            <a href="course-details.html" class="dashboard-recent-item">
+
+                                <div class="dashboard-recent-icon">
+                                    <i class="fa-solid fa-landmark"></i>
+                                </div>
+
+                                <div class="dashboard-recent-info">
+
+                                    <strong>
+                                        General Awareness
+                                    </strong>
+
+                                    <span>
+                                        Indian Polity · Lesson 06
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-chevron-right dashboard-recent-arrow"></i>
+
+                            </a>
+
+
+                            <!-- Quick Action -->
+
+                            <a href="study-materials.html" class="dashboard-material-link">
+
+                                <div>
+
+                                    <strong>
+                                        Need a quick revision?
+                                    </strong>
+
+                                    <span>
+                                        Open your study materials
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     DASHBOARD - SECTION 03
+     UPCOMING SCHEDULE & QUICK ACTIONS
+========================================= -->
+
+                <section class="dashboard-schedule-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span>
+                                YOUR SCHEDULE
+                            </span>
+
+                            <h2>
+                                What's Coming Up
+                            </h2>
+
+                        </div>
+
+                        <a href="schedule.html" class="dashboard-view-link">
+
+                            View Full Schedule
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="dashboard-schedule-layout">
+
+
+                        <!-- =================================
+             UPCOMING EVENTS
+        ================================== -->
+
+                        <div class="dashboard-upcoming-card">
+
+                            <div class="dashboard-upcoming-header">
+
+                                <h3>
+                                    Upcoming
+                                </h3>
+
+                                <span>
+                                    THIS WEEK
+                                </span>
+
+                            </div>
+
+
+                            <!-- LIVE CLASS -->
+
+                            <a href="live-classes.html" class="dashboard-event-item">
+
+                                <div class="dashboard-event-date">
+
+                                    <strong>
+                                        24
+                                    </strong>
+
+                                    <span>
+                                        AUG
+                                    </span>
+
+                                </div>
+
+
+                                <div class="dashboard-event-info">
+
+                                    <div class="dashboard-event-title">
+
+                                        <strong>
+                                            Quantitative Aptitude
+                                        </strong>
+
+                                        <span class="dashboard-live-badge">
+                                            LIVE
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Number System — Concept & Practice
+                                    </p>
+
+                                    <span class="dashboard-event-time">
+
+                                        <i class="fa-regular fa-clock"></i>
+
+                                        07:00 PM – 08:00 PM
+
+                                    </span>
+
+                                </div>
+
+
+                                <i class="fa-solid fa-chevron-right dashboard-event-arrow"></i>
+
+                            </a>
+
+
+                            <!-- MOCK TEST -->
+
+                            <a href="my-tests.html" class="dashboard-event-item">
+
+                                <div class="dashboard-event-date">
+
+                                    <strong>
+                                        26
+                                    </strong>
+
+                                    <span>
+                                        AUG
+                                    </span>
+
+                                </div>
+
+
+                                <div class="dashboard-event-info">
+
+                                    <div class="dashboard-event-title">
+
+                                        <strong>
+                                            SSC CGL Mock Test
+                                        </strong>
+
+                                    </div>
+
+                                    <p>
+                                        Full Length Practice Test — 01
+                                    </p>
+
+                                    <span class="dashboard-event-time">
+
+                                        <i class="fa-regular fa-clock"></i>
+
+                                        Available from 10:00 AM
+
+                                    </span>
+
+                                </div>
+
+
+                                <i class="fa-solid fa-chevron-right dashboard-event-arrow"></i>
+
+                            </a>
+
+
+                            <!-- DOUBT SESSION -->
+
+                            <a href="doubts.html" class="dashboard-event-item">
+
+                                <div class="dashboard-event-date">
+
+                                    <strong>
+                                        28
+                                    </strong>
+
+                                    <span>
+                                        AUG
+                                    </span>
+
+                                </div>
+
+
+                                <div class="dashboard-event-info">
+
+                                    <div class="dashboard-event-title">
+
+                                        <strong>
+                                            Faculty Doubt Session
+                                        </strong>
+
+                                    </div>
+
+                                    <p>
+                                        Ask questions & clarify your concepts
+                                    </p>
+
+                                    <span class="dashboard-event-time">
+
+                                        <i class="fa-regular fa-clock"></i>
+
+                                        06:30 PM – 07:15 PM
+
+                                    </span>
+
+                                </div>
+
+
+                                <i class="fa-solid fa-chevron-right dashboard-event-arrow"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <!-- =================================
+             QUICK ACTIONS
+        ================================== -->
+
+                        <div class="dashboard-quick-actions">
+
+                            <div class="dashboard-quick-heading">
+
+                                <div>
+
+                                    <span>
+                                        QUICK ACCESS
+                                    </span>
+
+                                    <h3>
+                                        Jump Right In
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-action-grid">
+
+
+                                <!-- TESTS -->
+
+                                <a href="my-tests.html" class="dashboard-action-card">
+
+                                    <div class="dashboard-action-icon">
+                                        <i class="fa-solid fa-clipboard-check"></i>
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Take a Test
+                                        </strong>
+
+                                        <span>
+                                            Practice now
+                                        </span>
+
+                                    </div>
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square dashboard-action-arrow"></i>
+
+                                </a>
+
+
+                                <!-- MATERIALS -->
+
+                                <a href="study-materials.html" class="dashboard-action-card">
+
+                                    <div class="dashboard-action-icon">
+                                        <i class="fa-solid fa-file-lines"></i>
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Study Materials
+                                        </strong>
+
+                                        <span>
+                                            Revise & learn
+                                        </span>
+
+                                    </div>
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square dashboard-action-arrow"></i>
+
+                                </a>
+
+
+                                <!-- LIVE CLASS -->
+
+                                <a href="live-classes.html" class="dashboard-action-card">
+
+                                    <div class="dashboard-action-icon">
+                                        <i class="fa-solid fa-video"></i>
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Live Classes
+                                        </strong>
+
+                                        <span>
+                                            Join a session
+                                        </span>
+
+                                    </div>
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square dashboard-action-arrow"></i>
+
+                                </a>
+
+
+                                <!-- DOUBTS -->
+
+                                <a href="doubts.html" class="dashboard-action-card">
+
+                                    <div class="dashboard-action-icon">
+                                        <i class="fa-solid fa-comments"></i>
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Ask a Doubt
+                                        </strong>
+
+                                        <span>
+                                            Get faculty help
+                                        </span>
+
+                                    </div>
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square dashboard-action-arrow"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     DASHBOARD - SECTION 04
+     PERFORMANCE OVERVIEW
+========================================= -->
+
+                <section class="dashboard-performance-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span>
+                                YOUR PERFORMANCE
+                            </span>
+
+                            <h2>
+                                Track Your Progress
+                            </h2>
+
+                        </div>
+
+                        <a href="results.html" class="dashboard-view-link">
+
+                            View Detailed Results
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="dashboard-performance-layout">
+
+
+                        <!-- =================================
+             PERFORMANCE SCORE
+        ================================== -->
+
+                        <div class="dashboard-performance-score">
+
+                            <div class="dashboard-performance-score-top">
+
+                                <div>
+
+                                    <span>
+                                        OVERALL SCORE
+                                    </span>
+
+                                    <h3>
+                                        82<span>%</span>
+                                    </h3>
+
+                                </div>
+
+                                <div class="dashboard-score-status">
+
+                                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                                    <span>
+                                        +6.4%
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Score Circle -->
+
+                            <div class="dashboard-score-visual">
+
+                                <div class="dashboard-score-circle">
+
+                                    <div>
+
+                                        <strong>
+                                            82
+                                        </strong>
+
+                                        <span>
+                                            / 100
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="dashboard-score-message">
+
+                                    <strong>
+                                        You're doing great!
+                                    </strong>
+
+                                    <p>
+                                        Your average score improved compared
+                                        with your previous tests.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Stats -->
+
+                            <div class="dashboard-score-stats">
+
+                                <div>
+
+                                    <strong>
+                                        18
+                                    </strong>
+
+                                    <span>
+                                        Tests Taken
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        87%
+                                    </strong>
+
+                                    <span>
+                                        Best Score
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        91%
+                                    </strong>
+
+                                    <span>
+                                        Accuracy
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             SUBJECT PERFORMANCE
+        ================================== -->
+
+                        <div class="dashboard-subject-performance">
+
+                            <div class="dashboard-subject-heading">
+
+                                <div>
+
+                                    <span>
+                                        SUBJECT PERFORMANCE
+                                    </span>
+
+                                    <h3>
+                                        Know Your Strengths
+                                    </h3>
+
+                                </div>
+
+                                <button class="dashboard-filter-button">
+
+                                    This Month
+
+                                    <i class="fa-solid fa-chevron-down"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <!-- Subject 01 -->
+
+                            <div class="dashboard-subject-item">
+
+                                <div class="dashboard-subject-info">
+
+                                    <div>
+
+                                        <strong>
+                                            English
+                                        </strong>
+
+                                        <span>
+                                            Strong
+                                        </span>
+
+                                    </div>
+
+                                    <strong>
+                                        91%
+                                    </strong>
+
+                                </div>
+
+                                <div class="dashboard-subject-bar">
+
+                                    <span style="width: 91%;"></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Subject 02 -->
+
+                            <div class="dashboard-subject-item">
+
+                                <div class="dashboard-subject-info">
+
+                                    <div>
+
+                                        <strong>
+                                            Reasoning
+                                        </strong>
+
+                                        <span>
+                                            Strong
+                                        </span>
+
+                                    </div>
+
+                                    <strong>
+                                        86%
+                                    </strong>
+
+                                </div>
+
+                                <div class="dashboard-subject-bar">
+
+                                    <span style="width: 86%;"></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Subject 03 -->
+
+                            <div class="dashboard-subject-item">
+
+                                <div class="dashboard-subject-info">
+
+                                    <div>
+
+                                        <strong>
+                                            General Awareness
+                                        </strong>
+
+                                        <span class="subject-needs-work">
+                                            Needs Practice
+                                        </span>
+
+                                    </div>
+
+                                    <strong>
+                                        74%
+                                    </strong>
+
+                                </div>
+
+                                <div class="dashboard-subject-bar">
+
+                                    <span style="width: 74%;"></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Subject 04 -->
+
+                            <div class="dashboard-subject-item">
+
+                                <div class="dashboard-subject-info">
+
+                                    <div>
+
+                                        <strong>
+                                            Quantitative Aptitude
+                                        </strong>
+
+                                        <span class="subject-needs-work">
+                                            Needs Practice
+                                        </span>
+
+                                    </div>
+
+                                    <strong>
+                                        69%
+                                    </strong>
+
+                                </div>
+
+                                <div class="dashboard-subject-bar">
+
+                                    <span style="width: 69%;"></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Improvement CTA -->
+
+                            <a href="my-tests.html" class="dashboard-performance-action">
+
+                                <div>
+
+                                    <strong>
+                                        Improve your weakest subject
+                                    </strong>
+
+                                    <span>
+                                        Practice Quantitative Aptitude
+                                    </span>
+
+                                </div>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- =================================
+         RECENT TEST ACTIVITY
+    ================================== -->
+
+                    <div class="dashboard-recent-tests">
+
+                        <div class="dashboard-recent-tests-heading">
+
+                            <div>
+
+                                <span>
+                                    RECENT ACTIVITY
+                                </span>
+
+                                <h3>
+                                    Latest Test Results
+                                </h3>
+
+                            </div>
+
+                            <a href="my-tests.html">
+                                View All Tests
+                            </a>
+
+                        </div>
+
+
+                        <div class="dashboard-test-table">
+
+
+                            <!-- Header -->
+
+                            <div class="dashboard-test-row dashboard-test-header">
+
+                                <span>
+                                    TEST
+                                </span>
+
+                                <span>
+                                    DATE
+                                </span>
+
+                                <span>
+                                    SCORE
+                                </span>
+
+                                <span>
+                                    ACCURACY
+                                </span>
+
+                                <span>
+                                    STATUS
+                                </span>
+
+                            </div>
+
+
+                            <!-- Test 01 -->
+
+                            <a href="test-result.html" class="dashboard-test-row">
+
+                                <span>
+                                    SSC CGL Full Mock Test 04
+                                </span>
+
+                                <span>
+                                    22 Aug 2026
+                                </span>
+
+                                <strong>
+                                    87 / 100
+                                </strong>
+
+                                <span>
+                                    91%
+                                </span>
+
+                                <span class="dashboard-result-good">
+                                    Excellent
+                                </span>
+
+                            </a>
+
+
+                            <!-- Test 02 -->
+
+                            <a href="test-result.html" class="dashboard-test-row">
+
+                                <span>
+                                    Quantitative Aptitude — Test 08
+                                </span>
+
+                                <span>
+                                    20 Aug 2026
+                                </span>
+
+                                <strong>
+                                    74 / 100
+                                </strong>
+
+                                <span>
+                                    78%
+                                </span>
+
+                                <span class="dashboard-result-average">
+                                    Good
+                                </span>
+
+                            </a>
+
+
+                            <!-- Test 03 -->
+
+                            <a href="test-result.html" class="dashboard-test-row">
+
+                                <span>
+                                    Reasoning Practice Test 06
+                                </span>
+
+                                <span>
+                                    18 Aug 2026
+                                </span>
+
+                                <strong>
+                                    81 / 100
+                                </strong>
+
+                                <span>
+                                    86%
+                                </span>
+
+                                <span class="dashboard-result-good">
+                                    Excellent
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- MOBILE MENU OVERLAY -->
+
+    <div class="dashboard-mobile-overlay" id="dashboardMobileOverlay">
+    </div>
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION POPUP
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-overlay"></div>
+
+
+        <div class="logout-modal-box">
+
+            <!-- Icon -->
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="logout-modal-content">
+
+                <h3>
+                    Logout from Prepvera?
+                </h3>
+
+                <p>
+                    Are you sure you want to logout from your
+                    student dashboard?
+                </p>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="logoutCancel">
+
+                    No, Stay
+
+                </button>
+
+
+                <button type="button" class="logout-confirm-btn" id="logoutConfirm">
+
+                    Yes, Logout
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JS -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

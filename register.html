@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Prepvera</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<!-- =========================================
+     REGISTER PAGE
+========================================= -->
+
+<body class="login-page">
+
+
+    <section class="auth-page">
+
+
+        <!-- =====================================
+             TOP CONTROLS
+        ====================================== -->
+
+        <div class="auth-controls">
+
+            <!-- Dark Mode -->
+
+            <button type="button" class="auth-control" id="themeToggle" aria-label="Toggle dark mode">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+
+            <!-- RTL -->
+
+            <button type="button" class="auth-control" id="rtlToggle" aria-label="Toggle RTL">
+
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================
+             REGISTER CARD
+        ====================================== -->
+
+        <div class="auth-card register-card">
+
+
+            <!-- Logo -->
+
+            <a href="index.html" class="auth-logo">
+
+                <img src="images/logo.png" alt="Prepvera">
+
+            </a>
+
+
+            <!-- Heading -->
+
+            <div class="auth-heading">
+
+                <span>
+                    GET STARTED
+                </span>
+
+                <h1>
+                    Create Your Account
+                </h1>
+
+                <p>
+                    Join Prepvera and start building
+                    a smarter preparation journey.
+                </p>
+
+            </div>
+
+
+            <!-- =================================
+                 REGISTER FORM
+            ================================= -->
+
+            <form action="#" method="post" class="auth-form register-form">
+
+
+                <!-- Full Name -->
+
+                <div class="auth-form-group">
+
+                    <label for="registerName">
+                        Full Name
+                    </label>
+
+                    <div class="auth-input">
+
+                        <i class="fa-regular fa-user"></i>
+
+                        <input type="text" id="registerName" name="name" placeholder="Enter your full name"
+                            autocomplete="name" required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="auth-form-group">
+
+                    <label for="registerEmail">
+                        Email Address
+                    </label>
+
+                    <div class="auth-input">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input type="email" id="registerEmail" name="email" placeholder="Enter your email address"
+                            autocomplete="email" required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Phone -->
+
+                <div class="auth-form-group">
+
+                    <label for="registerPhone">
+                        Phone Number
+                    </label>
+
+                    <div class="auth-input">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <input type="tel" id="registerPhone" name="phone" placeholder="Enter your phone number"
+                            autocomplete="tel" required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Password -->
+
+                <div class="auth-form-group">
+
+                    <label for="registerPassword">
+                        Password
+                    </label>
+
+                    <div class="auth-input">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="registerPassword" name="password" placeholder="Create a password"
+                            autocomplete="new-password" required>
+
+                        <button type="button" class="password-toggle" id="registerPasswordToggle"
+                            aria-label="Show password">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Confirm Password -->
+
+                <div class="auth-form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <div class="auth-input">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="confirmPassword" name="confirm_password"
+                            placeholder="Confirm your password" autocomplete="new-password" required>
+
+                        <button type="button" class="password-toggle" id="confirmPasswordToggle"
+                            aria-label="Show password">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Terms -->
+
+                <label class="terms-option">
+
+                    <input type="checkbox" name="terms" required>
+
+                    <span>
+                        I agree to the
+                        <a href="terms.html">
+                            Terms &amp; Conditions
+                        </a>
+                        and
+                        <a href="privacy.html">
+                            Privacy Policy
+                        </a>.
+                    </span>
+
+                </label>
+
+
+                <!-- Create Account -->
+
+                <button type="submit" class="auth-submit">
+
+                    Create Account
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+
+            <!-- =================================
+                 DIVIDER
+            ================================= -->
+
+            <div class="auth-divider">
+
+                <span>
+                    Or continue with
+                </span>
+
+            </div>
+
+
+            <!-- =================================
+                 SOCIAL LOGIN
+            ================================= -->
+
+            <div class="social-login">
+
+                <!-- Google -->
+
+                <a href="#" class="social-login-btn" aria-label="Continue with Google">
+
+                    <img src="images/google-logo.svg" alt="Google">
+
+                </a>
+
+
+                <!-- Facebook -->
+
+                <a href="#" class="social-login-btn" aria-label="Continue with Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+
+                <!-- Apple -->
+
+                <a href="#" class="social-login-btn" aria-label="Continue with Apple">
+
+                    <i class="fa-brands fa-apple"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- =================================
+                 LOGIN LINK
+            ================================= -->
+
+            <div class="auth-register">
+
+                <span>
+                    Already have an account?
+                </span>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<!-- Main JS -->
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

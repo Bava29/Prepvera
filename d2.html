@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Prepvera</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+     STUDENT DASHBOARD
+========================================= -->
+
+    <div class="student-dashboard">
+
+
+        <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+        <aside class="dashboard-sidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="dashboard-logo">
+
+                <a href="index.html">
+
+                    <img src="images/logo-light.png" alt="Prepvera" class="dashboard-logo-image">
+
+                </a>
+
+            </div>
+
+
+            <!-- MOBILE MENU HEADER -->
+
+            <div class="dashboard-mobile-close">
+
+                <button type="button" class="dashboard-mobile-menu-close" id="dashboardMobileMenuClose"
+                    aria-label="Close dashboard menu">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+            <!-- NAVIGATION -->
+
+            <nav class="dashboard-navigation">
+
+
+                <!-- OVERVIEW -->
+
+                <div class="dashboard-nav-group">
+
+                    <span class="dashboard-nav-label">
+                        STUDENT PORTAL
+                    </span>
+
+
+                    <a href="dashboard.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a href="d2.html" class="dashboard-nav-link active">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span>
+                            My Courses
+                        </span>
+
+                    </a>
+
+
+                    <a href="d3.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-clipboard-check"></i>
+
+                        <span>
+                            My Tests
+                        </span>
+
+                    </a>
+
+
+                    <a href="d4.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>
+                            Study Materials
+                        </span>
+
+                    </a>
+
+
+                    <a href="d5.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        <span>
+                            Results
+                        </span>
+
+                    </a>
+
+                    <a href="d6.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-video"></i>
+
+                        <span>
+                            Live Classes
+                        </span>
+
+                    </a>
+
+
+                    <a href="d7.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <span>
+                            Schedule
+                        </span>
+
+                    </a>
+
+
+                    <a href="d8.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>
+                            Doubts
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="dashboard-mobile-actions">
+
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="dashboard-header-action" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+            </div>
+
+            <!-- MOBILE PROFILE -->
+
+            <div class="dashboard-mobile-profile">
+
+                <div class="dashboard-profile-image">
+
+                    <img src="images/student-profile.jpg" alt="Student profile">
+
+                </div>
+
+                <div class="dashboard-profile-info">
+
+                    <strong>
+                        Ananya R.
+                    </strong>
+
+                    <span>
+                        SSC Aspirant
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- LOGOUT -->
+
+            <div class="dashboard-logout">
+
+                <a href="javascript:void(0);" id="logoutTrigger">
+
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- =================================
+             FIXED HEADER
+        ================================== -->
+
+            <header class="dashboard-header">
+
+
+                <!-- LEFT -->
+
+                <div class="dashboard-header-left">
+
+                    <button type="button" class="dashboard-mobile-menu-toggle" id="dashboardMobileMenuToggle"
+                        aria-label="Open dashboard menu" aria-expanded="false">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <h1>
+                            My Courses
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="dashboard-header-right">
+
+
+                    <!-- NOTIFICATION -->
+
+                    <button class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- SETTINGS -->
+
+                    <button class="dashboard-header-action" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- DARK MODE -->
+
+                    <button class="dashboard-header-action" aria-label="Dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+
+                    <button class="dashboard-header-action" aria-label="RTL mode">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+
+                    <!-- PROFILE -->
+
+                    <div class="dashboard-profile">
+
+                        <div class="dashboard-profile-image">
+
+                            <img src="images/student-profile.jpg" alt="Student profile">
+
+                        </div>
+
+                        <div class="dashboard-profile-info">
+
+                            <strong>
+                                Ananya R.
+                            </strong>
+
+                            <span>
+                                SSC Aspirant
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+             PAGE CONTENT
+        ================================== -->
+
+            <div class="dashboard-content">
+
+                <!-- =========================================
+     MY COURSES - SECTION 01
+     LEARNING OVERVIEW
+========================================= -->
+
+                <section class="my-courses-overview-section">
+
+                    <div class="my-courses-overview-header">
+
+                        <div>
+
+                            <span class="my-courses-section-label">
+                                MY LEARNING
+                            </span>
+
+                            <h2>
+                                Your Courses
+                            </h2>
+
+                            <p>
+                                Pick up where you left off or explore a new course
+                                to keep your preparation moving forward.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Search -->
+
+                        <div class="my-courses-search">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <input type="text" placeholder="Search your courses...">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         COURSE SUMMARY
+    ====================================== -->
+
+                    <div class="my-courses-summary">
+
+
+                        <!-- Active Courses -->
+
+                        <div class="my-courses-summary-card">
+
+                            <div class="my-courses-summary-icon">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    ACTIVE COURSES
+                                </span>
+
+                                <strong>
+                                    04
+                                </strong>
+
+                                <p>
+                                    Currently learning
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Completed -->
+
+                        <div class="my-courses-summary-card">
+
+                            <div class="my-courses-summary-icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    COMPLETED
+                                </span>
+
+                                <strong>
+                                    02
+                                </strong>
+
+                                <p>
+                                    Courses finished
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Learning Hours -->
+
+                        <div class="my-courses-summary-card">
+
+                            <div class="my-courses-summary-icon">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    LEARNING HOURS
+                                </span>
+
+                                <strong>
+                                    28h
+                                </strong>
+
+                                <p>
+                                    This month
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Overall Progress -->
+
+                        <div class="my-courses-summary-card my-courses-summary-highlight">
+
+                            <div class="my-courses-summary-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    OVERALL PROGRESS
+                                </span>
+
+                                <strong>
+                                    68%
+                                </strong>
+
+                                <p>
+                                    Across all courses
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     MY COURSES - SECTION 02
+     CONTINUE YOUR COURSES
+========================================= -->
+
+                <section class="my-courses-active-section">
+
+                    <div class="my-courses-section-heading">
+
+                        <div>
+
+                            <span>
+                                IN PROGRESS
+                            </span>
+
+                            <h2>
+                                Continue Your Courses
+                            </h2>
+
+                        </div>
+
+                        <a href="my-courses.html" class="my-courses-view-link">
+
+                            View All
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="my-courses-active-layout">
+
+
+                        <!-- =================================
+             FEATURED COURSE
+        ================================== -->
+
+                        <article class="my-courses-featured-card">
+
+                            <div class="my-courses-featured-image">
+
+                                <img src="images/dashboard-course.jpg" alt="SSC CGL Complete Preparation">
+
+                                <span class="my-courses-progress-badge">
+                                    68% COMPLETE
+                                </span>
+
+                            </div>
+
+
+                            <div class="my-courses-featured-content">
+
+                                <span class="my-courses-course-category">
+                                    SSC CGL · COMPLETE PREPARATION
+                                </span>
+
+                                <h3>
+                                    SSC CGL Complete Preparation
+                                </h3>
+
+                                <p>
+                                    Build strong concepts, practise regularly and
+                                    prepare confidently with a structured learning path.
+                                </p>
+
+
+                                <div class="my-courses-progress-info">
+
+                                    <div>
+
+                                        <span>
+                                            Course Progress
+                                        </span>
+
+                                        <strong>
+                                            68%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="my-courses-progress-track">
+
+                                        <span style="width: 68%;"></span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="my-courses-course-details">
+
+                                    <span>
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        42 / 62 Lessons
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        18h 40m remaining
+                                    </span>
+
+                                </div>
+
+
+                                <a href="#" class="my-courses-continue-btn">
+
+                                    Continue Learning
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- =================================
+             SIDE COURSES
+        ================================== -->
+
+                        <div class="my-courses-side-list">
+
+
+                            <!-- COURSE 01 -->
+
+                            <article class="my-courses-small-card">
+
+                                <div class="my-courses-small-image">
+
+                                    <img src="images/course-quantitative.jpg" alt="Quantitative Aptitude">
+
+                                    <span>
+                                        74%
+                                    </span>
+
+                                </div>
+
+
+                                <div class="my-courses-small-content">
+
+                                    <span>
+                                        QUANTITATIVE APTITUDE
+                                    </span>
+
+                                    <h3>
+                                        Advanced Mathematics
+                                    </h3>
+
+                                    <p>
+                                        18 of 24 lessons completed
+                                    </p>
+
+
+                                    <div class="my-courses-small-progress">
+
+                                        <span style="width: 74%;"></span>
+
+                                    </div>
+
+
+                                    <a href="#">
+
+                                        Resume Course
+
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- COURSE 02 -->
+
+                            <article class="my-courses-small-card">
+
+                                <div class="my-courses-small-image">
+
+                                    <img src="images/course-english.jpg" alt="English Language">
+
+                                    <span>
+                                        52%
+                                    </span>
+
+                                </div>
+
+
+                                <div class="my-courses-small-content">
+
+                                    <span>
+                                        ENGLISH LANGUAGE
+                                    </span>
+
+                                    <h3>
+                                        Grammar & Vocabulary
+                                    </h3>
+
+                                    <p>
+                                        21 of 40 lessons completed
+                                    </p>
+
+
+                                    <div class="my-courses-small-progress">
+
+                                        <span style="width: 52%;"></span>
+
+                                    </div>
+
+
+                                    <a href="#">
+
+                                        Resume Course
+
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- COURSE 03 -->
+
+                            <article class="my-courses-small-card">
+
+                                <div class="my-courses-small-image">
+
+                                    <img src="images/course-reasoning.jpg" alt="Reasoning">
+
+                                    <span>
+                                        41%
+                                    </span>
+
+                                </div>
+
+
+                                <div class="my-courses-small-content">
+
+                                    <span>
+                                        REASONING
+                                    </span>
+
+                                    <h3>
+                                        Logical Reasoning Mastery
+                                    </h3>
+
+                                    <p>
+                                        12 of 29 lessons completed
+                                    </p>
+
+
+                                    <div class="my-courses-small-progress">
+
+                                        <span style="width: 41%;"></span>
+
+                                    </div>
+
+
+                                    <a href="#">
+
+                                        Resume Course
+
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     MY COURSES - SECTION 03
+     EXPLORE MORE COURSES
+========================================= -->
+
+                <section class="my-courses-explore-section">
+
+                    <div class="my-courses-section-heading">
+
+                        <div>
+
+                            <span>
+                                EXPLORE & LEARN
+                            </span>
+
+                            <h2>
+                                Find Your Next Course
+                            </h2>
+
+                        </div>
+
+                        <a href="courses.html" class="my-courses-view-link">
+
+                            Browse All Courses
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =====================================
+         CATEGORY TABS
+    ====================================== -->
+
+                    <div class="my-courses-category-tabs">
+
+                        <button class="my-courses-category-tab active">
+                            All Courses
+                        </button>
+
+                        <button class="my-courses-category-tab">
+                            Quantitative Aptitude
+                        </button>
+
+                        <button class="my-courses-category-tab">
+                            Reasoning
+                        </button>
+
+                        <button class="my-courses-category-tab">
+                            English
+                        </button>
+
+                        <button class="my-courses-category-tab">
+                            General Awareness
+                        </button>
+
+                    </div>
+
+
+                    <!-- =====================================
+         RECOMMENDED COURSES
+    ====================================== -->
+
+                    <div class="my-courses-recommended-grid">
+
+
+                        <!-- COURSE 01 -->
+
+                        <article class="my-courses-recommended-card">
+
+                            <div class="my-courses-recommended-image">
+
+                                <img src="images/course-gk.jpg" alt="General Awareness course">
+
+                                <span class="my-courses-course-level">
+                                    BEGINNER
+                                </span>
+
+                            </div>
+
+
+                            <div class="my-courses-recommended-content">
+
+                                <span class="my-courses-recommended-category">
+                                    GENERAL AWARENESS
+                                </span>
+
+                                <h3>
+                                    General Awareness & Current Affairs
+                                </h3>
+
+                                <p>
+                                    Build strong awareness of important topics,
+                                    current events and exam-relevant facts.
+                                </p>
+
+
+                                <div class="my-courses-recommended-meta">
+
+                                    <span>
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        38 Lessons
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        12h 30m
+                                    </span>
+
+                                </div>
+
+
+                                <div class="my-courses-recommended-footer">
+
+                                    <strong>
+                                        ₹1,499
+                                    </strong>
+
+                                    <a href="#">
+
+                                        Explore
+
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- COURSE 02 -->
+
+                        <article class="my-courses-recommended-card">
+
+                            <div class="my-courses-recommended-image">
+
+                                <img src="images/course-reasoning-advanced.jpg" alt="Advanced reasoning course">
+
+                                <span class="my-courses-course-level">
+                                    INTERMEDIATE
+                                </span>
+
+                            </div>
+
+
+                            <div class="my-courses-recommended-content">
+
+                                <span class="my-courses-recommended-category">
+                                    REASONING
+                                </span>
+
+                                <h3>
+                                    Advanced Reasoning Masterclass
+                                </h3>
+
+                                <p>
+                                    Improve logical thinking and solve challenging
+                                    reasoning problems with confidence.
+                                </p>
+
+
+                                <div class="my-courses-recommended-meta">
+
+                                    <span>
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        46 Lessons
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        16h 20m
+                                    </span>
+
+                                </div>
+
+
+                                <div class="my-courses-recommended-footer">
+
+                                    <strong>
+                                        ₹1,799
+                                    </strong>
+
+                                    <a href="#">
+
+                                        Explore
+
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- COURSE 03 -->
+
+                        <article class="my-courses-recommended-card">
+
+                            <div class="my-courses-recommended-image">
+
+                                <img src="images/course-english-advanced.jpg" alt="English language course">
+
+                                <span class="my-courses-course-level">
+                                    ADVANCED
+                                </span>
+
+                            </div>
+
+
+                            <div class="my-courses-recommended-content">
+
+                                <span class="my-courses-recommended-category">
+                                    ENGLISH LANGUAGE
+                                </span>
+
+                                <h3>
+                                    English for Competitive Exams
+                                </h3>
+
+                                <p>
+                                    Master grammar, vocabulary and comprehension
+                                    through exam-focused practice.
+                                </p>
+
+
+                                <div class="my-courses-recommended-meta">
+
+                                    <span>
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        52 Lessons
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        20h 10m
+                                    </span>
+
+                                </div>
+
+
+                                <div class="my-courses-recommended-footer">
+
+                                    <strong>
+                                        ₹1,999
+                                    </strong>
+
+                                    <a href="course-details.html">
+
+                                        Explore
+
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     MY COURSES - SECTION 04
+     LEARNING ROADMAP
+========================================= -->
+
+                <section class="my-courses-roadmap-section">
+
+                    <div class="my-courses-section-heading">
+
+                        <div>
+
+                            <span>
+                                YOUR JOURNEY
+                            </span>
+
+                            <h2>
+                                Learning Roadmap
+                            </h2>
+
+                        </div>
+
+                        <div class="my-courses-roadmap-status">
+
+                            <i class="fa-solid fa-route"></i>
+
+                            <span>
+                                68% Journey Completed
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="my-courses-roadmap-wrapper">
+
+
+                        <!-- =================================
+             ROADMAP LINE
+        ================================== -->
+
+                        <div class="my-courses-roadmap-line"></div>
+
+
+                        <!-- STEP 01 -->
+
+                        <div class="my-courses-roadmap-step completed">
+
+                            <div class="my-courses-roadmap-marker">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </div>
+
+                            <div class="my-courses-roadmap-content">
+
+                                <span>
+                                    MILESTONE 01
+                                </span>
+
+                                <h3>
+                                    Build Your Foundation
+                                </h3>
+
+                                <p>
+                                    Complete the essential concepts and understand
+                                    the fundamentals required for your exam preparation.
+                                </p>
+
+                                <strong>
+                                    Completed
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- STEP 02 -->
+
+                        <div class="my-courses-roadmap-step active">
+
+                            <div class="my-courses-roadmap-marker">
+
+                                <span>
+                                    02
+                                </span>
+
+                            </div>
+
+                            <div class="my-courses-roadmap-content">
+
+                                <span>
+                                    CURRENT MILESTONE
+                                </span>
+
+                                <h3>
+                                    Strengthen Your Skills
+                                </h3>
+
+                                <p>
+                                    Practise important topics, improve accuracy and
+                                    build confidence through regular tests and exercises.
+                                </p>
+
+                                <div class="my-courses-roadmap-progress">
+
+                                    <div>
+
+                                        <span>
+                                            Progress
+                                        </span>
+
+                                        <strong>
+                                            72%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="my-courses-roadmap-progress-bar">
+
+                                        <span style="width: 72%;"></span>
+
+                                    </div>
+
+                                </div>
+
+                                <a href="my-tests.html">
+
+                                    Continue Practice
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- STEP 03 -->
+
+                        <div class="my-courses-roadmap-step">
+
+                            <div class="my-courses-roadmap-marker">
+
+                                <span>
+                                    03
+                                </span>
+
+                            </div>
+
+                            <div class="my-courses-roadmap-content">
+
+                                <span>
+                                    UPCOMING MILESTONE
+                                </span>
+
+                                <h3>
+                                    Master & Revise
+                                </h3>
+
+                                <p>
+                                    Revise completed topics, identify weak areas and
+                                    improve your performance through targeted practice.
+                                </p>
+
+                                <strong>
+                                    Starts after Milestone 02
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- STEP 04 -->
+
+                        <div class="my-courses-roadmap-step">
+
+                            <div class="my-courses-roadmap-marker">
+
+                                <span>
+                                    04
+                                </span>
+
+                            </div>
+
+                            <div class="my-courses-roadmap-content">
+
+                                <span>
+                                    FINAL MILESTONE
+                                </span>
+
+                                <h3>
+                                    Exam Ready
+                                </h3>
+
+                                <p>
+                                    Complete full-length mock tests and prepare yourself
+                                    for the final exam with confidence.
+                                </p>
+
+                                <strong>
+                                    Locked
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     MY COURSES - SECTION 04
+     CERTIFICATES & ACHIEVEMENTS
+========================================= -->
+
+                <section class="my-courses-certificates-section">
+
+                    <!-- Section Heading -->
+
+                    <div class="my-courses-section-heading">
+
+                        <div>
+
+                            <span>
+                                YOUR ACHIEVEMENTS
+                            </span>
+
+                            <h2>
+                                Certificates Earned
+                            </h2>
+
+                        </div>
+
+
+                        <a href="certificates.html" class="my-courses-view-link">
+
+                            View All Certificates
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =====================================
+         CERTIFICATE + ACHIEVEMENTS
+    ====================================== -->
+
+                    <div class="my-courses-certificates-layout">
+
+
+                        <!-- =================================
+             FEATURED CERTIFICATE
+        ================================== -->
+
+                        <div class="my-courses-certificate-featured">
+
+
+                            <!-- Certificate Preview -->
+
+                            <div class="my-courses-certificate-preview">
+
+                                <div class="my-certificate-image-wrap">
+
+                                    <img src="images/certificate-preview.png"
+                                        alt="Prepvera Academy Certificate of Completion">
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Certificate Information -->
+
+                            <div class="my-courses-certificate-info">
+
+                                <span>
+                                    LATEST ACHIEVEMENT
+                                </span>
+
+                                <h3>
+                                    SSC Foundation Preparation
+                                </h3>
+
+                                <p>
+                                    You successfully completed this course
+                                    and earned your certificate of completion.
+                                </p>
+
+
+                                <!-- Certificate Details -->
+
+                                <div class="my-certificate-meta">
+
+                                    <span>
+
+                                        <i class="fa-solid fa-calendar-check"></i>
+
+                                        Completed 22 Aug 2026
+
+                                    </span>
+
+
+                                    <span>
+
+                                        <i class="fa-solid fa-certificate"></i>
+
+                                        Certificate Verified
+
+                                    </span>
+
+                                </div>
+
+
+                                <!-- Certificate Actions -->
+
+                                <div class="my-certificate-actions">
+
+                                    <a href="#" class="my-certificate-primary">
+
+                                        <i class="fa-regular fa-eye"></i>
+
+                                        View Certificate
+
+                                    </a>
+
+
+                                    <a href="#" class="my-certificate-secondary">
+
+                                        <i class="fa-solid fa-download"></i>
+
+                                        Download
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             ACHIEVEMENT PANEL
+        ================================== -->
+
+                        <div class="my-courses-achievement-panel">
+
+
+                            <!-- Heading -->
+
+                            <div class="my-courses-achievement-heading">
+
+                                <span>
+                                    YOUR MILESTONES
+                                </span>
+
+                                <h3>
+                                    Keep Going
+                                </h3>
+
+                            </div>
+
+
+                            <!-- Achievement 01 -->
+
+                            <div class="my-courses-achievement-item">
+
+                                <div class="my-courses-achievement-icon">
+
+                                    <i class="fa-solid fa-graduation-cap"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        2
+                                    </strong>
+
+                                    <span>
+                                        Courses Completed
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Achievement 02 -->
+
+                            <div class="my-courses-achievement-item">
+
+                                <div class="my-courses-achievement-icon">
+
+                                    <i class="fa-solid fa-award"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        2
+                                    </strong>
+
+                                    <span>
+                                        Certificates Earned
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Achievement 03 -->
+
+                            <div class="my-courses-achievement-item">
+
+                                <div class="my-courses-achievement-icon">
+
+                                    <i class="fa-solid fa-fire"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        12
+                                    </strong>
+
+                                    <span>
+                                        Day Learning Streak
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Next Achievement -->
+
+                            <div class="my-courses-next-achievement">
+
+                                <div class="my-courses-next-achievement-icon">
+
+                                    <i class="fa-solid fa-lock"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        NEXT MILESTONE
+                                    </span>
+
+                                    <strong>
+                                        Complete Quantitative Aptitude
+                                    </strong>
+
+                                    <p>
+                                        74% completed · Keep learning to unlock
+                                        your next certificate.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- MOBILE MENU OVERLAY -->
+
+    <div class="dashboard-mobile-overlay" id="dashboardMobileOverlay">
+    </div>
+
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION POPUP
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-overlay"></div>
+
+
+        <div class="logout-modal-box">
+
+            <!-- Icon -->
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="logout-modal-content">
+
+                <h3>
+                    Logout from Prepvera?
+                </h3>
+
+                <p>
+                    Are you sure you want to logout from your
+                    student dashboard?
+                </p>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="logoutCancel">
+
+                    No, Stay
+
+                </button>
+
+
+                <button type="button" class="logout-confirm-btn" id="logoutConfirm">
+
+                    Yes, Logout
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JS -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Prepvera</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+     STUDENT DASHBOARD
+========================================= -->
+
+    <div class="student-dashboard">
+
+
+        <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+        <aside class="dashboard-sidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="dashboard-logo">
+
+                <a href="index.html">
+
+                    <img src="images/logo-light.png" alt="Prepvera" class="dashboard-logo-image">
+
+                </a>
+
+            </div>
+
+
+            <!-- MOBILE MENU HEADER -->
+
+            <div class="dashboard-mobile-close">
+
+                <button type="button" class="dashboard-mobile-menu-close" id="dashboardMobileMenuClose"
+                    aria-label="Close dashboard menu">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+            <!-- NAVIGATION -->
+
+            <nav class="dashboard-navigation">
+
+
+                <!-- OVERVIEW -->
+
+                <div class="dashboard-nav-group">
+
+                    <span class="dashboard-nav-label">
+                        STUDENT PORTAL
+                    </span>
+
+
+                    <a href="dashboard.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a href="d2.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span>
+                            My Courses
+                        </span>
+
+                    </a>
+
+
+                    <a href="d3.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-clipboard-check"></i>
+
+                        <span>
+                            My Tests
+                        </span>
+
+                    </a>
+
+
+                    <a href="d4.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>
+                            Study Materials
+                        </span>
+
+                    </a>
+
+
+                    <a href="d5.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        <span>
+                            Results
+                        </span>
+
+                    </a>
+
+                    <a href="d6.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-video"></i>
+
+                        <span>
+                            Live Classes
+                        </span>
+
+                    </a>
+
+
+                    <a href="d7.html" class="dashboard-nav-link active">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <span>
+                            Schedule
+                        </span>
+
+                    </a>
+
+
+                    <a href="d8.html" class="dashboard-nav-link">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>
+                            Doubts
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="dashboard-mobile-actions">
+
+
+                <!-- NOTIFICATIONS -->
+
+                <button type="button" class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-badge">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- SETTINGS -->
+
+                <button type="button" class="dashboard-header-action" aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+            </div>
+
+            <!-- MOBILE PROFILE -->
+
+            <div class="dashboard-mobile-profile">
+
+                <div class="dashboard-profile-image">
+
+                    <img src="images/student-profile.jpg" alt="Student profile">
+
+                </div>
+
+                <div class="dashboard-profile-info">
+
+                    <strong>
+                        Ananya R.
+                    </strong>
+
+                    <span>
+                        SSC Aspirant
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- LOGOUT -->
+
+            <div class="dashboard-logout">
+
+                <a href="javascript:void(0);" id="logoutTrigger">
+
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+        </aside>
+
+
+
+        <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- =================================
+             FIXED HEADER
+        ================================== -->
+
+            <header class="dashboard-header">
+
+
+                <!-- LEFT -->
+
+                <div class="dashboard-header-left">
+
+                    <button type="button" class="dashboard-mobile-menu-toggle" id="dashboardMobileMenuToggle"
+                        aria-label="Open dashboard menu" aria-expanded="false">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <h1>
+                            Schedule
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="dashboard-header-right">
+
+
+                    <!-- NOTIFICATION -->
+
+                    <button class="dashboard-header-action notification-action" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- SETTINGS -->
+
+                    <button class="dashboard-header-action" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- DARK MODE -->
+
+                    <button class="dashboard-header-action" aria-label="Dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+
+                    <button class="dashboard-header-action" aria-label="RTL mode">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+
+                    <!-- PROFILE -->
+
+                    <div class="dashboard-profile">
+
+                        <div class="dashboard-profile-image">
+
+                            <img src="images/student-profile.jpg" alt="Student profile">
+
+                        </div>
+
+                        <div class="dashboard-profile-info">
+
+                            <strong>
+                                Ananya R.
+                            </strong>
+
+                            <span>
+                                SSC Aspirant
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+             PAGE CONTENT
+        ================================== -->
+
+            <div class="dashboard-content">
+
+                <!-- =========================================
+     SCHEDULE - SECTION 01
+     SCHEDULE OVERVIEW
+========================================= -->
+
+                <section class="schedule-overview-section">
+
+                    <div class="schedule-overview-header">
+
+                        <div>
+
+                            <span class="schedule-eyebrow">
+                                YOUR LEARNING PLAN
+                            </span>
+
+                            <h2>
+                                Class Schedule
+                            </h2>
+
+                            <p>
+                                Stay organised with your upcoming live classes,
+                                sessions and learning plans.
+                            </p>
+
+                        </div>
+
+
+                        <div class="schedule-date-card">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <div>
+
+                                <span>
+                                    TODAY
+                                </span>
+
+                                <strong>
+                                    24 August 2026
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         TODAY SUMMARY
+    ====================================== -->
+
+                    <div class="schedule-overview-grid">
+
+
+                        <!-- TOTAL CLASSES -->
+
+                        <div class="schedule-overview-card">
+
+                            <div class="schedule-overview-icon">
+
+                                <i class="fa-solid fa-video"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    TODAY'S CLASSES
+                                </span>
+
+                                <strong>
+                                    03
+                                </strong>
+
+                                <small>
+                                    Live sessions scheduled
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- NEXT CLASS -->
+
+                        <div class="schedule-overview-card featured">
+
+                            <div class="schedule-overview-icon">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    NEXT CLASS
+                                </span>
+
+                                <strong>
+                                    07:00 PM
+                                </strong>
+
+                                <small>
+                                    Quantitative Aptitude
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- UPCOMING -->
+
+                        <div class="schedule-overview-card">
+
+                            <div class="schedule-overview-icon">
+
+                                <i class="fa-solid fa-calendar-days"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    THIS WEEK
+                                </span>
+
+                                <strong>
+                                    12
+                                </strong>
+
+                                <small>
+                                    Upcoming sessions
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         TODAY'S FOCUS
+    ====================================== -->
+
+                    <div class="schedule-focus">
+
+                        <div class="schedule-focus-icon">
+
+                            <i class="fa-solid fa-bullseye"></i>
+
+                        </div>
+
+                        <div class="schedule-focus-content">
+
+                            <span>
+                                TODAY'S FOCUS
+                            </span>
+
+                            <h3>
+                                Keep your evening free for Quantitative Aptitude
+                            </h3>
+
+                            <p>
+                                Your next live class starts at 07:00 PM.
+                                Prepare your notes and join on time.
+                            </p>
+
+                        </div>
+
+                        <a href="join-live-class.html" class="schedule-focus-button">
+
+                            View Next Class
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     SCHEDULE - SECTION 02
+     WEEKLY SCHEDULE
+========================================= -->
+
+                <section class="schedule-week-section">
+
+                    <div class="schedule-section-heading">
+
+                        <div>
+
+                            <span>
+                                WEEK AT A GLANCE
+                            </span>
+
+                            <h2>
+                                Weekly Schedule
+                            </h2>
+
+                            <p>
+                                Plan your preparation around your upcoming classes.
+                            </p>
+
+                        </div>
+
+                        <div class="schedule-week-label">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <span>
+                                24 – 30 August 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="schedule-week-list">
+
+
+                        <!-- =================================
+             MONDAY
+        ================================== -->
+
+                        <div class="schedule-day">
+
+                            <div class="schedule-day-date">
+
+                                <span>
+                                    MON
+                                </span>
+
+                                <strong>
+                                    24
+                                </strong>
+
+                            </div>
+
+
+                            <div class="schedule-day-content">
+
+                                <div class="schedule-class">
+
+                                    <div class="schedule-class-time">
+                                        07:00 PM
+                                    </div>
+
+                                    <div class="schedule-class-info">
+
+                                        <span>
+                                            QUANTITATIVE APTITUDE
+                                        </span>
+
+                                        <strong>
+                                            Number System — Concepts & Shortcuts
+                                        </strong>
+
+                                        <small>
+                                            Arjun Kumar · 60 min
+                                        </small>
+
+                                    </div>
+
+                                    <a href="join-live-class.html" class="schedule-class-action">
+
+                                        Join
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             TUESDAY
+        ================================== -->
+
+                        <div class="schedule-day">
+
+                            <div class="schedule-day-date">
+
+                                <span>
+                                    TUE
+                                </span>
+
+                                <strong>
+                                    25
+                                </strong>
+
+                            </div>
+
+
+                            <div class="schedule-day-content">
+
+                                <div class="schedule-class">
+
+                                    <div class="schedule-class-time">
+                                        06:30 PM
+                                    </div>
+
+                                    <div class="schedule-class-info">
+
+                                        <span>
+                                            LOGICAL REASONING
+                                        </span>
+
+                                        <strong>
+                                            Coding & Decoding
+                                        </strong>
+
+                                        <small>
+                                            Meera Sharma · 60 min
+                                        </small>
+
+                                    </div>
+
+                                    <span class="schedule-class-upcoming">
+                                        Upcoming
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             WEDNESDAY
+        ================================== -->
+
+                        <div class="schedule-day">
+
+                            <div class="schedule-day-date">
+
+                                <span>
+                                    WED
+                                </span>
+
+                                <strong>
+                                    26
+                                </strong>
+
+                            </div>
+
+
+                            <div class="schedule-day-content">
+
+                                <div class="schedule-class">
+
+                                    <div class="schedule-class-time">
+                                        07:30 PM
+                                    </div>
+
+                                    <div class="schedule-class-info">
+
+                                        <span>
+                                            ENGLISH LANGUAGE
+                                        </span>
+
+                                        <strong>
+                                            Sentence Correction
+                                        </strong>
+
+                                        <small>
+                                            Priya Nair · 60 min
+                                        </small>
+
+                                    </div>
+
+                                    <span class="schedule-class-upcoming">
+                                        Upcoming
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             THURSDAY
+        ================================== -->
+
+                        <div class="schedule-day">
+
+                            <div class="schedule-day-date">
+
+                                <span>
+                                    THU
+                                </span>
+
+                                <strong>
+                                    27
+                                </strong>
+
+                            </div>
+
+
+                            <div class="schedule-day-content">
+
+                                <div class="schedule-class">
+
+                                    <div class="schedule-class-time">
+                                        08:00 PM
+                                    </div>
+
+                                    <div class="schedule-class-info">
+
+                                        <span>
+                                            GENERAL AWARENESS
+                                        </span>
+
+                                        <strong>
+                                            Weekly Current Affairs
+                                        </strong>
+
+                                        <small>
+                                            Rahul Menon · 45 min
+                                        </small>
+
+                                    </div>
+
+                                    <span class="schedule-class-upcoming">
+                                        Upcoming
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             FRIDAY
+        ================================== -->
+
+                        <div class="schedule-day">
+
+                            <div class="schedule-day-date">
+
+                                <span>
+                                    FRI
+                                </span>
+
+                                <strong>
+                                    28
+                                </strong>
+
+                            </div>
+
+
+                            <div class="schedule-day-content">
+
+                                <div class="schedule-class">
+
+                                    <div class="schedule-class-time">
+                                        06:00 PM
+                                    </div>
+
+                                    <div class="schedule-class-info">
+
+                                        <span>
+                                            QUANTITATIVE APTITUDE
+                                        </span>
+
+                                        <strong>
+                                            Percentage & Profit
+                                        </strong>
+
+                                        <small>
+                                            Arjun Kumar · 60 min
+                                        </small>
+
+                                    </div>
+
+                                    <span class="schedule-class-upcoming">
+                                        Upcoming
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             SATURDAY
+        ================================== -->
+
+                        <div class="schedule-day">
+
+                            <div class="schedule-day-date">
+
+                                <span>
+                                    SAT
+                                </span>
+
+                                <strong>
+                                    29
+                                </strong>
+
+                            </div>
+
+
+                            <div class="schedule-day-content">
+
+                                <div class="schedule-class">
+
+                                    <div class="schedule-class-time">
+                                        10:00 AM
+                                    </div>
+
+                                    <div class="schedule-class-info">
+
+                                        <span>
+                                            FULL MOCK TEST
+                                        </span>
+
+                                        <strong>
+                                            Weekly Mock Test — 01
+                                        </strong>
+
+                                        <small>
+                                            Prepvera · 90 min
+                                        </small>
+
+                                    </div>
+
+                                    <span class="schedule-class-upcoming">
+                                        Upcoming
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             SUNDAY
+        ================================== -->
+
+                        <div class="schedule-day schedule-rest-day">
+
+                            <div class="schedule-day-date">
+
+                                <span>
+                                    SUN
+                                </span>
+
+                                <strong>
+                                    30
+                                </strong>
+
+                            </div>
+
+
+                            <div class="schedule-day-content">
+
+                                <div class="schedule-rest-content">
+
+                                    <i class="fa-solid fa-book-open"></i>
+
+                                    <div>
+
+                                        <strong>
+                                            Self Study Day
+                                        </strong>
+
+                                        <span>
+                                            Use this day for revision and practice.
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     SCHEDULE - SECTION 03
+     STUDY & REVISION PLANNER
+========================================= -->
+
+                <section class="schedule-planner-section">
+
+                    <div class="schedule-section-heading">
+
+                        <div>
+
+                            <span>
+                                PLAN YOUR PREPARATION
+                            </span>
+
+                            <h2>
+                                Study & Revision Planner
+                            </h2>
+
+                            <p>
+                                Organise your self-study around your live classes
+                                and upcoming tests.
+                            </p>
+
+                        </div>
+
+                        <a href="study-planner.html" class="schedule-view-planner">
+
+                            Open Planner
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="schedule-planner-layout">
+
+
+                        <!-- =================================
+             TODAY'S PLAN
+        ================================== -->
+
+                        <div class="schedule-planner-main">
+
+                            <div class="schedule-planner-main-header">
+
+                                <div>
+
+                                    <span>
+                                        TODAY'S PLAN
+                                    </span>
+
+                                    <h3>
+                                        Monday, 24 August
+                                    </h3>
+
+                                </div>
+
+                                <span class="schedule-plan-progress">
+                                    2 of 4 completed
+                                </span>
+
+                            </div>
+
+
+                            <div class="schedule-planner-progress">
+
+                                <span style="width: 50%;"></span>
+
+                            </div>
+
+
+                            <!-- TASK 01 -->
+
+                            <div class="schedule-plan-item completed">
+
+                                <div class="schedule-plan-check">
+
+                                    <i class="fa-solid fa-check"></i>
+
+                                </div>
+
+                                <div class="schedule-plan-content">
+
+                                    <span>
+                                        REVISION
+                                    </span>
+
+                                    <strong>
+                                        Revise Percentage & Profit
+                                    </strong>
+
+                                    <small>
+                                        45 minutes
+                                    </small>
+
+                                </div>
+
+                                <span class="schedule-plan-done">
+                                    Completed
+                                </span>
+
+                            </div>
+
+
+                            <!-- TASK 02 -->
+
+                            <div class="schedule-plan-item completed">
+
+                                <div class="schedule-plan-check">
+
+                                    <i class="fa-solid fa-check"></i>
+
+                                </div>
+
+                                <div class="schedule-plan-content">
+
+                                    <span>
+                                        PRACTICE
+                                    </span>
+
+                                    <strong>
+                                        Solve 20 Aptitude Questions
+                                    </strong>
+
+                                    <small>
+                                        30 minutes
+                                    </small>
+
+                                </div>
+
+                                <span class="schedule-plan-done">
+                                    Completed
+                                </span>
+
+                            </div>
+
+
+                            <!-- TASK 03 -->
+
+                            <div class="schedule-plan-item">
+
+                                <div class="schedule-plan-check">
+                                </div>
+
+                                <div class="schedule-plan-content">
+
+                                    <span>
+                                        PREPARATION
+                                    </span>
+
+                                    <strong>
+                                        Prepare for Number System Class
+                                    </strong>
+
+                                    <small>
+                                        20 minutes
+                                    </small>
+
+                                </div>
+
+                                <span class="schedule-plan-upcoming">
+                                    Upcoming
+                                </span>
+
+                            </div>
+
+
+                            <!-- TASK 04 -->
+
+                            <div class="schedule-plan-item">
+
+                                <div class="schedule-plan-check">
+                                </div>
+
+                                <div class="schedule-plan-content">
+
+                                    <span>
+                                        MOCK PRACTICE
+                                    </span>
+
+                                    <strong>
+                                        Complete Daily Practice Set
+                                    </strong>
+
+                                    <small>
+                                        30 minutes
+                                    </small>
+
+                                </div>
+
+                                <span class="schedule-plan-upcoming">
+                                    Upcoming
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================
+             QUICK GOAL
+        ================================== -->
+
+                        <div class="schedule-planner-side">
+
+                            <div class="schedule-planner-side-icon">
+
+                                <i class="fa-solid fa-bullseye"></i>
+
+                            </div>
+
+                            <span>
+                                TODAY'S GOAL
+                            </span>
+
+                            <h3>
+                                Complete 2 hours of focused study
+                            </h3>
+
+                            <p>
+                                You have already completed 1 hour
+                                and 15 minutes today.
+                            </p>
+
+
+                            <div class="schedule-goal-bar">
+
+                                <span style="width: 62%;"></span>
+
+                            </div>
+
+
+                            <div class="schedule-goal-meta">
+
+                                <strong>
+                                    1h 15m
+                                </strong>
+
+                                <span>
+                                    / 2h 00m
+                                </span>
+
+                            </div>
+
+
+                            <a href="study-planner.html" class="schedule-planner-button">
+
+                                Continue Studying
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =========================================
+     SCHEDULE - SECTION 04
+     UPCOMING DEADLINES
+========================================= -->
+
+                <section class="schedule-deadlines-section">
+
+                    <div class="schedule-section-heading">
+
+                        <div>
+
+                            <span>
+                                DON'T MISS OUT
+                            </span>
+
+                            <h2>
+                                Upcoming Deadlines
+                            </h2>
+
+                            <p>
+                                Keep track of important tests, assignments and
+                                preparation milestones.
+                            </p>
+
+                        </div>
+
+                        <a href="all-reminders.html" class="schedule-view-planner">
+
+                            View All
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="schedule-deadlines-layout">
+
+
+                        <!-- =================================
+             DEADLINE 01
+        ================================== -->
+
+                        <div class="schedule-deadline-item">
+
+                            <div class="schedule-deadline-date">
+
+                                <span>
+                                    AUG
+                                </span>
+
+                                <strong>
+                                    27
+                                </strong>
+
+                            </div>
+
+
+                            <div class="schedule-deadline-content">
+
+                                <span>
+                                    MOCK TEST
+                                </span>
+
+                                <h3>
+                                    SSC Full Mock Test — 05
+                                </h3>
+
+                                <p>
+                                    Complete the full-length mock test
+                                    before the scheduled deadline.
+                                </p>
+
+                                <small>
+                                    <i class="fa-regular fa-clock"></i>
+                                    Due by 09:00 PM
+                                </small>
+
+                            </div>
+
+
+                            <span class="schedule-deadline-badge urgent">
+                                3 DAYS LEFT
+                            </span>
+
+                        </div>
+
+
+                        <!-- =================================
+             DEADLINE 02
+        ================================== -->
+
+                        <div class="schedule-deadline-item">
+
+                            <div class="schedule-deadline-date">
+
+                                <span>
+                                    AUG
+                                </span>
+
+                                <strong>
+                                    29
+                                </strong>
+
+                            </div>
+
+
+                            <div class="schedule-deadline-content">
+
+                                <span>
+                                    REVISION
+                                </span>
+
+                                <h3>
+                                    Quantitative Aptitude Revision
+                                </h3>
+
+                                <p>
+                                    Finish the assigned revision topics
+                                    before the weekend mock test.
+                                </p>
+
+                                <small>
+                                    <i class="fa-regular fa-clock"></i>
+                                    Due by 06:00 PM
+                                </small>
+
+                            </div>
+
+
+                            <span class="schedule-deadline-badge">
+                                5 DAYS LEFT
+                            </span>
+
+                        </div>
+
+
+                        <!-- =================================
+             DEADLINE 03
+        ================================== -->
+
+                        <div class="schedule-deadline-item">
+
+                            <div class="schedule-deadline-date">
+
+                                <span>
+                                    SEP
+                                </span>
+
+                                <strong>
+                                    02
+                                </strong>
+
+                            </div>
+
+
+                            <div class="schedule-deadline-content">
+
+                                <span>
+                                    PRACTICE
+                                </span>
+
+                                <h3>
+                                    Reasoning Practice Set — 08
+                                </h3>
+
+                                <p>
+                                    Complete the assigned practice questions
+                                    and review your mistakes.
+                                </p>
+
+                                <small>
+                                    <i class="fa-regular fa-clock"></i>
+                                    Due by 08:00 PM
+                                </small>
+
+                            </div>
+
+
+                            <span class="schedule-deadline-badge">
+                                9 DAYS LEFT
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+         REMINDER CTA
+    ====================================== -->
+
+                    <div class="schedule-reminder-cta">
+
+                        <div class="schedule-reminder-icon">
+
+                            <i class="fa-regular fa-bell"></i>
+
+                        </div>
+
+                        <div class="schedule-reminder-content">
+
+                            <span>
+                                STAY ON TRACK
+                            </span>
+
+                            <h3>
+                                Never miss an important deadline.
+                            </h3>
+
+                        </div>
+
+                        <a href="settings.html" class="schedule-reminder-button">
+
+                            Manage Reminders
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- MOBILE MENU OVERLAY -->
+
+    <div class="dashboard-mobile-overlay" id="dashboardMobileOverlay">
+    </div>
+
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION POPUP
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-overlay"></div>
+
+
+        <div class="logout-modal-box">
+
+            <!-- Icon -->
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="logout-modal-content">
+
+                <h3>
+                    Logout from Prepvera?
+                </h3>
+
+                <p>
+                    Are you sure you want to logout from your
+                    student dashboard?
+                </p>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="logoutCancel">
+
+                    No, Stay
+
+                </button>
+
+
+                <button type="button" class="logout-confirm-btn" id="logoutConfirm">
+
+                    Yes, Logout
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main JS -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
