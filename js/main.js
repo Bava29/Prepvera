@@ -543,3 +543,39 @@ if (heroSlides.length > 1) {
     startHeroAutoPlay();
 
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const faqItems =
+        document.querySelectorAll(".courses-faq-item");
+
+    faqItems.forEach(item => {
+
+        const question =
+            item.querySelector(".courses-faq-question");
+
+        question.addEventListener("click", function () {
+
+            const isActive =
+                item.classList.contains("active");
+
+
+            /* Close all */
+
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove("active");
+            });
+
+
+            /* Open clicked */
+
+            if (!isActive) {
+                item.classList.add("active");
+            }
+
+        });
+
+    });
+
+});
