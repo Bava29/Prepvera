@@ -1985,7 +1985,7 @@ body {
 .exam-paths-title h2 {
     margin-top: 10px;
 
-    font-size: clamp(36px, 4.2vw, 58px);
+    font-size: 42px;
     line-height: 1.12;
 }
 
@@ -2245,7 +2245,7 @@ body {
     margin-top: 12px;
     margin-bottom: 22px;
 
-    font-size: clamp(38px, 4.5vw, 60px);
+    font-size: 42px;
     line-height: 1.1;
 }
 
@@ -2699,7 +2699,7 @@ body {
 
     margin-top: 12px;
 
-    font-size: clamp(38px, 4.5vw, 58px);
+    font-size: 42px;
     line-height: 1.1;
 }
 
@@ -3035,7 +3035,7 @@ body {
 
     color: var(--white);
 
-    font-size: clamp(38px, 4.5vw, 58px);
+    font-size: 42px;
     line-height: 1.1;
 }
 
@@ -3737,7 +3737,7 @@ body {
     margin-top: 12px;
     margin-bottom: 24px;
 
-    font-size: clamp(40px, 4.5vw, 60px);
+    font-size: 42px;
     font-weight: 700;
 
     line-height: 1.1;
@@ -3959,7 +3959,7 @@ body {
 
     color: var(--primary-color);
 
-    font-size: clamp(40px, 4.5vw, 62px);
+    font-size: 42px;
     font-weight: 700;
 
     line-height: 1.08;
@@ -4959,7 +4959,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 64px);
+    font-size: 42px;
     font-weight: 700;
 
     line-height: 1.08;
@@ -5284,7 +5284,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 64px);
+    font-size: 42px;
     font-weight: 700;
 
     line-height: 1.08;
@@ -5744,7 +5744,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.6vw, 62px);
+    font-size: 42px;
 
     line-height: 1.08;
 
@@ -6025,7 +6025,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.5vw, 60px);
+    font-size: 42px;
 
     line-height: 1.08;
 
@@ -6608,7 +6608,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.7vw, 64px);
+    font-size: 42px;
 
     line-height: 1.08;
 
@@ -6926,7 +6926,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.6vw, 62px);
+    font-size: 42px;
 
     line-height: 1.08;
 
@@ -7192,7 +7192,7 @@ body {
 
     color: var(--white);
 
-    font-size: clamp(42px, 4.5vw, 62px);
+    font-size: 42px;
 
     line-height: 1.06;
 
@@ -7640,7 +7640,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.5vw, 62px);
+    font-size: 42px;
 
     line-height: 1.08;
 
@@ -7877,7 +7877,7 @@ body {
 
     color: var(--white);
 
-    font-size: clamp(44px, 5vw, 70px);
+    font-size: 42px;
 
     line-height: 1.06;
 
@@ -8056,7 +8056,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 64px);
+    font-size: 42px;
 
     line-height: 1.06;
 
@@ -8328,7 +8328,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.7vw, 64px);
+    font-size: 42px;
 
     line-height: 1.07;
 
@@ -8704,7 +8704,411 @@ body {
 
     color: var(--primary-color);
 
-    transform: rotate(45deg);
+}
+
+/* =========================================
+   LEAD FACULTY - LINKEDIN
+========================================= */
+
+.about-faculty-main-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-faculty-main-info {
+    min-width: 0;
+}
+
+.about-faculty-linkedin {
+    width: 42px;
+    height: 42px;
+
+    flex: 0 0 42px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--secondary-color);
+    color: var(--primary-color);
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+
+    font-size: 16px;
+
+    transition: var(--transition);
+}
+
+.about-faculty-linkedin:hover {
+    background: var(--white);
+    color: var(--primary-color);
+
+    border-color: var(--white);
+
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   ABOUT - AWARDS & RECOGNITION
+========================================= */
+
+.about-awards-section {
+    padding: 105px 0;
+    background: #f8f6f1;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.about-awards-header {
+    max-width: 780px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.about-awards-label {
+    display: block;
+    margin-bottom: 15px;
+
+    color: #352a5e;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+}
+
+.about-awards-header h2 {
+    margin: 0 0 18px;
+
+    color: #11101a;
+
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: 600;
+}
+
+.about-awards-header h2 span {
+    color: #352a5e;
+}
+
+.about-awards-header>p {
+    max-width: 680px;
+    margin: 0 auto;
+
+    color: #5e5969;
+
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 450;
+}
+
+
+/* =========================================
+   AWARDS GRID
+========================================= */
+
+.about-awards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+
+/* =========================================
+   AWARD CARD
+========================================= */
+
+.about-award-card {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e0d8;
+    border-radius: 22px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.about-award-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #d7cee9;
+
+    box-shadow: 0 18px 45px rgba(53, 42, 94, 0.10);
+}
+
+
+/* =========================================
+   AWARD IMAGE
+========================================= */
+
+.about-award-image {
+    position: relative;
+
+    width: 100%;
+    height: 265px;
+
+    overflow: hidden;
+
+    background: #eee9df;
+}
+
+.about-award-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.about-award-card:hover .about-award-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.about-award-content {
+    padding: 27px 25px 29px;
+}
+
+.about-award-category {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #352a5e;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.about-award-content h3 {
+    margin: 0 0 9px;
+
+    color: #11101a;
+
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+.about-award-organisation {
+    margin: 0;
+
+    color: #352a5e;
+
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.about-award-line {
+    width: 38px;
+    height: 2px;
+
+    margin: 20px 0 17px;
+
+    background: #c9a866;
+}
+
+.about-award-content>p:last-child {
+    margin: 0;
+
+    color: #5e5969;
+
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 450;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .about-awards-section {
+        padding: 85px 0;
+    }
+
+    .about-awards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .about-award-image {
+        height: 290px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET / iPAD MINI
+========================================= */
+
+@media (max-width: 767px) {
+
+    .about-awards-section {
+        padding: 70px 0;
+    }
+
+    .about-awards-header {
+        margin-bottom: 40px;
+    }
+
+    .about-awards-header h2 {
+        font-size: 36px;
+    }
+
+    .about-awards-header>p {
+        font-size: 15px;
+    }
+
+    .about-awards-grid {
+        grid-template-columns: 1fr;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .about-award-image {
+        height: 280px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .about-awards-section {
+        padding: 58px 0;
+    }
+
+    .about-awards-header {
+        margin-bottom: 32px;
+    }
+
+    .about-awards-label {
+        font-size: 10px;
+        letter-spacing: 1.8px;
+    }
+
+    .about-awards-header h2 {
+        font-size: 32px;
+    }
+
+    .about-awards-header>p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .about-award-image {
+        height: 245px;
+    }
+
+    .about-award-content {
+        padding: 23px 21px 25px;
+    }
+
+    .about-award-content h3 {
+        font-size: 19px;
+    }
+
+}
+
+/* =========================================
+   ABOUT - AWARDS DARK MODE
+========================================= */
+
+html.dark-mode .about-awards-section {
+    background: #17151d;
+}
+
+html.dark-mode .about-awards-label {
+    color: #e8dcc8;
+}
+
+html.dark-mode .about-awards-header h2 {
+    color: #ffffff;
+}
+
+html.dark-mode .about-awards-header h2 span {
+    color: #e8dcc8;
+}
+
+html.dark-mode .about-awards-header>p {
+    color: rgba(255, 255, 255, 0.70);
+}
+
+
+/* =========================================
+   AWARD CARD
+========================================= */
+
+html.dark-mode .about-award-card {
+    background: #211d29;
+
+    border-color: rgba(232, 220, 200, 0.16);
+}
+
+html.dark-mode .about-award-card:hover {
+    border-color: rgba(232, 220, 200, 0.35);
+
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+}
+
+
+/* =========================================
+   AWARD IMAGE
+========================================= */
+
+html.dark-mode .about-award-image {
+    background: #292431;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+html.dark-mode .about-award-category {
+    color: #e8dcc8;
+}
+
+html.dark-mode .about-award-content h3 {
+    color: #ffffff;
+}
+
+html.dark-mode .about-award-organisation {
+    color: #e8dcc8;
+}
+
+html.dark-mode .about-award-line {
+    background: #e8dcc8;
+}
+
+html.dark-mode .about-award-content>p:last-child {
+    color: rgba(255, 255, 255, 0.68);
 }
 
 /* =========================================
@@ -8737,7 +9141,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 64px);
+    font-size: 42px;
 
     line-height: 1.07;
 
@@ -9062,7 +9466,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.7vw, 64px);
+    font-size: 42px;
 
     line-height: 1.06;
 
@@ -9431,7 +9835,7 @@ body {
 
     color: var(--white);
 
-    font-size: clamp(50px, 6vw, 82px);
+    font-size: 42px;
 
     line-height: 1.02;
 
@@ -9525,1262 +9929,1468 @@ body {
 /***************************************************Courses Page********************************************************/
 
 /* =========================================
-   COURSES - EXPLORE BY EXAM
+   EXAM CATEGORIES SECTION
 ========================================= */
 
-.courses-exam-section {
-    padding: 120px 0;
-
-    background: var(--white);
-
-    overflow: hidden;
+.exam-categories-section {
+    padding: 100px 0;
+    background: #f8f6f1;
 }
 
-
-/* =========================================
-   HEADING
-========================================= */
-
-.courses-exam-heading {
-    display: grid;
-
-    grid-template-columns: 1fr 0.65fr;
-
-    align-items: end;
-
-    gap: 80px;
-
-    margin-bottom: 55px;
-}
-
-.courses-exam-heading h2 {
-    margin: 12px 0 0;
-
-    color: var(--black);
-
-    font-size: clamp(42px, 4.7vw, 64px);
-
-    line-height: 1.06;
-
-    letter-spacing: -1px;
-}
-
-.courses-exam-heading h2 span {
-    color: var(--primary-color);
-}
-
-.courses-exam-heading>p {
-    max-width: 500px;
-
-    margin: 0;
-
-    color: var(--text-color);
-
-    font-size: 17px;
-
-    line-height: 1.8;
-}
-
-
-/* =========================================
-   EXAM GRID
-========================================= */
-
-.courses-exam-grid {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 20px;
-}
-
-
-/* =========================================
-   EXAM CARD
-========================================= */
-
-.courses-exam-card {
-    position: relative;
-
-    min-height: 430px;
-
-    display: flex;
-
-    align-items: flex-end;
-
-    overflow: hidden;
-
-    border-radius: 24px;
-
-    text-decoration: none;
-
-    background: var(--primary-color);
-}
-
-
-/* =========================================
-   IMAGE
-========================================= */
-
-.courses-exam-image {
-    position: absolute;
-
-    inset: 0;
-
-    z-index: 0;
-}
-
-.courses-exam-image img {
-    display: block;
-
+.exam-categories-header {
+    max-width: 760px;
     width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    transition: transform 0.8s ease;
-}
-
-.courses-exam-card:hover .courses-exam-image img {
-    transform: scale(1.07);
-}
-
-
-/* =========================================
-   OVERLAY
-========================================= */
-
-.courses-exam-overlay {
-    position: absolute;
-
-    inset: 0;
-
-    z-index: 1;
-
-    background:
-        linear-gradient(180deg,
-            rgba(23, 21, 29, 0.12) 10%,
-            rgba(23, 21, 29, 0.48) 45%,
-            rgba(23, 21, 29, 0.94) 100%);
-}
-
-
-/* =========================================
-   CONTENT
-========================================= */
-
-.courses-exam-content {
-    position: relative;
-
-    z-index: 2;
-
-    width: 100%;
-
-    padding: 32px;
-}
-
-
-/* =========================================
-   TOP ROW
-========================================= */
-
-.courses-exam-top {
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    margin-bottom: 15px;
-}
-
-.courses-exam-top span {
-    color: var(--secondary-color);
-
-    font-size: 11px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-}
-
-.courses-exam-top i {
-    width: 38px;
-    height: 38px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: rgba(255, 255, 255, 0.13);
-
-    color: var(--white);
-
-    border: 1px solid rgba(255, 255, 255, 0.20);
-
-    border-radius: 50%;
-
-    font-size: 12px;
-
-    transition: var(--transition);
-}
-
-.courses-exam-card:hover .courses-exam-top i {
-    background: var(--secondary-color);
-
-    color: var(--primary-color);
-
-    transform: rotate(45deg);
-}
-
-
-/* =========================================
-   TITLE
-========================================= */
-
-.courses-exam-content h3 {
-    margin: 0 0 10px;
-
-    color: var(--white);
-
-    font-size: 30px;
-
-    line-height: 1.2;
-}
-
-.courses-exam-content>p {
-    max-width: 620px;
-
-    margin: 0 0 20px;
-
-    color: rgba(255, 255, 255, 0.76);
-
-    font-size: 15px;
-
-    line-height: 1.7;
-}
-
-
-/* =========================================
-   META
-========================================= */
-
-.courses-exam-meta {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 9px;
-}
-
-.courses-exam-meta span {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 7px;
-
-    padding: 8px 11px;
-
-    background: rgba(255, 255, 255, 0.10);
-
-    color: rgba(255, 255, 255, 0.82);
-
-    border: 1px solid rgba(255, 255, 255, 0.13);
-
-    border-radius: 7px;
-
-    font-size: 11px;
-}
-
-.courses-exam-meta i {
-    color: var(--secondary-color);
-
-    font-size: 10px;
-}
-
-.courses-style-v2 {
-    padding: 120px 0;
-
-    background: var(--light-bg);
-
-    overflow: hidden;
-}
-
-/* =========================================
-   SECTION HEADING - CENTER ALIGN
-========================================= */
-
-.courses-style-v2-heading {
-    max-width: 820px;
-    margin: 0 auto 60px;
-
+    margin: 0 auto 50px;
     text-align: center;
 }
 
-.courses-style-v2-heading h2 {
-    margin: 12px 0 18px;
-
-    color: var(--black);
-
-    font-size: clamp(42px, 5vw, 68px);
-
-    line-height: 1.04;
-
-    letter-spacing: -1.2px;
+.exam-categories-header .section-label {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #3d2d70;
+    text-align: center;
 }
 
-.courses-style-v2-heading h2 span {
-    color: var(--primary-color);
+.exam-categories-header h2 {
+    margin: 0 0 16px;
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #11101a;
+    text-align: center;
 }
 
-.courses-style-v2-heading p {
+.exam-categories-header h2 span {
+    color: #3d2d70;
+}
+
+.exam-categories-header p {
     max-width: 680px;
-
     margin: 0 auto;
-
-    color: var(--text-color);
-
     font-size: 17px;
-
-    line-height: 1.8;
+    line-height: 1.7;
+    font-weight: 450;
+    color: #5e5969;
+    text-align: center;
 }
 
-/* =========================================
-   MAIN LAYOUT
-========================================= */
 
-.courses-style-v2-layout {
+/* GRID */
+
+.exam-categories-grid {
     display: grid;
-
-    grid-template-columns: 1.05fr 0.95fr;
-
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-
-    min-height: 590px;
 }
 
 
-/* =========================================
-   FEATURED CARD
-========================================= */
+/* CARD */
 
-.courses-style-v2-featured {
+.exam-category-card {
     position: relative;
-
-    min-height: 590px;
-
+    padding: 28px;
+    min-height: 390px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #e5e0d8;
+    border-radius: 22px;
     overflow: hidden;
-
-    border-radius: 28px;
-
-    background: var(--primary-color);
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-.courses-style-v2-featured>img {
-    position: absolute;
-
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    transition: transform 0.8s ease;
-}
-
-.courses-style-v2-featured:hover>img {
-    transform: scale(1.05);
+.exam-category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(35, 24, 65, 0.10);
 }
 
 
-/* =========================================
-   OVERLAY
-========================================= */
+/* TOP */
 
-.courses-style-v2-featured-overlay {
-    position: absolute;
+.exam-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
 
-    inset: 0;
+.exam-number {
+    font-size: 13px;
+    font-weight: 700;
+    color: #3d2d70;
+}
 
-    background:
-        linear-gradient(180deg,
-            rgba(23, 21, 29, 0.08) 15%,
-            rgba(23, 21, 29, 0.28) 40%,
-            rgba(23, 21, 29, 0.94) 100%);
+.exam-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: #f2eee7;
+    color: #3d2d70;
+    font-size: 19px;
 }
 
 
-/* =========================================
-   FEATURED CONTENT
-========================================= */
+/* CONTENT */
 
-.courses-style-v2-featured-content {
-    position: absolute;
-
-    left: 42px;
-    right: 42px;
-    bottom: 42px;
-
-    z-index: 2;
-
-    max-width: 540px;
+.exam-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
-.courses-style-v2-featured-content>span {
-    display: block;
-
-    margin-bottom: 10px;
-
-    color: var(--secondary-color);
-
+.exam-card-label {
+    margin-bottom: 9px;
     font-size: 10px;
     font-weight: 700;
-
-    letter-spacing: 1.7px;
+    letter-spacing: 1.5px;
+    color: #817894;
 }
 
-.courses-style-v2-featured-content h3 {
-    margin: 0 0 14px;
-
-    color: var(--white);
-
-    font-size: clamp(38px, 4vw, 54px);
-
-    line-height: 1.05;
-
-    letter-spacing: -0.7px;
+.exam-card-content h3 {
+    margin: 0 0 13px;
+    font-size: 23px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #171521;
 }
 
-.courses-style-v2-featured-content p {
-    max-width: 500px;
-
-    margin: 0 0 22px;
-
-    color: rgba(255, 255, 255, 0.76);
-
+.exam-card-content p {
+    margin: 0;
     font-size: 15px;
-
-    line-height: 1.75;
+    line-height: 1.7;
+    font-weight: 450;
+    color: #696473;
 }
 
 
-/* =========================================
-   FEATURED LINK
-========================================= */
+/* LINK */
 
-.courses-style-v2-link {
+.exam-card-link {
     display: inline-flex;
-
     align-items: center;
-
-    gap: 10px;
-
-    color: var(--secondary-color);
-
+    gap: 9px;
+    width: fit-content;
+    margin-top: auto;
+    padding-top: 28px;
+    color: #3d2d70;
     font-size: 14px;
     font-weight: 700;
-
     text-decoration: none;
 }
 
-.courses-style-v2-link i {
-    transition: var(--transition);
+.exam-card-link i {
+    transition: transform 0.25s ease;
 }
 
-.courses-style-v2-link:hover i {
+.exam-card-link:hover i {
     transform: translateX(5px);
 }
 
-
 /* =========================================
-   FEATURED NUMBER
+   SECTION 3 — FEATURED COURSES
 ========================================= */
 
-.courses-style-v2-featured-number {
-    position: absolute;
+.featured-courses-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
 
-    top: 30px;
-    right: 30px;
 
-    z-index: 2;
+/* HEADER */
 
-    color: rgba(255, 255, 255, 0.65);
+.featured-courses-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 48px;
+}
 
-    font-size: 12px;
+.featured-courses-header>div {
+    max-width: 650px;
+}
+
+.featured-courses-header .section-label {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 11px;
     font-weight: 700;
+    letter-spacing: 2px;
+    color: #3d2d70;
+}
 
+.featured-courses-header h2 {
+    margin: 0;
+    font-size: 42px;
+    line-height: 1.12;
+    font-weight: 600;
+    color: #11101a;
+}
+
+.featured-courses-header h2 span {
+    color: #3d2d70;
+}
+
+.featured-courses-header>p {
+    max-width: 430px;
+    margin: 0 0 3px;
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 450;
+    color: #65606e;
+}
+
+
+/* GRID */
+
+.featured-courses-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+/* CARD */
+
+.course-card {
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e6e1da;
+    border-radius: 22px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 45px rgba(45, 32, 75, 0.10);
+}
+
+
+/* IMAGE */
+
+.course-image-wrap {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+}
+
+.course-image-wrap img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.course-category {
+    position: absolute;
+    left: 18px;
+    bottom: 16px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #3d2d70;
+    font-size: 10px;
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
 
-/* =========================================
-   OPTIONS
-========================================= */
+/* BODY */
 
-.courses-style-v2-options {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 12px;
+.course-card-body {
+    padding: 26px;
 }
 
 
-/* =========================================
-   OPTION
-========================================= */
+/* TITLE */
 
-.courses-style-v2-option {
-    position: relative;
+.course-card-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-    flex: 1;
+.course-card-heading h3 {
+    margin: 0;
+    max-width: 430px;
+    font-size: 22px;
+    line-height: 1.25;
+    font-weight: 600;
+    color: #171521;
+}
 
-    display: grid;
-
-    grid-template-columns: 48px 1fr 42px;
-
+.course-rating {
+    flex-shrink: 0;
+    display: inline-flex;
     align-items: center;
-
-    gap: 18px;
-
-    padding: 25px 28px;
-
-    background: var(--white);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 18px;
-
-    transition: var(--transition);
+    gap: 5px;
+    color: #3d2d70;
+    font-size: 13px;
+    font-weight: 700;
 }
 
-.courses-style-v2-option:hover {
-    background: var(--primary-color);
-
-    border-color: var(--primary-color);
-
-    transform: translateX(-6px);
+.course-rating i {
+    font-size: 11px;
 }
 
+
+/* DESCRIPTION */
+
+.course-description {
+    margin: 12px 0 20px;
+    font-size: 14px;
+    line-height: 1.65;
+    font-weight: 450;
+    color: #6a6572;
+}
+
+
+/* FEATURES */
+
+.course-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11px 18px;
+    padding: 18px 0;
+    border-top: 1px solid #eeeae4;
+    border-bottom: 1px solid #eeeae4;
+}
+
+.course-features span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #514c59;
+}
+
+.course-features i {
+    width: 17px;
+    color: #3d2d70;
+    text-align: center;
+}
+
+
+/* BOTTOM */
+
+.course-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.course-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.course-price strong {
+    font-size: 25px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #171521;
+}
+
+.course-price span {
+    margin-top: 4px;
+    font-size: 11px;
+    color: #77717e;
+}
+
+
+/* BUTTON */
+
+.view-course-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-width: 125px;
+    padding: 12px 17px;
+    border: 1px solid #3d2d70;
+    border-radius: 9px;
+    background: #3d2d70;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.view-course-btn:hover {
+    background: #30235a;
+}
+
+.view-course-btn i {
+    transition: transform 0.25s ease;
+}
+
+.view-course-btn:hover i {
+    transform: translateX(4px);
+}
+
+
+/* VIEW ALL */
+
+.courses-view-all {
+    margin-top: 38px;
+    text-align: center;
+}
+
+.courses-view-all a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #3d2d70;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.courses-view-all a i {
+    transition: transform 0.25s ease;
+}
+
+.courses-view-all a:hover i {
+    transform: translateX(5px);
+}
 
 /* =========================================
-   OPTION NUMBER
+   COURSE DETAILS POPUP
 ========================================= */
 
-.courses-style-v2-option-number {
-    width: 43px;
-    height: 43px;
+.course-modal {
+    position: fixed;
+    inset: 0;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
-    background: var(--secondary-color);
+    padding: 25px;
 
-    color: var(--primary-color);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 
-    border-radius: 50%;
+    z-index: 100000;
 
-    font-size: 11px;
-    font-weight: 800;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.course-modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 
-/* =========================================
-   OPTION CONTENT
-========================================= */
+/* OVERLAY */
 
-.courses-style-v2-option-content>span {
-    display: block;
+.course-modal-overlay {
+    position: absolute;
+    inset: 0;
 
-    margin-bottom: 5px;
+    background: rgba(18, 15, 25, 0.72);
 
-    color: var(--primary-color);
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 1.4px;
-
-    transition: var(--transition);
-}
-
-.courses-style-v2-option-content h3 {
-    margin: 0 0 5px;
-
-    color: var(--black);
-
-    font-size: 20px;
-
-    line-height: 1.3;
-
-    transition: var(--transition);
-}
-
-.courses-style-v2-option-content p {
-    margin: 0;
-
-    color: var(--text-color);
-
-    font-size: 15px;
-
-    line-height: 1.55;
-
-    transition: var(--transition);
+    backdrop-filter: blur(5px);
 }
 
 
-/* =========================================
-   OPTION ARROW
-========================================= */
+/* MODAL BOX */
 
-.courses-style-v2-option>a {
+.course-modal-box {
+    position: relative;
+
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e4ded5;
+    border-radius: 22px;
+
+    box-shadow:
+        0 30px 80px rgba(25, 18, 40, 0.25);
+
+    transform: translateY(20px) scale(0.98);
+
+    transition: transform 0.3s ease;
+
+    z-index: 2;
+}
+
+.course-modal.active .course-modal-box {
+    transform: translateY(0) scale(1);
+}
+
+
+/* CLOSE */
+
+.course-modal-close {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
     width: 40px;
     height: 40px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
-    background: var(--light-bg);
-
-    color: var(--primary-color);
-
+    border: 1px solid #e3ddd5;
     border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #352a5e;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition: all 0.25s ease;
+}
+
+.course-modal-close:hover {
+    background: #352a5e;
+    color: #ffffff;
+    border-color: #352a5e;
+}
+
+
+/* HEADER */
+
+.course-modal-header {
+    padding: 38px 42px 28px;
+
+    border-bottom: 1px solid #ebe6df;
+}
+
+.course-modal-category {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #352a5e;
 
     font-size: 11px;
-
-    text-decoration: none;
-
-    transition: var(--transition);
-}
-
-
-/* =========================================
-   HOVER STATES
-========================================= */
-
-.courses-style-v2-option:hover .courses-style-v2-option-content>span {
-    color: var(--secondary-color);
-}
-
-.courses-style-v2-option:hover .courses-style-v2-option-content h3 {
-    color: var(--white);
-}
-
-.courses-style-v2-option:hover .courses-style-v2-option-content p {
-    color: rgba(255, 255, 255, 0.68);
-}
-
-.courses-style-v2-option:hover>a {
-    background: var(--secondary-color);
-
-    color: var(--primary-color);
-
-    transform: rotate(45deg);
-}
-
-
-/* =========================================
-   BOTTOM STATEMENT
-========================================= */
-
-.courses-style-v2-bottom {
-    display: flex;
-
-    align-items: center;
-
-    gap: 18px;
-
-    margin-top: 45px;
-}
-
-.courses-style-v2-bottom span {
-    flex-shrink: 0;
-
-    color: var(--primary-color);
-
-    font-size: 10px;
     font-weight: 700;
 
-    letter-spacing: 1.5px;
-
-    text-align: center;
+    letter-spacing: 1.8px;
 }
 
-.courses-style-v2-line {
-    width: 100%;
+.course-modal-header h2 {
+    margin: 0 0 12px;
 
-    height: 1px;
+    max-width: 720px;
 
-    background: var(--border-color);
+    color: #17151d;
+
+    font-size: 42px;
+    line-height: 1.2;
+
+    font-weight: 600;
 }
 
-/* =========================================
-   COURSES - WHAT YOUR COURSE INCLUDES
-========================================= */
+.course-modal-header p {
+    max-width: 720px;
 
-.courses-includes-section {
-    padding: 120px 0;
-
-    background: var(--white);
-
-    overflow: hidden;
-}
-
-
-/* =========================================
-   WRAPPER
-========================================= */
-
-.courses-includes-wrapper {
-    display: grid;
-
-    grid-template-columns: 0.8fr 1.2fr;
-
-    gap: 90px;
-
-    align-items: start;
-}
-
-
-/* =========================================
-   INTRO
-========================================= */
-
-.courses-includes-intro {
-    position: sticky;
-
-    top: 120px;
-
-    max-width: 500px;
-}
-
-.courses-includes-intro h2 {
-    margin: 12px 0 22px;
-
-    color: var(--black);
-
-    font-size: clamp(42px, 4.5vw, 62px);
-
-    line-height: 1.06;
-
-    letter-spacing: -1px;
-}
-
-.courses-includes-intro h2 span {
-    display: block;
-
-    color: var(--primary-color);
-}
-
-.courses-includes-intro>p {
     margin: 0;
 
-    color: var(--text-color);
+    color: #66616c;
 
-    font-size: 17px;
+    font-size: 15px;
+    line-height: 1.7;
 
-    line-height: 1.8;
+    font-weight: 450;
 }
 
 
-/* =========================================
-   HIGHLIGHT
-========================================= */
+/* INFO */
 
-.courses-includes-highlight {
+.course-modal-info {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0;
+
+    border-bottom: 1px solid #ebe6df;
+}
+
+.modal-info-item {
     display: flex;
-
     align-items: center;
 
-    gap: 14px;
+    gap: 13px;
 
-    margin-top: 35px;
+    padding: 20px 28px;
 
-    padding: 18px;
-
-    background: var(--light-bg);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 14px;
+    border-right: 1px solid #ebe6df;
 }
 
-.courses-includes-highlight-icon {
-    width: 45px;
-    height: 45px;
+.modal-info-item:last-child {
+    border-right: 0;
+}
+
+.modal-info-item>i {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
-    flex-shrink: 0;
+    background: #f1ede7;
 
-    background: var(--primary-color);
+    color: #352a5e;
 
-    color: var(--secondary-color);
+    border-radius: 10px;
 
-    border-radius: 50%;
+    font-size: 14px;
 }
 
-.courses-includes-highlight strong {
+.modal-info-item span {
     display: block;
 
     margin-bottom: 3px;
 
-    color: var(--black);
+    color: #8a8490;
 
-    font-size: 14px;
+    font-size: 10px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
-.courses-includes-highlight span {
+.modal-info-item strong {
     display: block;
 
-    color: var(--text-color);
+    color: #201d27;
 
-    font-size: 12px;
-
-    line-height: 1.5;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 
-/* =========================================
-   FEATURES
-========================================= */
+/* MAIN CONTENT */
 
-.courses-includes-features {
-    display: flex;
-
-    flex-direction: column;
-}
-
-
-/* =========================================
-   FEATURE ROW
-========================================= */
-
-.courses-includes-feature {
+.course-modal-content {
     display: grid;
 
-    grid-template-columns: 38px 58px 1fr;
+    grid-template-columns: 1.5fr 0.7fr;
 
+    gap: 35px;
+
+    padding: 35px 42px 40px;
+}
+
+
+/* DETAILS */
+
+.modal-detail-block {
+    margin-bottom: 30px;
+}
+
+.modal-detail-block:last-child {
+    margin-bottom: 0;
+}
+
+.modal-detail-block h3 {
+    margin: 0 0 16px;
+
+    color: #201d27;
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    font-weight: 600;
+}
+
+
+/* SUBJECTS */
+
+.modal-subjects {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.modal-subjects span {
+    display: flex;
     align-items: center;
 
-    gap: 20px;
+    gap: 9px;
 
-    padding: 27px 0;
+    padding: 11px 13px;
 
-    border-bottom: 1px solid var(--border-color);
+    background: #f8f6f2;
 
-    transition: var(--transition);
+    border: 1px solid #ebe6df;
+    border-radius: 9px;
+
+    color: #504b58;
+
+    font-size: 13px;
+    font-weight: 450;
 }
 
-.courses-includes-feature:first-child {
-    padding-top: 0;
+.modal-subjects i {
+    color: #352a5e;
+    font-size: 11px;
 }
 
 
-/* =========================================
-   NUMBER
-========================================= */
+/* INCLUDES */
 
-.courses-includes-feature-number {
-    color: rgba(53, 42, 94, 0.35);
+.modal-includes {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px 20px;
+}
+
+.modal-includes li {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 9px;
+
+    color: #5e5965;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    font-weight: 450;
+}
+
+.modal-includes li i {
+    margin-top: 3px;
+
+    flex-shrink: 0;
+
+    color: #352a5e;
 
     font-size: 12px;
-    font-weight: 700;
-
-    letter-spacing: 1px;
 }
 
 
-/* =========================================
-   ICON
-========================================= */
+/* PRICING */
 
-.courses-includes-feature-icon {
-    width: 52px;
-    height: 52px;
+.course-modal-pricing {
+    align-self: start;
 
-    display: flex;
+    padding: 25px;
 
-    align-items: center;
-    justify-content: center;
+    background: #f8f6f2;
 
-    background: var(--light-bg);
+    border: 1px solid #e5dfd7;
 
-    color: var(--primary-color);
-
-    border-radius: 50%;
-
-    font-size: 16px;
-
-    transition: var(--transition);
+    border-radius: 17px;
 }
 
-.courses-includes-feature:hover .courses-includes-feature-icon {
-    background: var(--primary-color);
-
-    color: var(--secondary-color);
-
-    transform: scale(1.06);
-}
-
-
-/* =========================================
-   CONTENT
-========================================= */
-
-.courses-includes-feature-content>span {
+.pricing-label {
     display: block;
 
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 
-    color: var(--primary-color);
+    color: #807989;
 
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 700;
 
     letter-spacing: 1.5px;
 }
 
-.courses-includes-feature-content h3 {
-    margin: 0 0 6px;
+.modal-price {
+    display: flex;
+    align-items: baseline;
 
-    color: var(--black);
+    gap: 10px;
 
-    font-size: 21px;
-
-    line-height: 1.3;
+    margin-bottom: 6px;
 }
 
-.courses-includes-feature-content p {
-    max-width: 620px;
+.modal-price strong {
+    color: #352a5e;
 
-    margin: 0;
+    font-size: 31px;
+    line-height: 1;
 
-    color: var(--text-color);
-
-    font-size: 16px;
-
-    line-height: 1.65;
+    font-weight: 600;
 }
 
-.courses-includes-small-text {
-    margin: 18px 0 0;
+.modal-price del {
+    color: #99939c;
 
-    color: var(--text-color);
+    font-size: 13px;
+}
 
-    font-size: 14px;
+.modal-discount {
+    display: inline-block;
 
-    line-height: 1.7;
+    margin-bottom: 22px;
+
+    color: #6c6279;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* VALIDITY */
+
+.modal-validity {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px 0;
+
+    border-top: 1px solid #e5dfd7;
+    border-bottom: 1px solid #e5dfd7;
+}
+
+.modal-validity>i {
+    color: #352a5e;
+}
+
+.modal-validity span {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #89838d;
+
+    font-size: 10px;
+}
+
+.modal-validity strong {
+    color: #28242e;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* START BUTTON */
+
+.modal-start-btn {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-top: 20px;
+
+    padding: 13px 18px;
+
+    background: #352a5e;
+    color: #ffffff;
+
+    border: 1px solid #352a5e;
+    border-radius: 9px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.modal-start-btn:hover {
+    background: #e8dcc8;
+    color: #352a5e;
+    border-color: #e8dcc8;
+}
+
+.modal-start-btn i {
+    transition: transform 0.25s ease;
+}
+
+.modal-start-btn:hover i {
+    transform: translateX(4px);
+}
+
+.modal-note {
+    margin: 10px 0 0;
+
+    color: #918b94;
+
+    font-size: 10px;
+
+    text-align: center;
 }
 
 /* =========================================
-   COURSES - LEARNING JOURNEY
+   SECTION 4 — WHAT YOU GET
 ========================================= */
 
-.courses-journey-section {
-    padding: 120px 0;
+.courses-benefits-section {
+    padding: 100px 0;
+    background: #f8f6f1;
+}
 
-    background: var(--light-bg);
+
+/* LAYOUT */
+
+.courses-benefits-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: start;
+    gap: 75px;
+}
+
+
+/* LEFT */
+
+.courses-benefits-content {
+    position: sticky;
+    top: 110px;
+}
+
+.courses-benefits-content .section-label {
+    display: block;
+    margin-bottom: 14px;
+
+    color: #3d2d70;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.courses-benefits-content h2 {
+    margin: 0 0 18px;
+
+    font-size: 42px;
+    line-height: 1.12;
+
+    font-weight: 600;
+
+    color: #171521;
+}
+
+.courses-benefits-content h2 span {
+    display: block;
+    color: #3d2d70;
+}
+
+.courses-benefits-content>p {
+    max-width: 470px;
+
+    margin: 0 0 28px;
+
+    color: #696473;
+
+    font-size: 15px;
+    line-height: 1.75;
+
+    font-weight: 450;
+}
+
+
+/* FEATURES GRID */
+
+.courses-benefits-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+/* FEATURE CARD */
+
+.courses-benefit-card {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 17px;
+
+    min-height: 205px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e0d8;
+
+    border-radius: 18px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.courses-benefit-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(50, 40, 75, 0.08);
+}
+
+
+/* ICON */
+
+.courses-benefit-icon {
+    width: 46px;
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f0ece5;
+
+    color: #3d2d70;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+}
+
+
+/* NUMBER */
+
+.benefit-number {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #968ea0;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* TITLE */
+
+.courses-benefit-card h3 {
+    margin: 0 0 9px;
+
+    color: #171521;
+
+    font-size: 18px;
+    line-height: 1.25;
+
+    font-weight: 600;
+}
+
+
+/* TEXT */
+
+.courses-benefit-card p {
+    margin: 0;
+
+    color: #6a6572;
+
+    font-size: 15px;
+    line-height: 1.65;
+
+    font-weight: 450;
+}
+
+
+
+/* =========================================
+   SECTION 5 — COURSE COMPARISON
+========================================= */
+
+.course-comparison-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+
+/* HEADER */
+
+.course-comparison-header {
+    max-width: 720px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.course-comparison-header .section-label {
+    display: block;
+    margin-bottom: 13px;
+
+    color: #352a5e;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.course-comparison-header h2 {
+    margin: 0 0 16px;
+
+    color: #17151d;
+
+    font-size: 42px;
+    line-height: 1.12;
+
+    font-weight: 600;
+}
+
+.course-comparison-header h2 span {
+    color: #352a5e;
+}
+
+.course-comparison-header p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #68636f;
+
+    font-size: 15px;
+    line-height: 1.75;
+
+    font-weight: 450;
+}
+
+
+/* TABLE */
+
+.course-comparison-wrap {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border: 1px solid #e5dfd7;
+    border-radius: 20px;
+
+    background: #ffffff;
+}
+
+.course-comparison-table {
+    min-width: 760px;
+}
+
+
+/* ROW */
+
+.comparison-row {
+    display: grid;
+
+    grid-template-columns: 1.7fr repeat(4, 1fr);
+
+    min-height: 62px;
+
+    border-bottom: 1px solid #ebe6df;
+}
+
+.comparison-row:last-child {
+    border-bottom: 0;
+}
+
+
+/* CELLS */
+
+.comparison-row>div {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 12px;
+
+    color: #5e5965;
+
+    font-size: 13px;
+
+    font-weight: 450;
+
+    text-align: center;
+
+    border-right: 1px solid #ebe6df;
+}
+
+.comparison-row>div:last-child {
+    border-right: 0;
+}
+
+
+/* FEATURE */
+
+.comparison-row .comparison-feature {
+    justify-content: flex-start;
+
+    padding-left: 24px;
+
+    color: #28242e;
+
+    font-weight: 550;
+
+    text-align: left;
+}
+
+
+/* HEADER */
+
+.comparison-row.comparison-header {
+    min-height: 66px;
+
+    background: #f8f6f2;
+}
+
+.comparison-header>div {
+    color: #352a5e;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* ICON */
+
+.comparison-row i {
+    color: #352a5e;
+
+    font-size: 13px;
+}
+
+.comparison-row .fa-minus {
+    color: #aaa4ad;
+}
+
+/* =========================================
+   SECTION 6 — FAQ
+========================================= */
+
+.courses-faq-section {
+    padding: 100px 0;
+    background: #f8f6f2;
+}
+
+
+/* HEADER */
+
+.courses-faq-header {
+    max-width: 720px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.courses-faq-header .section-label {
+    display: block;
+
+    margin-bottom: 13px;
+
+    color: #352a5e;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.courses-faq-header h2 {
+    margin: 0 0 16px;
+
+    color: #17151d;
+
+    font-size: 42px;
+    line-height: 1.12;
+
+    font-weight: 600;
+}
+
+.courses-faq-header h2 span {
+    color: #352a5e;
+}
+
+.courses-faq-header p {
+    max-width: 640px;
+
+    margin: 0 auto;
+
+    color: #68636f;
+
+    font-size: 15px;
+    line-height: 1.75;
+
+    font-weight: 450;
+}
+
+
+/* FAQ LIST */
+
+.courses-faq-list {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e5dfd7;
+
+    border-radius: 20px;
 
     overflow: hidden;
 }
 
 
-/* =========================================
-   HEADER
-========================================= */
+/* ITEM */
 
-.courses-journey-header {
-    max-width: 780px;
-
-    margin: 0 auto 70px;
-
-    text-align: center;
+.courses-faq-item {
+    border-bottom: 1px solid #e8e3dc;
 }
 
-.courses-journey-header h2 {
-    margin: 12px 0 18px;
-
-    color: var(--black);
-
-    font-size: clamp(42px, 4.8vw, 66px);
-
-    line-height: 1.05;
-
-    letter-spacing: -1px;
-}
-
-.courses-journey-header h2 span {
-    color: var(--primary-color);
-}
-
-.courses-journey-header p {
-    max-width: 650px;
-
-    margin: 0 auto;
-
-    color: var(--text-color);
-
-    font-size: 17px;
-
-    line-height: 1.8;
+.courses-faq-item:last-child {
+    border-bottom: 0;
 }
 
 
-/* =========================================
-   JOURNEY ROW
-========================================= */
+/* QUESTION */
 
-.courses-journey {
-    display: flex;
+.courses-faq-question {
+    width: 100%;
 
-    align-items: stretch;
-
-    justify-content: center;
-
-    gap: 0;
-}
-
-
-/* =========================================
-   STEP
-========================================= */
-
-.courses-journey-step {
-    position: relative;
-
-    width: 19%;
-
-    padding: 28px 20px;
-
-    background: var(--white);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 18px;
-
-    transition: var(--transition);
-}
-
-.courses-journey-step:hover {
-    transform: translateY(-8px);
-
-    background: var(--primary-color);
-
-    border-color: var(--primary-color);
-
-    box-shadow:
-        0 20px 45px rgba(53, 42, 94, 0.12);
-}
-
-
-/* =========================================
-   STEP TOP
-========================================= */
-
-.courses-journey-step-top {
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
 
-    margin-bottom: 30px;
-}
+    gap: 20px;
 
-.courses-journey-step-top>span {
-    color: rgba(53, 42, 94, 0.35);
+    padding: 22px 25px;
 
-    font-size: 11px;
-    font-weight: 800;
+    border: 0;
 
-    letter-spacing: 1px;
+    background: #ffffff;
 
-    transition: var(--transition);
-}
+    color: #211e27;
 
-
-/* =========================================
-   ICON
-========================================= */
-
-.courses-journey-icon {
-    width: 52px;
-    height: 52px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: var(--secondary-color);
-
-    color: var(--primary-color);
-
-    border-radius: 50%;
-
-    font-size: 16px;
-
-    transition: var(--transition);
-}
-
-.courses-journey-step:hover .courses-journey-icon {
-    background: var(--white);
-
-    color: var(--primary-color);
-}
-
-
-/* =========================================
-   STEP CONTENT
-========================================= */
-
-.courses-journey-step-content small {
-    display: block;
-
-    margin-bottom: 7px;
-
-    color: var(--primary-color);
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 1.4px;
-
-    transition: var(--transition);
-}
-
-.courses-journey-step-content h3 {
-    margin: 0 0 10px;
-
-    color: var(--black);
-
-    font-size: 25px;
-
-    line-height: 1.2;
-
-    transition: var(--transition);
-}
-
-.courses-journey-step-content p {
-    margin: 0;
-
-    color: var(--text-color);
+    font-family: inherit;
 
     font-size: 15px;
 
-    line-height: 1.7;
+    font-weight: 600;
 
-    transition: var(--transition);
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
 }
 
-
-/* =========================================
-   HOVER TEXT
-========================================= */
-
-.courses-journey-step:hover .courses-journey-step-top>span {
-    color: rgba(255, 255, 255, 0.40);
+.courses-faq-question:hover {
+    background: #faf8f5;
 }
 
-.courses-journey-step:hover .courses-journey-step-content small {
-    color: var(--secondary-color);
-}
-
-.courses-journey-step:hover .courses-journey-step-content h3 {
-    color: var(--white);
-}
-
-.courses-journey-step:hover .courses-journey-step-content p {
-    color: rgba(255, 255, 255, 0.70);
-}
-
-
-/* =========================================
-   CONNECTOR
-========================================= */
-
-.courses-journey-connector {
-    width: 35px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
+.courses-faq-question i {
+    width: 30px;
+    height: 30px;
 
     flex-shrink: 0;
 
-    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f0ece6;
+
+    color: #352a5e;
 
     font-size: 11px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
 }
 
-.courses-journey-connector i {
-    transition: var(--transition);
+
+/* ANSWER */
+
+.courses-faq-answer {
+    display: none;
+
+    padding: 0 25px 22px;
+}
+
+.courses-faq-answer p {
+    max-width: 720px;
+
+    margin: 0;
+
+    color: #6a6570;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+
+    font-weight: 450;
 }
 
 
-/* =========================================
-   BOTTOM MESSAGE
-========================================= */
+/* ACTIVE */
 
-.courses-journey-bottom {
-    display: flex;
-
-    align-items: center;
-
-    gap: 18px;
-
-    margin-top: 55px;
+.courses-faq-item.active .courses-faq-answer {
+    display: block;
 }
 
-.courses-journey-bottom-line {
-    flex: 1;
-
-    height: 1px;
-
-    background: var(--border-color);
+.courses-faq-item.active .courses-faq-question {
+    color: #352a5e;
 }
 
-.courses-journey-bottom-content {
-    display: flex;
+.courses-faq-item.active .courses-faq-question i {
+    transform: rotate(45deg);
 
-    align-items: center;
+    background: #352a5e;
 
-    gap: 10px;
-
-    padding: 10px 16px;
-
-    background: var(--white);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 30px;
-}
-
-.courses-journey-bottom-content i {
-    color: var(--primary-color);
-
-    font-size: 12px;
-}
-
-.courses-journey-bottom-content span {
-    color: var(--primary-color);
-
-    font-size: 10px;
-    font-weight: 700;
-
-    letter-spacing: 1.2px;
+    color: #ffffff;
 }
 
 /* =========================================
@@ -10813,7 +11423,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 66px);
+    font-size: 42px;
 
     line-height: 1.05;
 
@@ -11352,7 +11962,7 @@ body {
 
     color: var(--white);
 
-    font-size: clamp(48px, 6vw, 80px);
+    font-size: 42px;
 
     line-height: 1.03;
 
@@ -11449,6 +12059,1680 @@ body {
     border-color: var(--white);
 }
 
+/* =========================================================
+   RESPONSIVE OVERRIDES — COURSES PAGE
+   Add this at the VERY END of your CSS
+========================================================= */
+
+
+/* =========================================================
+   LARGE LAPTOP / SMALL DESKTOP
+   1200px and below
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .exam-categories-section,
+    .featured-courses-section,
+    .courses-benefits-section,
+    .course-comparison-section,
+    .courses-faq-section {
+        padding: 85px 0;
+    }
+
+    /* EXAM CATEGORIES */
+
+    .exam-categories-header {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .exam-categories-header h2 {
+        font-size: 42px;
+    }
+
+    .exam-categories-grid {
+        gap: 18px;
+    }
+
+    .exam-category-card {
+        padding: 24px;
+    }
+
+
+    /* FEATURED COURSES */
+
+    .featured-courses-header {
+        gap: 35px;
+    }
+
+    .featured-courses-header>div {
+        max-width: 580px;
+    }
+
+    .featured-courses-header h2 {
+        font-size: 40px;
+    }
+
+    .course-card-body {
+        padding: 23px;
+    }
+
+
+    /* BENEFITS */
+
+    .courses-benefits-layout {
+        gap: 50px;
+    }
+
+    .courses-benefits-content h2 {
+        font-size: 39px;
+    }
+
+    .courses-benefit-card {
+        padding: 22px;
+    }
+
+
+    /* MODAL */
+
+    .course-modal-box {
+        max-width: 850px;
+    }
+
+    .course-modal-content {
+        gap: 28px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / iPAD PRO
+   992px and below
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .exam-categories-section,
+    .featured-courses-section,
+    .courses-benefits-section,
+    .course-comparison-section,
+    .courses-faq-section {
+        padding: 75px 0;
+    }
+
+
+    /* -----------------------------------------
+       EXAM CATEGORIES
+    ----------------------------------------- */
+
+    .exam-categories-header {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 42px;
+        text-align: center;
+    }
+
+    .exam-categories-header h2 {
+        font-size: 40px;
+    }
+
+    .exam-categories-header p {
+        max-width: 620px;
+        font-size: 16px;
+    }
+
+    .exam-categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .exam-category-card {
+        min-height: 350px;
+        padding: 25px;
+    }
+
+    .exam-card-top {
+        margin-bottom: 35px;
+    }
+
+    .exam-card-content h3 {
+        font-size: 21px;
+    }
+
+
+    /* -----------------------------------------
+       FEATURED COURSES
+    ----------------------------------------- */
+
+    .featured-courses-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        margin-bottom: 38px;
+    }
+
+    .featured-courses-header>div {
+        max-width: 700px;
+    }
+
+    .featured-courses-header h2 {
+        font-size: 38px;
+    }
+
+    .featured-courses-header>p {
+        max-width: 650px;
+        margin: 0;
+    }
+
+    .featured-courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .course-image-wrap {
+        height: 210px;
+    }
+
+    .course-card-body {
+        padding: 22px;
+    }
+
+    .course-card-heading {
+        gap: 12px;
+    }
+
+    .course-card-heading h3 {
+        font-size: 20px;
+    }
+
+    .course-features {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .course-bottom {
+        gap: 15px;
+    }
+
+
+    /* -----------------------------------------
+       COURSE MODAL
+    ----------------------------------------- */
+
+    .course-modal {
+        padding: 20px;
+    }
+
+    .course-modal-box {
+        max-width: 760px;
+        max-height: 88vh;
+    }
+
+    .course-modal-header {
+        padding: 32px 32px 25px;
+    }
+
+    .course-modal-header h2 {
+        font-size: 30px;
+        padding-right: 35px;
+    }
+
+    .course-modal-info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .modal-info-item {
+        padding: 18px 20px;
+    }
+
+    .course-modal-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 32px 35px;
+    }
+
+    .course-modal-pricing {
+        width: 100%;
+    }
+
+
+    /* -----------------------------------------
+       BENEFITS
+    ----------------------------------------- */
+
+    .courses-benefits-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .courses-benefits-content {
+        position: static;
+    }
+
+    .courses-benefits-content h2 {
+        max-width: 650px;
+        font-size: 39px;
+    }
+
+    .courses-benefits-content>p {
+        max-width: 650px;
+    }
+
+    .courses-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* -----------------------------------------
+       COMPARISON
+    ----------------------------------------- */
+
+    .course-comparison-header h2 {
+        font-size: 40px;
+    }
+
+    .course-comparison-table {
+        min-width: 720px;
+    }
+
+
+    /* -----------------------------------------
+       FAQ
+    ----------------------------------------- */
+
+    .courses-faq-header h2 {
+        font-size: 40px;
+    }
+
+    .courses-faq-list {
+        max-width: 800px;
+    }
+
+}
+
+
+/* =========================================================
+   iPAD MINI / TABLET
+   768px and below
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .exam-categories-section,
+    .featured-courses-section,
+    .courses-benefits-section,
+    .course-comparison-section,
+    .courses-faq-section {
+        padding: 65px 0;
+    }
+
+
+    /* -----------------------------------------
+       EXAM CATEGORIES
+    ----------------------------------------- */
+
+    .exam-categories-header {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto 38px;
+        text-align: center;
+    }
+
+    .exam-categories-header .section-label {
+        margin-bottom: 12px;
+        font-size: 11px;
+    }
+
+    .exam-categories-header h2 {
+        font-size: 36px;
+        line-height: 1.15;
+    }
+
+    .exam-categories-header p {
+        max-width: 600px;
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .exam-categories-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .exam-category-card {
+        min-height: 335px;
+        padding: 23px;
+        border-radius: 18px;
+    }
+
+    .exam-card-top {
+        margin-bottom: 30px;
+    }
+
+    .exam-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .exam-card-content h3 {
+        font-size: 20px;
+    }
+
+    .exam-card-content p {
+        font-size: 13px;
+    }
+
+    .exam-card-link {
+        padding-top: 22px;
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------
+       FEATURED COURSES
+    ----------------------------------------- */
+
+    .featured-courses-header {
+        margin-bottom: 32px;
+    }
+
+    .featured-courses-header h2 {
+        font-size: 35px;
+        line-height: 1.15;
+    }
+
+    .featured-courses-header>p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .featured-courses-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .course-image-wrap {
+        height: 190px;
+    }
+
+    .course-card-body {
+        padding: 20px;
+    }
+
+    .course-card-heading {
+        display: block;
+    }
+
+    .course-card-heading h3 {
+        max-width: 100%;
+        margin-bottom: 9px;
+        font-size: 19px;
+    }
+
+    .course-rating {
+        font-size: 12px;
+    }
+
+    .course-description {
+        margin: 11px 0 17px;
+        font-size: 13px;
+    }
+
+    .course-features {
+        gap: 9px;
+        padding: 15px 0;
+    }
+
+    .course-features span {
+        font-size: 11px;
+    }
+
+    .course-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+        padding-top: 17px;
+    }
+
+    .view-course-btn {
+        width: 100%;
+    }
+
+
+    /* -----------------------------------------
+       MODAL
+    ----------------------------------------- */
+
+    .course-modal {
+        padding: 15px;
+    }
+
+    .course-modal-box {
+        max-height: 92vh;
+        border-radius: 18px;
+    }
+
+    .course-modal-header {
+        padding: 28px 25px 22px;
+    }
+
+    .course-modal-close {
+        top: 15px;
+        right: 15px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .course-modal-category {
+        font-size: 10px;
+    }
+
+    .course-modal-header h2 {
+        font-size: 27px;
+        line-height: 1.25;
+        padding-right: 30px;
+    }
+
+    .course-modal-header p {
+        font-size: 13px;
+    }
+
+    .course-modal-info {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-info-item {
+        padding: 15px 22px;
+        border-right: 0;
+        border-bottom: 1px solid #ebe6df;
+    }
+
+    .modal-info-item:last-child {
+        border-bottom: 0;
+    }
+
+    .course-modal-content {
+        padding: 25px;
+        gap: 22px;
+    }
+
+    .modal-subjects,
+    .modal-includes {
+        grid-template-columns: 1fr;
+    }
+
+    .course-modal-pricing {
+        padding: 22px;
+    }
+
+
+    /* -----------------------------------------
+       BENEFITS
+    ----------------------------------------- */
+
+    .courses-benefits-layout {
+        gap: 32px;
+    }
+
+    .courses-benefits-content h2 {
+        font-size: 35px;
+    }
+
+    .courses-benefits-content>p {
+        font-size: 14px;
+    }
+
+    .courses-benefits-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .courses-benefit-card {
+        min-height: 190px;
+        padding: 20px;
+        gap: 13px;
+    }
+
+    .courses-benefit-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 15px;
+    }
+
+    .courses-benefit-card h3 {
+        font-size: 16px;
+    }
+
+    .courses-benefit-card p {
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------
+       COMPARISON
+    ----------------------------------------- */
+
+    .course-comparison-header {
+        margin-bottom: 35px;
+    }
+
+    .course-comparison-header h2 {
+        font-size: 36px;
+    }
+
+    .course-comparison-header p {
+        font-size: 14px;
+    }
+
+    .course-comparison-wrap {
+        border-radius: 16px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .course-comparison-table {
+        min-width: 700px;
+    }
+
+
+    /* -----------------------------------------
+       FAQ
+    ----------------------------------------- */
+
+    .courses-faq-header {
+        margin-bottom: 35px;
+    }
+
+    .courses-faq-header h2 {
+        font-size: 36px;
+    }
+
+    .courses-faq-header p {
+        font-size: 14px;
+    }
+
+    .courses-faq-list {
+        border-radius: 16px;
+    }
+
+    .courses-faq-question {
+        padding: 19px 20px;
+        font-size: 14px;
+    }
+
+    .courses-faq-answer {
+        padding: 0 20px 20px;
+    }
+
+    .courses-faq-answer p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   767px and below
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* Prevent accidental horizontal page overflow */
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    .exam-categories-section,
+    .featured-courses-section,
+    .courses-benefits-section,
+    .course-comparison-section,
+    .courses-faq-section {
+        padding: 55px 0;
+    }
+
+
+    /* -----------------------------------------
+       EXAM CATEGORIES
+    ----------------------------------------- */
+
+    .exam-categories-header {
+        max-width: 100%;
+        margin-bottom: 32px;
+        padding: 0 5px;
+    }
+
+    .exam-categories-header h2 {
+        font-size: 31px;
+        line-height: 1.16;
+    }
+
+    .exam-categories-header p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .exam-categories-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .exam-category-card {
+        min-height: auto;
+        padding: 22px;
+    }
+
+    .exam-card-top {
+        margin-bottom: 25px;
+    }
+
+    .exam-card-content h3 {
+        font-size: 21px;
+    }
+
+    .exam-card-content p {
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------
+       FEATURED COURSES
+    ----------------------------------------- */
+
+    .featured-courses-header {
+        gap: 14px;
+        margin-bottom: 28px;
+    }
+
+    .featured-courses-header h2 {
+        font-size: 31px;
+    }
+
+    .featured-courses-header>p {
+        font-size: 14px;
+    }
+
+    .featured-courses-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .course-image-wrap {
+        height: 215px;
+    }
+
+    .course-card-body {
+        padding: 21px;
+    }
+
+    .course-card-heading {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .course-card-heading h3 {
+        font-size: 20px;
+    }
+
+    .course-description {
+        font-size: 13px;
+    }
+
+    .course-features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .course-bottom {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .view-course-btn {
+        width: auto;
+        min-width: 120px;
+    }
+
+
+    /* -----------------------------------------
+       BENEFITS
+    ----------------------------------------- */
+
+    .courses-benefits-content h2 {
+        font-size: 31px;
+    }
+
+    .courses-benefits-content>p {
+        font-size: 14px;
+    }
+
+    .courses-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .courses-benefit-card {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .courses-benefit-card h3 {
+        font-size: 17px;
+    }
+
+    .courses-benefit-card p {
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------
+       COMPARISON
+    ----------------------------------------- */
+
+    .course-comparison-header h2 {
+        font-size: 31px;
+    }
+
+    .course-comparison-header p {
+        font-size: 14px;
+    }
+
+    .course-comparison-table {
+        min-width: 680px;
+    }
+
+
+    /* -----------------------------------------
+       FAQ
+    ----------------------------------------- */
+
+    .courses-faq-header h2 {
+        font-size: 31px;
+    }
+
+    .courses-faq-header p {
+        font-size: 14px;
+    }
+
+    .courses-faq-question {
+        padding: 18px;
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .courses-faq-question i {
+        width: 28px;
+        height: 28px;
+    }
+
+    .courses-faq-answer {
+        padding: 0 18px 19px;
+    }
+
+    .courses-faq-answer p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   575px and below
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .exam-categories-section,
+    .featured-courses-section,
+    .courses-benefits-section,
+    .course-comparison-section,
+    .courses-faq-section {
+        padding: 48px 0;
+    }
+
+
+    /* EXAM */
+
+    .exam-categories-header h2 {
+        font-size: 28px;
+    }
+
+    .exam-categories-header p {
+        font-size: 13px;
+    }
+
+    .exam-category-card {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .exam-card-top {
+        margin-bottom: 22px;
+    }
+
+    .exam-icon {
+        width: 45px;
+        height: 45px;
+        border-radius: 12px;
+        font-size: 17px;
+    }
+
+
+    /* FEATURED */
+
+    .featured-courses-header h2 {
+        font-size: 28px;
+    }
+
+    .course-image-wrap {
+        height: 200px;
+    }
+
+    .course-card-body {
+        padding: 19px;
+    }
+
+    .course-card-heading h3 {
+        font-size: 18px;
+    }
+
+    .course-features {
+        grid-template-columns: 1fr;
+    }
+
+    .course-bottom {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .view-course-btn {
+        width: 100%;
+    }
+
+
+    /* BENEFITS */
+
+    .courses-benefits-content h2 {
+        font-size: 28px;
+    }
+
+    .courses-benefit-card {
+        padding: 18px;
+    }
+
+
+    /* MODAL */
+
+    .course-modal {
+        padding: 10px;
+    }
+
+    .course-modal-box {
+        max-height: 94vh;
+        border-radius: 16px;
+    }
+
+    .course-modal-header {
+        padding: 24px 20px 20px;
+    }
+
+    .course-modal-header h2 {
+        font-size: 24px;
+    }
+
+    .course-modal-header p {
+        font-size: 12px;
+    }
+
+    .course-modal-content {
+        padding: 20px;
+    }
+
+    .course-modal-pricing {
+        padding: 19px;
+    }
+
+    .modal-price strong {
+        font-size: 28px;
+    }
+
+
+    /* COMPARISON */
+
+    .course-comparison-header h2 {
+        font-size: 28px;
+    }
+
+    .course-comparison-table {
+        min-width: 650px;
+    }
+
+
+    /* FAQ */
+
+    .courses-faq-header h2 {
+        font-size: 28px;
+    }
+
+    .courses-faq-question {
+        padding: 16px;
+        font-size: 13px;
+    }
+
+    .courses-faq-answer {
+        padding: 0 16px 18px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   400px and below
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .exam-categories-section,
+    .featured-courses-section,
+    .courses-benefits-section,
+    .course-comparison-section,
+    .courses-faq-section {
+        padding: 42px 0;
+    }
+
+
+    /* EXAM */
+
+    .exam-categories-header h2 {
+        font-size: 25px;
+    }
+
+    .exam-category-card {
+        padding: 18px;
+    }
+
+    .exam-card-content h3 {
+        font-size: 19px;
+    }
+
+
+    /* FEATURED */
+
+    .featured-courses-header h2 {
+        font-size: 25px;
+    }
+
+    .course-image-wrap {
+        height: 185px;
+    }
+
+    .course-card-body {
+        padding: 17px;
+    }
+
+    .course-card-heading h3 {
+        font-size: 17px;
+    }
+
+    .course-description {
+        font-size: 12px;
+    }
+
+
+    /* BENEFITS */
+
+    .courses-benefits-content h2 {
+        font-size: 25px;
+    }
+
+    .courses-benefit-card {
+        gap: 12px;
+        padding: 17px;
+    }
+
+    .courses-benefit-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* MODAL */
+
+    .course-modal-header h2 {
+        font-size: 22px;
+    }
+
+    .modal-info-item {
+        padding: 14px 18px;
+    }
+
+    .course-modal-content {
+        padding: 18px;
+    }
+
+
+    /* FAQ */
+
+    .courses-faq-header h2 {
+        font-size: 25px;
+    }
+
+}
+
+/* =========================================================
+   COURSE COMPARISON TABLE
+   iPad Mini + Mobile — NO HORIZONTAL SCROLL
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .course-comparison-wrap {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .course-comparison-table {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .comparison-row {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        grid-template-columns:
+            1.65fr repeat(4, 1fr) !important;
+
+        box-sizing: border-box !important;
+    }
+
+    .comparison-row>div {
+        min-width: 0 !important;
+        width: 100% !important;
+
+        padding: 14px 8px !important;
+
+        font-size: 11px !important;
+
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    .comparison-row .comparison-feature {
+        padding-left: 12px !important;
+        padding-right: 8px !important;
+
+        justify-content: flex-start !important;
+        text-align: left !important;
+
+        white-space: normal !important;
+    }
+
+    .comparison-row.comparison-header {
+        min-height: 58px !important;
+    }
+
+    .comparison-header>div {
+        font-size: 8px !important;
+        letter-spacing: 0.7px !important;
+        white-space: nowrap !important;
+    }
+
+    .comparison-row i {
+        font-size: 11px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE — EXTRA COMPACT BUT FULL TABLE VISIBLE
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .course-comparison-wrap {
+        width: 100% !important;
+        overflow: hidden !important;
+        border-radius: 15px !important;
+    }
+
+    .course-comparison-table {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .comparison-row {
+        grid-template-columns:
+            1.55fr repeat(4, 1fr) !important;
+
+        min-height: 56px !important;
+    }
+
+    .comparison-row>div {
+        padding: 12px 5px !important;
+        font-size: 10px !important;
+    }
+
+    .comparison-row .comparison-feature {
+        padding-left: 10px !important;
+        padding-right: 5px !important;
+
+        font-size: 10px !important;
+    }
+
+    .comparison-row.comparison-header {
+        min-height: 55px !important;
+    }
+
+    .comparison-header>div {
+        font-size: 7px !important;
+        letter-spacing: 0.5px !important;
+    }
+
+    .comparison-row i {
+        font-size: 10px !important;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .comparison-row {
+        grid-template-columns:
+            1.5fr repeat(4, 1fr) !important;
+    }
+
+    .comparison-row>div {
+        padding: 11px 4px !important;
+        font-size: 9px !important;
+    }
+
+    .comparison-row .comparison-feature {
+        padding-left: 8px !important;
+        font-size: 9px !important;
+    }
+
+    .comparison-header>div {
+        font-size: 6.5px !important;
+    }
+
+    .comparison-row i {
+        font-size: 9px !important;
+    }
+}
+
+/* =========================================================
+   PREPVERA COURSES — DARK MODE
+   STRONG OVERRIDE
+========================================================= */
+
+html.dark-mode .exam-categories-section,
+body.dark-mode .exam-categories-section {
+    background: #12101a !important;
+}
+
+html.dark-mode .exam-categories-header h2,
+body.dark-mode .exam-categories-header h2 {
+    color: #f8f6f1 !important;
+}
+
+html.dark-mode .exam-categories-header p,
+body.dark-mode .exam-categories-header p {
+    color: #c4becd !important;
+}
+
+html.dark-mode .exam-category-card,
+body.dark-mode .exam-category-card {
+    background: #1b1825 !important;
+    border-color: #302b3d !important;
+    box-shadow: none !important;
+}
+
+html.dark-mode .exam-number,
+body.dark-mode .exam-number,
+html.dark-mode .exam-card-label,
+body.dark-mode .exam-card-label {
+    color: #a99bcf !important;
+}
+
+html.dark-mode .exam-icon,
+body.dark-mode .exam-icon {
+    background: #29243a !important;
+    color: #cfc3ee !important;
+}
+
+html.dark-mode .exam-card-content h3,
+body.dark-mode .exam-card-content h3 {
+    color: #f7f4fa !important;
+}
+
+html.dark-mode .exam-card-content p,
+body.dark-mode .exam-card-content p {
+    color: #c4becd !important;
+}
+
+html.dark-mode .exam-card-link,
+body.dark-mode .exam-card-link {
+    color: #cfc3ee !important;
+}
+
+
+/* =========================================================
+   FEATURED COURSES
+========================================================= */
+
+html.dark-mode .featured-courses-section,
+body.dark-mode .featured-courses-section {
+    background: #12101a !important;
+}
+
+html.dark-mode .featured-courses-header h2,
+body.dark-mode .featured-courses-header h2 {
+    color: #f8f6f1 !important;
+}
+
+html.dark-mode .featured-courses-header>p,
+body.dark-mode .featured-courses-header>p {
+    color: #c4becd !important;
+}
+
+html.dark-mode .course-card,
+body.dark-mode .course-card {
+    background: #1b1825 !important;
+    border-color: #302b3d !important;
+}
+
+html.dark-mode .course-card-heading h3,
+body.dark-mode .course-card-heading h3 {
+    color: #f7f4fa !important;
+}
+
+html.dark-mode .course-description,
+body.dark-mode .course-description {
+    color: #c4becd !important;
+}
+
+html.dark-mode .course-features,
+body.dark-mode .course-features {
+    border-top-color: #302b3d !important;
+    border-bottom-color: #302b3d !important;
+}
+
+html.dark-mode .course-features span,
+body.dark-mode .course-features span {
+    color: #c4becd !important;
+}
+
+html.dark-mode .course-features i,
+body.dark-mode .course-features i,
+html.dark-mode .course-rating,
+body.dark-mode .course-rating {
+    color: #cfc3ee !important;
+}
+
+html.dark-mode .course-price strong,
+body.dark-mode .course-price strong {
+    color: #f7f4fa !important;
+}
+
+html.dark-mode .course-price span,
+body.dark-mode .course-price span {
+    color: #aaa3b1 !important;
+}
+
+html.dark-mode .course-category,
+body.dark-mode .course-category {
+    background: #f2eadc !important;
+    color: #352a5e !important;
+}
+
+html.dark-mode .courses-view-all a,
+body.dark-mode .courses-view-all a {
+    color: #cfc3ee !important;
+}
+
+
+/* =========================================================
+   COURSE POPUP
+========================================================= */
+
+html.dark-mode .course-modal-overlay,
+body.dark-mode .course-modal-overlay {
+    background: rgba(5, 4, 9, 0.82) !important;
+}
+
+html.dark-mode .course-modal-box,
+body.dark-mode .course-modal-box {
+    background: #1a1723 !important;
+    border-color: #332d40 !important;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55) !important;
+}
+
+html.dark-mode .course-modal-header,
+body.dark-mode .course-modal-header {
+    border-bottom-color: #332d40 !important;
+}
+
+html.dark-mode .course-modal-header h2,
+body.dark-mode .course-modal-header h2 {
+    color: #f8f6f1 !important;
+}
+
+html.dark-mode .course-modal-header p,
+body.dark-mode .course-modal-header p {
+    color: #c4becd !important;
+}
+
+html.dark-mode .course-modal-category,
+body.dark-mode .course-modal-category {
+    color: #b9a9dc !important;
+}
+
+html.dark-mode .course-modal-close,
+body.dark-mode .course-modal-close {
+    background: #24202e !important;
+    border-color: #3a3447 !important;
+    color: #d8d0e3 !important;
+}
+
+html.dark-mode .course-modal-info,
+body.dark-mode .course-modal-info {
+    border-bottom-color: #332d40 !important;
+}
+
+html.dark-mode .modal-info-item,
+body.dark-mode .modal-info-item {
+    border-right-color: #332d40 !important;
+}
+
+html.dark-mode .modal-info-item>i,
+body.dark-mode .modal-info-item>i {
+    background: #29243a !important;
+    color: #cfc3ee !important;
+}
+
+html.dark-mode .modal-info-item span,
+body.dark-mode .modal-info-item span {
+    color: #938b9d !important;
+}
+
+html.dark-mode .modal-info-item strong,
+body.dark-mode .modal-info-item strong {
+    color: #f0ecf4 !important;
+}
+
+html.dark-mode .modal-detail-block h3,
+body.dark-mode .modal-detail-block h3 {
+    color: #f2eef5 !important;
+}
+
+html.dark-mode .modal-subjects span,
+body.dark-mode .modal-subjects span {
+    background: #24202e !important;
+    border-color: #342e40 !important;
+    color: #c9c1d1 !important;
+}
+
+html.dark-mode .modal-subjects i,
+body.dark-mode .modal-subjects i {
+    color: #cfc3ee !important;
+}
+
+html.dark-mode .modal-includes li,
+body.dark-mode .modal-includes li {
+    color: #c4becd !important;
+}
+
+html.dark-mode .modal-includes li i,
+body.dark-mode .modal-includes li i {
+    color: #cfc3ee !important;
+}
+
+html.dark-mode .course-modal-pricing,
+body.dark-mode .course-modal-pricing {
+    background: #24202e !important;
+    border-color: #393345 !important;
+}
+
+html.dark-mode .pricing-label,
+body.dark-mode .pricing-label {
+    color: #a59dab !important;
+}
+
+html.dark-mode .modal-price strong,
+body.dark-mode .modal-price strong {
+    color: #d0c2ee !important;
+}
+
+html.dark-mode .modal-price del,
+body.dark-mode .modal-price del {
+    color: #908995 !important;
+}
+
+html.dark-mode .modal-discount,
+body.dark-mode .modal-discount {
+    color: #bdb4c7 !important;
+}
+
+html.dark-mode .modal-validity,
+body.dark-mode .modal-validity {
+    border-top-color: #393345 !important;
+    border-bottom-color: #393345 !important;
+}
+
+html.dark-mode .modal-validity>i,
+body.dark-mode .modal-validity>i {
+    color: #cfc3ee !important;
+}
+
+html.dark-mode .modal-validity span,
+body.dark-mode .modal-validity span {
+    color: #938b9d !important;
+}
+
+html.dark-mode .modal-validity strong,
+body.dark-mode .modal-validity strong {
+    color: #f0ecf4 !important;
+}
+
+html.dark-mode .modal-note,
+body.dark-mode .modal-note {
+    color: #918997 !important;
+}
+
+
+/* =========================================================
+   WHAT YOU GET
+========================================================= */
+
+html.dark-mode .courses-benefits-section,
+body.dark-mode .courses-benefits-section {
+    background: #12101a !important;
+}
+
+html.dark-mode .courses-benefits-content h2,
+body.dark-mode .courses-benefits-content h2 {
+    color: #f7f3f9 !important;
+}
+
+html.dark-mode .courses-benefits-content>p,
+body.dark-mode .courses-benefits-content>p {
+    color: #c4becd !important;
+}
+
+html.dark-mode .courses-benefit-card,
+body.dark-mode .courses-benefit-card {
+    background: #1b1825 !important;
+    border-color: #302b3d !important;
+}
+
+html.dark-mode .courses-benefit-icon,
+body.dark-mode .courses-benefit-icon {
+    background: #29243a !important;
+    color: #cfc3ee !important;
+}
+
+html.dark-mode .benefit-number,
+body.dark-mode .benefit-number {
+    color: #938b9d !important;
+}
+
+html.dark-mode .courses-benefit-card h3,
+body.dark-mode .courses-benefit-card h3 {
+    color: #f2eef5 !important;
+}
+
+html.dark-mode .courses-benefit-card p,
+body.dark-mode .courses-benefit-card p {
+    color: #c4becd !important;
+}
+
+
+/* =========================================================
+   COURSE COMPARISON
+========================================================= */
+
+html.dark-mode .course-comparison-section,
+body.dark-mode .course-comparison-section {
+    background: #17141e !important;
+}
+
+html.dark-mode .course-comparison-header h2,
+body.dark-mode .course-comparison-header h2 {
+    color: #f7f3f9 !important;
+}
+
+html.dark-mode .course-comparison-header p,
+body.dark-mode .course-comparison-header p {
+    color: #c4becd !important;
+}
+
+html.dark-mode .course-comparison-wrap,
+body.dark-mode .course-comparison-wrap {
+    background: #1b1825 !important;
+    border-color: #342e40 !important;
+}
+
+html.dark-mode .comparison-row,
+body.dark-mode .comparison-row {
+    border-bottom-color: #302b3d !important;
+}
+
+html.dark-mode .comparison-row>div,
+body.dark-mode .comparison-row>div {
+    color: #c9c1d1 !important;
+    border-right-color: #302b3d !important;
+}
+
+html.dark-mode .comparison-row .comparison-feature,
+body.dark-mode .comparison-row .comparison-feature {
+    color: #f0ecf4 !important;
+}
+
+html.dark-mode .comparison-row.comparison-header,
+body.dark-mode .comparison-row.comparison-header {
+    background: #29243a !important;
+}
+
+html.dark-mode .comparison-header>div,
+body.dark-mode .comparison-header>div {
+    color: #d2c6ed !important;
+}
+
+html.dark-mode .comparison-row i,
+body.dark-mode .comparison-row i {
+    color: #cfc3ee !important;
+}
+
+html.dark-mode .comparison-row .fa-minus,
+body.dark-mode .comparison-row .fa-minus {
+    color: #777180 !important;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+html.dark-mode .courses-faq-section,
+body.dark-mode .courses-faq-section {
+    background: #12101a !important;
+}
+
+html.dark-mode .courses-faq-header h2,
+body.dark-mode .courses-faq-header h2 {
+    color: #f7f3f9 !important;
+}
+
+html.dark-mode .courses-faq-header p,
+body.dark-mode .courses-faq-header p {
+    color: #c4becd !important;
+}
+
+html.dark-mode .courses-faq-list,
+body.dark-mode .courses-faq-list {
+    background: #1b1825 !important;
+    border-color: #302b3d !important;
+}
+
+html.dark-mode .courses-faq-item,
+body.dark-mode .courses-faq-item {
+    border-bottom-color: #302b3d !important;
+}
+
+html.dark-mode .courses-faq-question,
+body.dark-mode .courses-faq-question {
+    background: #1b1825 !important;
+    color: #f0ecf4 !important;
+}
+
+html.dark-mode .courses-faq-question:hover,
+body.dark-mode .courses-faq-question:hover {
+    background: #24202e !important;
+}
+
+html.dark-mode .courses-faq-question i,
+body.dark-mode .courses-faq-question i {
+    background: #29243a !important;
+    color: #cfc3ee !important;
+}
+
+html.dark-mode .courses-faq-answer p,
+body.dark-mode .courses-faq-answer p {
+    color: #c4becd !important;
+}
+
+html.dark-mode .courses-faq-item.active .courses-faq-question,
+body.dark-mode .courses-faq-item.active .courses-faq-question {
+    color: #d0c2ee !important;
+}
+
+html.dark-mode .courses-faq-item.active .courses-faq-question i,
+body.dark-mode .courses-faq-item.active .courses-faq-question i {
+    background: #352a5e !important;
+    color: #ffffff !important;
+}
+
 /*****************************************************Academy Pages**************************************************/
 
 /***************************Faculty Page****************************/
@@ -11483,7 +13767,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 66px);
+    font-size: 42px;
 
     line-height: 1.05;
 
@@ -11659,7 +13943,7 @@ body {
 
     border-radius: 50%;
 
-    font-size: 12px;
+    font-size: 14px;
 
     text-decoration: none;
 
@@ -11669,7 +13953,6 @@ body {
 .faculty-featured-info>a:hover {
     background: var(--white);
 
-    transform: rotate(45deg);
 }
 
 
@@ -11785,7 +14068,7 @@ body {
 
     border-radius: 50%;
 
-    font-size: 9px;
+    font-size: 12px;
 
     text-decoration: none;
 
@@ -11798,8 +14081,6 @@ body {
     color: var(--secondary-color);
 
     border-color: var(--primary-color);
-
-    transform: rotate(45deg);
 }
 
 
@@ -11884,7 +14165,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 66px);
+    font-size: 42px;
 
     line-height: 1.05;
 
@@ -12281,7 +14562,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 66px);
+    font-size: 42px;
 
     line-height: 1.04;
 
@@ -12530,7 +14811,6 @@ body {
 
     border-color: var(--primary-color);
 
-    transform: rotate(45deg);
 }
 
 
@@ -12728,7 +15008,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.5vw, 62px);
+    font-size: 42px;
 
     line-height: 1.04;
 
@@ -13002,7 +15282,7 @@ body {
 
     color: var(--white);
 
-    font-size: clamp(46px, 5.5vw, 74px);
+    font-size: 42px;
 
     line-height: 1.04;
 
@@ -13207,7 +15487,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 66px);
+    font-size: 42px;
 
     line-height: 1.05;
 
@@ -13593,7 +15873,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 66px);
+    font-size: 42px;
 
     line-height: 1.04;
 
@@ -13871,7 +16151,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 66px);
+    font-size: 42px;
 
     line-height: 1.05;
 
@@ -14129,7 +16409,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 66px);
+    font-size: 42px;
 
     line-height: 1.05;
 
@@ -14676,7 +16956,7 @@ body {
 
     color: var(--white);
 
-    font-size: clamp(46px, 5.8vw, 76px);
+    font-size: 42px;
 
     line-height: 1.04;
 
@@ -14844,7 +17124,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 66px);
+    font-size: 42px;
 
     line-height: 1.05;
 
@@ -15357,7 +17637,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 66px);
+    font-size: 42px;
 
     line-height: 1.05;
 
@@ -15740,7 +18020,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.8vw, 66px);
+    font-size: 42px;
 
     line-height: 1.05;
 
@@ -16042,7 +18322,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.5vw, 62px);
+    font-size: 42px;
 
     line-height: 1.05;
 
@@ -16279,7 +18559,7 @@ body {
 
     color: var(--black);
 
-    font-size: clamp(42px, 4.5vw, 62px);
+    font-size: 42px;
 
     line-height: 1.05;
 
@@ -16560,7 +18840,7 @@ body {
 
     color: var(--white);
 
-    font-size: clamp(46px, 5.8vw, 76px);
+    font-size: 42px;
 
     line-height: 1.04;
 
@@ -16696,2274 +18976,6 @@ body {
 
 .plans-final-cta-secondary:hover i {
     transform: translateX(5px);
-}
-
-/*****************************************************Preparation page*********************************************************************/
-
-/* =========================================
-   PREPARATION - BUILD YOUR PLAN
-========================================= */
-
-.prep-plan-section {
-    padding: 120px 0;
-
-    background: var(--white);
-
-    overflow: hidden;
-}
-
-
-/* =========================================
-   HEADING
-========================================= */
-
-.prep-plan-heading {
-    max-width: 780px;
-
-    margin: 0 auto 65px;
-
-    text-align: center;
-}
-
-.prep-plan-heading h2 {
-    margin: 12px 0 18px;
-
-    color: var(--black);
-
-    font-size: clamp(42px, 4.8vw, 66px);
-
-    line-height: 1.05;
-
-    letter-spacing: -1px;
-}
-
-.prep-plan-heading h2 span {
-    color: var(--primary-color);
-}
-
-.prep-plan-heading p {
-    max-width: 650px;
-
-    margin: 0 auto;
-
-    color: var(--text-color);
-
-    font-size: 17px;
-
-    line-height: 1.8;
-}
-
-
-/* =========================================
-   MAIN WRAPPER
-========================================= */
-
-.prep-plan-wrapper {
-    display: grid;
-
-    grid-template-columns: 0.95fr 1.05fr;
-
-    gap: 80px;
-
-    align-items: center;
-}
-
-
-/* =========================================
-   VISUAL
-========================================= */
-
-.prep-plan-visual {
-    position: relative;
-
-    min-height: 620px;
-}
-
-.prep-plan-image {
-    width: 88%;
-    height: 570px;
-
-    overflow: hidden;
-
-    border-radius: 30px 30px 30px 0;
-}
-
-.prep-plan-image img {
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    transition: transform 0.8s ease;
-}
-
-.prep-plan-image:hover img {
-    transform: scale(1.04);
-}
-
-
-/* =========================================
-   IMAGE LABEL
-========================================= */
-
-.prep-plan-image-label {
-    position: absolute;
-
-    right: 0;
-    bottom: 25px;
-
-    width: 260px;
-
-    padding: 22px;
-
-    background: var(--primary-color);
-
-    border-radius: 15px;
-
-    box-shadow:
-        0 20px 45px rgba(53, 42, 94, 0.16);
-}
-
-.prep-plan-image-label span {
-    display: block;
-
-    margin-bottom: 7px;
-
-    color: var(--secondary-color);
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-}
-
-.prep-plan-image-label strong {
-    display: block;
-
-    color: var(--white);
-
-    font-size: 18px;
-
-    line-height: 1.4;
-}
-
-
-/* =========================================
-   CONTENT
-========================================= */
-
-.prep-plan-content {
-    display: flex;
-
-    flex-direction: column;
-}
-
-
-/* =========================================
-   ITEM
-========================================= */
-
-.prep-plan-item {
-    display: grid;
-
-    grid-template-columns: 50px 1fr;
-
-    gap: 22px;
-
-    padding: 27px 0;
-
-    border-bottom: 1px solid var(--border-color);
-}
-
-.prep-plan-item:first-child {
-    padding-top: 0;
-}
-
-
-/* =========================================
-   NUMBER
-========================================= */
-
-.prep-plan-number {
-    width: 42px;
-    height: 42px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: var(--secondary-color);
-
-    color: var(--primary-color);
-
-    border-radius: 50%;
-
-    font-size: 11px;
-    font-weight: 800;
-}
-
-
-/* =========================================
-   ITEM CONTENT
-========================================= */
-
-.prep-plan-item-content>span {
-    display: block;
-
-    margin-bottom: 6px;
-
-    color: var(--primary-color);
-
-    font-size: 10px;
-    font-weight: 700;
-
-    letter-spacing: 1.4px;
-}
-
-.prep-plan-item-content h3 {
-    margin: 0 0 8px;
-
-    color: var(--black);
-
-    font-size: 23px;
-
-    line-height: 1.3;
-}
-
-.prep-plan-item-content p {
-    max-width: 600px;
-
-    margin: 0;
-
-    color: var(--text-color);
-
-    font-size: 15px;
-
-    line-height: 1.75;
-}
-
-
-/* =========================================
-   NOTE
-========================================= */
-
-.prep-plan-note {
-    display: flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    margin-top: 25px;
-
-    padding: 15px 18px;
-
-    background: var(--light-bg);
-
-    border-radius: 10px;
-}
-
-.prep-plan-note i {
-    color: var(--primary-color);
-
-    font-size: 14px;
-}
-
-.prep-plan-note span {
-    color: var(--text-color);
-
-    font-size: 13px;
-
-    line-height: 1.5;
-}
-
-
-/* =========================================
-   PREPARATION - STUDY FOCUS
-========================================= */
-
-.prep-focus-section {
-    padding: 120px 0;
-
-    background: var(--light-bg);
-
-    overflow: hidden;
-}
-
-
-/* =========================================
-   HEADING
-========================================= */
-
-.prep-focus-heading {
-    max-width: 820px;
-
-    margin: 0 auto 65px;
-
-    text-align: center;
-}
-
-.prep-focus-heading h2 {
-    margin: 12px 0 18px;
-
-    color: var(--black);
-
-    font-size: clamp(42px, 4.8vw, 66px);
-
-    line-height: 1.05;
-
-    letter-spacing: -1px;
-}
-
-.prep-focus-heading h2 span {
-    display: block;
-
-    color: var(--primary-color);
-}
-
-.prep-focus-heading p {
-    max-width: 650px;
-
-    margin: 0 auto;
-
-    color: var(--text-color);
-
-    font-size: 17px;
-
-    line-height: 1.8;
-}
-
-
-/* =========================================
-   MAIN WRAPPER
-========================================= */
-
-.prep-focus-wrapper {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 80px;
-
-    align-items: center;
-}
-
-
-/* =========================================
-   VISUAL
-========================================= */
-
-.prep-focus-visual {
-    position: relative;
-
-    min-height: 590px;
-}
-
-.prep-focus-visual-image {
-    width: 88%;
-    height: 560px;
-
-    overflow: hidden;
-
-    border-radius: 28px 28px 28px 0;
-}
-
-.prep-focus-visual-image img {
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    transition: transform 0.8s ease;
-}
-
-.prep-focus-visual:hover .prep-focus-visual-image img {
-    transform: scale(1.04);
-}
-
-
-/* =========================================
-   VISUAL CARD
-========================================= */
-
-.prep-focus-visual-card {
-    position: absolute;
-
-    right: 0;
-    bottom: 20px;
-
-    width: 250px;
-
-    padding: 23px;
-
-    background: var(--primary-color);
-
-    border-radius: 15px;
-
-    box-shadow:
-        0 20px 45px rgba(53, 42, 94, 0.16);
-}
-
-.prep-focus-visual-card span {
-    display: block;
-
-    margin-bottom: 8px;
-
-    color: var(--secondary-color);
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-}
-
-.prep-focus-visual-card strong {
-    display: block;
-
-    color: var(--white);
-
-    font-size: 18px;
-
-    line-height: 1.4;
-}
-
-
-/* =========================================
-   CONTENT
-========================================= */
-
-.prep-focus-content {
-    max-width: 620px;
-}
-
-
-/* =========================================
-   INTRO
-========================================= */
-
-.prep-focus-intro {
-    padding-bottom: 25px;
-
-    border-bottom: 1px solid var(--border-color);
-}
-
-.prep-focus-intro>span {
-    display: block;
-
-    margin-bottom: 8px;
-
-    color: var(--primary-color);
-
-    font-size: 10px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-}
-
-.prep-focus-intro h3 {
-    max-width: 520px;
-
-    margin: 0;
-
-    color: var(--black);
-
-    font-size: 31px;
-
-    line-height: 1.25;
-}
-
-
-/* =========================================
-   FOCUS ITEMS
-========================================= */
-
-.prep-focus-item {
-    display: grid;
-
-    grid-template-columns: 55px 1fr;
-
-    gap: 20px;
-
-    padding: 25px 0;
-
-    border-bottom: 1px solid var(--border-color);
-}
-
-.prep-focus-icon {
-    width: 48px;
-    height: 48px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: var(--white);
-
-    color: var(--primary-color);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 50%;
-
-    font-size: 15px;
-
-    transition: var(--transition);
-}
-
-.prep-focus-item:hover .prep-focus-icon {
-    background: var(--primary-color);
-
-    color: var(--secondary-color);
-
-    border-color: var(--primary-color);
-
-    transform: scale(1.06);
-}
-
-
-/* =========================================
-   ITEM CONTENT
-========================================= */
-
-.prep-focus-item span {
-    display: block;
-
-    margin-bottom: 5px;
-
-    color: var(--primary-color);
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 1.4px;
-}
-
-.prep-focus-item h4 {
-    margin: 0 0 7px;
-
-    color: var(--black);
-
-    font-size: 21px;
-
-    line-height: 1.3;
-}
-
-.prep-focus-item p {
-    max-width: 540px;
-
-    margin: 0;
-
-    color: var(--text-color);
-
-    font-size: 14px;
-
-    line-height: 1.7;
-}
-
-/* =========================================
-   PREPARATION - PRACTICE HUB
-========================================= */
-
-.prep-practice-section {
-    padding: 120px 0;
-
-    background: var(--white);
-
-    overflow: hidden;
-}
-
-
-/* =========================================
-   HEADING
-========================================= */
-
-.prep-practice-heading {
-    max-width: 820px;
-
-    margin: 0 auto 65px;
-
-    text-align: center;
-}
-
-.prep-practice-heading h2 {
-    margin: 12px 0 18px;
-
-    color: var(--black);
-
-    font-size: clamp(42px, 4.8vw, 66px);
-
-    line-height: 1.05;
-
-    letter-spacing: -1px;
-}
-
-.prep-practice-heading h2 span {
-    color: var(--primary-color);
-}
-
-.prep-practice-heading p {
-    max-width: 650px;
-
-    margin: 0 auto;
-
-    color: var(--text-color);
-
-    font-size: 17px;
-
-    line-height: 1.8;
-}
-
-
-/* =========================================
-   MAIN GRID
-========================================= */
-
-.prep-practice-grid {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 20px;
-}
-
-
-/* =========================================
-   PYQ PANEL
-========================================= */
-
-.prep-practice-pyq {
-    padding: 38px;
-
-    background: var(--light-bg);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 24px;
-}
-
-
-/* =========================================
-   PYQ TOP
-========================================= */
-
-.prep-practice-pyq-top {
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    margin-bottom: 35px;
-}
-
-.prep-practice-pyq-top>span {
-    color: var(--primary-color);
-
-    font-size: 10px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-}
-
-.prep-practice-pyq-icon {
-    width: 52px;
-    height: 52px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: var(--primary-color);
-
-    color: var(--secondary-color);
-
-    border-radius: 50%;
-
-    font-size: 17px;
-}
-
-
-/* =========================================
-   PYQ CONTENT
-========================================= */
-
-.prep-practice-pyq-content h3 {
-    max-width: 480px;
-
-    margin: 0 0 13px;
-
-    color: var(--black);
-
-    font-size: 34px;
-
-    line-height: 1.2;
-}
-
-.prep-practice-pyq-content p {
-    max-width: 560px;
-
-    margin: 0 0 28px;
-
-    color: var(--text-color);
-
-    font-size: 14px;
-
-    line-height: 1.75;
-}
-
-
-/* =========================================
-   PYQ LIST
-========================================= */
-
-.prep-pyq-list {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 7px;
-}
-
-.prep-pyq-row {
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 13px 14px;
-
-    background: var(--white);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 9px;
-
-    transition: var(--transition);
-}
-
-.prep-pyq-row:hover {
-    border-color: var(--primary-color);
-
-    transform: translateX(4px);
-}
-
-.prep-pyq-row strong {
-    display: block;
-
-    margin-bottom: 3px;
-
-    color: var(--black);
-
-    font-size: 13px;
-}
-
-.prep-pyq-row span {
-    display: block;
-
-    color: var(--text-color);
-
-    font-size: 10px;
-}
-
-.prep-pyq-row a {
-    width: 31px;
-    height: 31px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: var(--light-bg);
-
-    color: var(--primary-color);
-
-    border-radius: 50%;
-
-    font-size: 10px;
-
-    text-decoration: none;
-
-    transition: var(--transition);
-}
-
-.prep-pyq-row a:hover {
-    background: var(--primary-color);
-
-    color: var(--secondary-color);
-}
-
-
-/* =========================================
-   VIEW ALL LINK
-========================================= */
-
-.prep-practice-view-link {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    margin-top: 22px;
-
-    color: var(--primary-color);
-
-    font-size: 13px;
-    font-weight: 700;
-
-    text-decoration: none;
-}
-
-.prep-practice-view-link i {
-    transition: var(--transition);
-}
-
-.prep-practice-view-link:hover i {
-    transform: translateX(5px);
-}
-
-
-/* =========================================
-   TEST COLUMN
-========================================= */
-
-.prep-practice-tests {
-    display: grid;
-
-    grid-template-rows: 1fr 1fr;
-
-    gap: 20px;
-}
-
-
-/* =========================================
-   LIVE TEST
-========================================= */
-
-.prep-live-test {
-    padding: 32px;
-
-    background: var(--primary-color);
-
-    color: var(--white);
-
-    border-radius: 24px;
-}
-
-.prep-test-top {
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 15px;
-}
-
-.prep-live-status {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 7px;
-
-    color: var(--secondary-color);
-
-    font-size: 10px;
-    font-weight: 800;
-
-    letter-spacing: 1.3px;
-}
-
-.prep-live-status span {
-    width: 7px;
-    height: 7px;
-
-    display: block;
-
-    background: var(--secondary-color);
-
-    border-radius: 50%;
-
-    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.08);
-}
-
-.prep-test-top>span {
-    color: rgba(255, 255, 255, 0.45);
-
-    font-size: 9px;
-
-    letter-spacing: 1.2px;
-}
-
-
-/* =========================================
-   LIVE CONTENT
-========================================= */
-
-.prep-live-content {
-    margin-top: 25px;
-}
-
-.prep-live-content h3 {
-    margin: 0 0 8px;
-
-    color: var(--white);
-
-    font-size: 29px;
-
-    line-height: 1.2;
-}
-
-.prep-live-content p {
-    max-width: 500px;
-
-    margin: 0;
-
-    color: rgba(255, 255, 255, 0.68);
-
-    font-size: 13px;
-
-    line-height: 1.65;
-}
-
-
-/* =========================================
-   LIVE DETAILS
-========================================= */
-
-.prep-live-details {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 10px;
-
-    margin-top: 23px;
-
-    padding-top: 18px;
-
-    border-top: 1px solid rgba(255, 255, 255, 0.14);
-}
-
-.prep-live-details span {
-    display: block;
-
-    margin-bottom: 4px;
-
-    color: rgba(255, 255, 255, 0.43);
-
-    font-size: 8px;
-
-    letter-spacing: 1px;
-}
-
-.prep-live-details strong {
-    display: block;
-
-    color: var(--white);
-
-    font-size: 14px;
-}
-
-
-/* =========================================
-   LIVE BUTTON
-========================================= */
-
-.prep-live-button {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 9px;
-
-    margin-top: 22px;
-
-    padding: 11px 15px;
-
-    background: var(--secondary-color);
-
-    color: var(--primary-color);
-
-    border-radius: 7px;
-
-    font-size: 12px;
-    font-weight: 700;
-
-    text-decoration: none;
-
-    transition: var(--transition);
-}
-
-.prep-live-button:hover {
-    background: var(--white);
-
-    color: var(--primary-color);
-}
-
-
-/* =========================================
-   MOCK TEST
-========================================= */
-
-.prep-mock-test {
-    position: relative;
-
-    padding: 32px;
-
-    background: var(--light-bg);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 24px;
-
-    overflow: hidden;
-}
-
-.prep-mock-test::after {
-    content: "";
-
-    position: absolute;
-
-    width: 170px;
-    height: 170px;
-
-    right: -75px;
-    bottom: -75px;
-
-    border: 1px solid rgba(53, 42, 94, 0.08);
-
-    border-radius: 50%;
-}
-
-
-/* =========================================
-   MOCK TOP
-========================================= */
-
-.prep-mock-test .prep-test-top>span {
-    color: var(--primary-color);
-
-    font-size: 10px;
-    font-weight: 700;
-
-    letter-spacing: 1.4px;
-}
-
-.prep-mock-icon {
-    width: 44px;
-    height: 44px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: var(--white);
-
-    color: var(--primary-color);
-
-    border-radius: 50%;
-
-    font-size: 15px;
-}
-
-
-/* =========================================
-   MOCK CONTENT
-========================================= */
-
-.prep-mock-test h3 {
-    max-width: 400px;
-
-    margin: 22px 0 9px;
-
-    color: var(--black);
-
-    font-size: 27px;
-
-    line-height: 1.2;
-}
-
-.prep-mock-test>p {
-    max-width: 520px;
-
-    margin: 0;
-
-    color: var(--text-color);
-
-    font-size: 13px;
-
-    line-height: 1.65;
-}
-
-
-/* =========================================
-   MOCK STATS
-========================================= */
-
-.prep-mock-stats {
-    display: flex;
-
-    gap: 35px;
-
-    margin-top: 21px;
-
-    padding-top: 17px;
-
-    border-top: 1px solid var(--border-color);
-}
-
-.prep-mock-stats strong {
-    display: block;
-
-    margin-bottom: 3px;
-
-    color: var(--primary-color);
-
-    font-size: 18px;
-}
-
-.prep-mock-stats span {
-    display: block;
-
-    color: var(--text-color);
-
-    font-size: 8px;
-    font-weight: 700;
-
-    letter-spacing: 0.8px;
-}
-
-
-/* =========================================
-   MOCK LINK
-========================================= */
-
-.prep-mock-link {
-    position: relative;
-
-    z-index: 2;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    margin-top: 20px;
-
-    color: var(--primary-color);
-
-    font-size: 12px;
-    font-weight: 700;
-
-    text-decoration: none;
-}
-
-.prep-mock-link i {
-    transition: var(--transition);
-}
-
-.prep-mock-link:hover i {
-    transform: translateX(5px);
-}
-
-
-/* =========================================
-   BOTTOM NOTE
-========================================= */
-
-.prep-practice-note {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 10px;
-
-    margin-top: 32px;
-
-    color: var(--text-color);
-
-    text-align: center;
-}
-
-.prep-practice-note i {
-    color: var(--primary-color);
-
-    font-size: 13px;
-}
-
-.prep-practice-note span {
-    font-size: 13px;
-}
-
-/* =========================================
-   PREPARATION - DAILY STUDY PLANNER
-========================================= */
-
-.prep-planner-section {
-    padding: 120px 0;
-
-    background: var(--light-bg);
-
-    overflow: hidden;
-}
-
-
-/* =========================================
-   HEADING
-========================================= */
-
-.prep-planner-heading {
-    max-width: 780px;
-
-    margin: 0 auto 65px;
-
-    text-align: center;
-}
-
-.prep-planner-heading h2 {
-    margin: 12px 0 18px;
-
-    color: var(--black);
-
-    font-size: clamp(42px, 4.8vw, 66px);
-
-    line-height: 1.05;
-
-    letter-spacing: -1px;
-}
-
-.prep-planner-heading h2 span {
-    color: var(--primary-color);
-}
-
-.prep-planner-heading p {
-    max-width: 650px;
-
-    margin: 0 auto;
-
-    color: var(--text-color);
-
-    font-size: 17px;
-
-    line-height: 1.8;
-}
-
-
-/* =========================================
-   MAIN WRAPPER
-========================================= */
-
-.prep-planner-wrapper {
-    display: grid;
-
-    grid-template-columns: 0.75fr 1.25fr;
-
-    gap: 70px;
-
-    padding: 45px;
-
-    background: var(--white);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 26px;
-}
-
-
-/* =========================================
-   INTRO
-========================================= */
-
-.prep-planner-intro {
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-}
-
-.prep-planner-date {
-    margin-bottom: 30px;
-}
-
-.prep-planner-date span {
-    display: block;
-
-    margin-bottom: 6px;
-
-    color: var(--primary-color);
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-}
-
-.prep-planner-date strong {
-    color: var(--black);
-
-    font-size: 14px;
-}
-
-.prep-planner-intro h3 {
-    margin: 0 0 16px;
-
-    color: var(--black);
-
-    font-size: 38px;
-
-    line-height: 1.15;
-
-    letter-spacing: -0.5px;
-}
-
-.prep-planner-intro>p {
-    max-width: 420px;
-
-    margin: 0;
-
-    color: var(--text-color);
-
-    font-size: 15px;
-
-    line-height: 1.75;
-}
-
-
-/* =========================================
-   PROGRESS
-========================================= */
-
-.prep-planner-progress {
-    margin-top: 40px;
-
-    max-width: 400px;
-}
-
-.prep-planner-progress-top {
-    display: flex;
-
-    justify-content: space-between;
-
-    margin-bottom: 9px;
-}
-
-.prep-planner-progress-top span {
-    color: var(--text-color);
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 1.2px;
-}
-
-.prep-planner-progress-top strong {
-    color: var(--primary-color);
-
-    font-size: 12px;
-}
-
-.prep-planner-progress-bar {
-    width: 100%;
-    height: 7px;
-
-    overflow: hidden;
-
-    background: var(--light-bg);
-
-    border-radius: 20px;
-}
-
-.prep-planner-progress-bar span {
-    display: block;
-
-    width: 72%;
-    height: 100%;
-
-    background: var(--primary-color);
-
-    border-radius: inherit;
-}
-
-
-/* =========================================
-   SCHEDULE
-========================================= */
-
-.prep-planner-schedule {
-    position: relative;
-}
-
-.prep-planner-schedule::before {
-    content: "";
-
-    position: absolute;
-
-    top: 24px;
-    bottom: 24px;
-    left: 92px;
-
-    width: 1px;
-
-    background: var(--border-color);
-}
-
-
-/* =========================================
-   ROW
-========================================= */
-
-.prep-planner-row {
-    position: relative;
-
-    display: grid;
-
-    grid-template-columns: 70px 45px 1fr;
-
-    align-items: center;
-
-    min-height: 105px;
-}
-
-
-/* =========================================
-   TIME
-========================================= */
-
-.prep-planner-time {
-    text-align: right;
-}
-
-.prep-planner-time strong {
-    display: block;
-
-    color: var(--black);
-
-    font-size: 16px;
-}
-
-.prep-planner-time span {
-    display: block;
-
-    margin-top: 2px;
-
-    color: var(--text-color);
-
-    font-size: 9px;
-
-    letter-spacing: 1px;
-}
-
-
-/* =========================================
-   DOT
-========================================= */
-
-.prep-planner-dot {
-    position: relative;
-
-    z-index: 2;
-
-    width: 12px;
-    height: 12px;
-
-    margin: 0 auto;
-
-    background: var(--secondary-color);
-
-    border: 3px solid var(--primary-color);
-
-    border-radius: 50%;
-}
-
-
-/* =========================================
-   TASK
-========================================= */
-
-.prep-planner-task {
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 20px;
-
-    margin-left: 18px;
-
-    padding: 18px 20px;
-
-    background: var(--light-bg);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 12px;
-
-    transition: var(--transition);
-}
-
-.prep-planner-task:hover {
-    border-color: var(--primary-color);
-
-    transform: translateX(5px);
-}
-
-.prep-planner-task span {
-    display: block;
-
-    margin-bottom: 4px;
-
-    color: var(--primary-color);
-
-    font-size: 8px;
-    font-weight: 700;
-
-    letter-spacing: 1.3px;
-}
-
-.prep-planner-task h4 {
-    margin: 0 0 4px;
-
-    color: var(--black);
-
-    font-size: 17px;
-}
-
-.prep-planner-task p {
-    margin: 0;
-
-    color: var(--text-color);
-
-    font-size: 12px;
-
-    line-height: 1.5;
-}
-
-.prep-planner-task>i {
-    width: 38px;
-    height: 38px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    background: var(--white);
-
-    color: var(--primary-color);
-
-    border-radius: 50%;
-
-    font-size: 13px;
-}
-
-
-/* =========================================
-   TIP
-========================================= */
-
-.prep-planner-tip {
-    display: flex;
-
-    align-items: center;
-
-    gap: 14px;
-
-    max-width: 800px;
-
-    margin: 28px auto 0;
-
-    padding: 17px 20px;
-
-    background: var(--white);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 12px;
-}
-
-.prep-planner-tip>i {
-    width: 36px;
-    height: 36px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    background: var(--secondary-color);
-
-    color: var(--primary-color);
-
-    border-radius: 50%;
-
-    font-size: 13px;
-}
-
-.prep-planner-tip strong {
-    display: block;
-
-    margin-bottom: 3px;
-
-    color: var(--black);
-
-    font-size: 13px;
-}
-
-.prep-planner-tip span {
-    display: block;
-
-    color: var(--text-color);
-
-    font-size: 12px;
-
-    line-height: 1.5;
-}
-
-/* =========================================
-   PREPARATION - ANALYSE & IMPROVE
-========================================= */
-
-.prep-analysis-section {
-    padding: 120px 0;
-
-    background: var(--white);
-
-    overflow: hidden;
-}
-
-
-/* =========================================
-   HEADING
-========================================= */
-
-.prep-analysis-heading {
-    max-width: 820px;
-
-    margin: 0 auto 65px;
-
-    text-align: center;
-}
-
-.prep-analysis-heading h2 {
-    margin: 12px 0 18px;
-
-    color: var(--black);
-
-    font-size: clamp(42px, 4.8vw, 66px);
-
-    line-height: 1.05;
-
-    letter-spacing: -1px;
-}
-
-.prep-analysis-heading h2 span {
-    display: block;
-
-    color: var(--primary-color);
-}
-
-.prep-analysis-heading p {
-    max-width: 650px;
-
-    margin: 0 auto;
-
-    color: var(--text-color);
-
-    font-size: 17px;
-
-    line-height: 1.8;
-}
-
-
-/* =========================================
-   DASHBOARD
-========================================= */
-
-.prep-analysis-dashboard {
-    display: grid;
-
-    grid-template-columns: 0.7fr 1.3fr;
-
-    min-height: 460px;
-
-    overflow: hidden;
-
-    background: var(--light-bg);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 26px;
-}
-
-
-/* =========================================
-   SCORE PANEL
-========================================= */
-
-.prep-analysis-score {
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    padding: 50px;
-
-    background: var(--primary-color);
-
-    color: var(--white);
-}
-
-.prep-analysis-score-label {
-    margin-bottom: 15px;
-
-    color: var(--secondary-color);
-
-    font-size: 10px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-}
-
-.prep-analysis-score-main {
-    display: flex;
-
-    align-items: baseline;
-
-    gap: 5px;
-
-    margin-bottom: 12px;
-}
-
-.prep-analysis-score-main strong {
-    color: var(--white);
-
-    font-size: 78px;
-
-    line-height: 1;
-
-    letter-spacing: -3px;
-}
-
-.prep-analysis-score-main span {
-    color: rgba(255, 255, 255, 0.45);
-
-    font-size: 18px;
-}
-
-.prep-analysis-score-status {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    margin-bottom: 40px;
-
-    color: var(--secondary-color);
-
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.prep-analysis-score-meta {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 20px;
-
-    padding-top: 20px;
-
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.prep-analysis-score-meta span {
-    display: block;
-
-    margin-bottom: 5px;
-
-    color: rgba(255, 255, 255, 0.40);
-
-    font-size: 9px;
-
-    letter-spacing: 1px;
-}
-
-.prep-analysis-score-meta strong {
-    color: var(--white);
-
-    font-size: 16px;
-}
-
-
-/* =========================================
-   CONTENT
-========================================= */
-
-.prep-analysis-content {
-    padding: 45px 50px;
-}
-
-
-/* =========================================
-   CONTENT HEAD
-========================================= */
-
-.prep-analysis-content-head {
-    display: flex;
-
-    align-items: flex-start;
-    justify-content: space-between;
-
-    gap: 20px;
-
-    margin-bottom: 30px;
-}
-
-.prep-analysis-content-head>div>span {
-    display: block;
-
-    margin-bottom: 7px;
-
-    color: var(--primary-color);
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-}
-
-.prep-analysis-content-head h3 {
-    margin: 0;
-
-    color: var(--black);
-
-    font-size: 30px;
-
-    line-height: 1.2;
-}
-
-.prep-analysis-date {
-    padding: 8px 12px;
-
-    background: var(--white);
-
-    color: var(--text-color);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 6px;
-
-    font-size: 10px;
-}
-
-
-/* =========================================
-   SUBJECT
-========================================= */
-
-.prep-analysis-subject {
-    margin-bottom: 21px;
-}
-
-.prep-analysis-subject-info {
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 15px;
-
-    margin-bottom: 8px;
-}
-
-.prep-analysis-subject-info>div {
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-}
-
-.prep-analysis-subject-info>div strong {
-    color: var(--black);
-
-    font-size: 13px;
-}
-
-.prep-analysis-subject-info>div span {
-    padding: 4px 7px;
-
-    background: var(--white);
-
-    color: var(--primary-color);
-
-    border-radius: 4px;
-
-    font-size: 8px;
-    font-weight: 700;
-}
-
-.prep-analysis-subject-info>strong {
-    color: var(--primary-color);
-
-    font-size: 12px;
-}
-
-
-/* =========================================
-   PROGRESS BAR
-========================================= */
-
-.prep-analysis-bar {
-    width: 100%;
-    height: 7px;
-
-    overflow: hidden;
-
-    background: var(--white);
-
-    border-radius: 20px;
-}
-
-.prep-analysis-bar span {
-    display: block;
-
-    height: 100%;
-
-    background: var(--primary-color);
-
-    border-radius: inherit;
-}
-
-
-/* =========================================
-   RECOMMENDATION
-========================================= */
-
-.prep-analysis-recommendation {
-    display: flex;
-
-    align-items: center;
-
-    gap: 13px;
-
-    margin-top: 30px;
-
-    padding: 15px 17px;
-
-    background: var(--white);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 10px;
-}
-
-.prep-analysis-recommendation-icon {
-    width: 38px;
-    height: 38px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    background: var(--secondary-color);
-
-    color: var(--primary-color);
-
-    border-radius: 50%;
-
-    font-size: 13px;
-}
-
-.prep-analysis-recommendation span {
-    display: block;
-
-    margin-bottom: 3px;
-
-    color: var(--primary-color);
-
-    font-size: 8px;
-    font-weight: 700;
-
-    letter-spacing: 1.2px;
-}
-
-.prep-analysis-recommendation strong {
-    display: block;
-
-    color: var(--black);
-
-    font-size: 13px;
-
-    line-height: 1.4;
-}
-
-
-/* =========================================
-   FLOW
-========================================= */
-
-.prep-analysis-flow {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 20px;
-
-    margin-top: 45px;
-}
-
-.prep-analysis-flow>div {
-    display: flex;
-
-    align-items: center;
-
-    gap: 8px;
-}
-
-.prep-analysis-flow>div i {
-    width: 36px;
-    height: 36px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: var(--light-bg);
-
-    color: var(--primary-color);
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 50%;
-
-    font-size: 11px;
-}
-
-.prep-analysis-flow>div span {
-    color: var(--primary-color);
-
-    font-size: 10px;
-    font-weight: 700;
-
-    letter-spacing: 1px;
-}
-
-.prep-analysis-flow>i {
-    color: var(--border-color);
-
-    font-size: 11px;
-}
-
-/* =========================================
-   PREPARATION - FINAL CTA
-========================================= */
-
-.prep-final-cta {
-    position: relative;
-
-    min-height: 620px;
-
-    display: flex;
-
-    align-items: center;
-
-    overflow: hidden;
-}
-
-
-/* =========================================
-   BACKGROUND
-========================================= */
-
-.prep-final-cta-bg {
-    position: absolute;
-
-    inset: 0;
-
-    z-index: 0;
-}
-
-.prep-final-cta-bg img {
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    object-position: center;
-}
-
-
-/* =========================================
-   OVERLAY
-========================================= */
-
-.prep-final-cta-overlay {
-    position: absolute;
-
-    inset: 0;
-
-    z-index: 1;
-
-    background:
-        linear-gradient(90deg,
-            rgba(23, 21, 29, 0.94) 0%,
-            rgba(23, 21, 29, 0.82) 42%,
-            rgba(23, 21, 29, 0.40) 100%);
-}
-
-
-/* =========================================
-   CONTENT
-========================================= */
-
-.prep-final-cta-content {
-    position: relative;
-
-    z-index: 2;
-
-    max-width: 700px;
-
-    padding: 80px 0;
-}
-
-.prep-final-cta-content>span {
-    display: block;
-
-    margin-bottom: 16px;
-
-    color: var(--secondary-color);
-
-    font-size: 11px;
-    font-weight: 700;
-
-    letter-spacing: 2px;
-}
-
-.prep-final-cta-content h2 {
-    margin: 0 0 22px;
-
-    color: var(--white);
-
-    font-size: clamp(48px, 6vw, 78px);
-
-    line-height: 1.03;
-
-    letter-spacing: -1.5px;
-}
-
-.prep-final-cta-content h2 strong {
-    display: block;
-
-    color: var(--secondary-color);
-
-    font-weight: inherit;
-}
-
-.prep-final-cta-content p {
-    max-width: 620px;
-
-    margin: 0 0 35px;
-
-    color: rgba(255, 255, 255, 0.76);
-
-    font-size: 18px;
-
-    line-height: 1.8;
-}
-
-
-/* =========================================
-   BUTTONS
-========================================= */
-
-.prep-final-cta-actions {
-    display: flex;
-
-    align-items: center;
-
-    gap: 13px;
-}
-
-
-/* =========================================
-   PRIMARY
-========================================= */
-
-.prep-final-cta-primary {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 10px;
-
-    background: var(--secondary-color);
-
-    color: var(--primary-color);
-
-    border-color: var(--secondary-color);
-}
-
-.prep-final-cta-primary:hover {
-    background: var(--white);
-
-    color: var(--primary-color);
-
-    border-color: var(--white);
-}
-
-
-/* =========================================
-   SECONDARY
-========================================= */
-
-.prep-final-cta-secondary {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 10px;
-
-    background: transparent;
-
-    color: var(--white);
-
-    border: 1px solid rgba(255, 255, 255, 0.55);
-}
-
-.prep-final-cta-secondary:hover {
-    background: var(--white);
-
-    color: var(--primary-color);
-
-    border-color: var(--white);
 }
 
 /**************************************************Contact Page*******************************************************/
@@ -19321,7 +19333,7 @@ body {
     margin-top: 12px;
     margin-bottom: 22px;
 
-    font-size: clamp(38px, 4.5vw, 58px);
+    font-size: 42px;
 
     line-height: 1.1;
 }
@@ -19658,7 +19670,7 @@ body {
     margin-top: 12px;
     margin-bottom: 20px;
 
-    font-size: clamp(38px, 4vw, 54px);
+    font-size: 42px;
 
     line-height: 1.1;
 }
@@ -24518,657 +24530,7 @@ html.dark-mode .fees-banner .inner-page-hero-content h1 {
     color: #ffffff !important;
 }
 
-/* =========================================================
-   PREPARATION PAGE — DARK MODE
-   ========================================================= */
 
-/* =========================================================
-   SECTION 02 — BUILD YOUR PLAN
-========================================================= */
-
-html.dark-mode .prep-plan-section {
-    background: #111015 !important;
-}
-
-html.dark-mode .prep-plan-heading h2,
-html.dark-mode .prep-plan-heading h2 span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-plan-heading p {
-    color: #d8d5dd !important;
-}
-
-html.dark-mode .prep-plan-image-label {
-    background: #1d1926 !important;
-}
-
-html.dark-mode .prep-plan-image-label span,
-html.dark-mode .prep-plan-image-label strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-plan-item {
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-plan-number {
-    background: #ffffff !important;
-    color: #111015 !important;
-}
-
-html.dark-mode .prep-plan-item-content>span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-plan-item-content h3 {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-plan-item-content p {
-    color: #d5d2d9 !important;
-}
-
-html.dark-mode .prep-plan-note {
-    background: #19171e !important;
-    border: 1px solid #393540 !important;
-}
-
-html.dark-mode .prep-plan-note i,
-html.dark-mode .prep-plan-note span {
-    color: #ffffff !important;
-}
-
-
-/* =========================================================
-   SECTION 03 — STUDY FOCUS
-========================================================= */
-
-html.dark-mode .prep-focus-section {
-    background: #17151d !important;
-}
-
-html.dark-mode .prep-focus-heading h2,
-html.dark-mode .prep-focus-heading h2 span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-focus-heading p {
-    color: #d8d5dd !important;
-}
-
-html.dark-mode .prep-focus-visual-card {
-    background: #1d1926 !important;
-}
-
-html.dark-mode .prep-focus-visual-card span,
-html.dark-mode .prep-focus-visual-card strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-focus-intro {
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-focus-intro>span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-focus-intro h3 {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-focus-item {
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-focus-icon {
-    background: #292630 !important;
-    color: #ffffff !important;
-    border-color: #45414c !important;
-}
-
-html.dark-mode .prep-focus-item:hover .prep-focus-icon {
-    background: #ffffff !important;
-    color: #111015 !important;
-    border-color: #ffffff !important;
-}
-
-html.dark-mode .prep-focus-item span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-focus-item h4 {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-focus-item p {
-    color: #d5d2d9 !important;
-}
-
-
-/* =========================================================
-   SECTION 04 — PRACTICE HUB
-========================================================= */
-
-html.dark-mode .prep-practice-section {
-    background: #111015 !important;
-}
-
-html.dark-mode .prep-practice-heading h2,
-html.dark-mode .prep-practice-heading h2 span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-practice-heading p {
-    color: #d8d5dd !important;
-}
-
-
-/* PYQ */
-
-html.dark-mode .prep-practice-pyq {
-    background: #19171e !important;
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-practice-pyq-top>span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-practice-pyq-icon {
-    background: #ffffff !important;
-    color: #111015 !important;
-}
-
-html.dark-mode .prep-practice-pyq-content h3 {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-practice-pyq-content p {
-    color: #d5d2d9 !important;
-}
-
-
-/* PYQ rows */
-
-html.dark-mode .prep-pyq-row {
-    background: #211e27 !important;
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-pyq-row:hover {
-    background: #292630 !important;
-    border-color: #ffffff !important;
-}
-
-html.dark-mode .prep-pyq-row strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-pyq-row span {
-    color: #c8c4cd !important;
-}
-
-html.dark-mode .prep-pyq-row a {
-    background: #292630 !important;
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-pyq-row a:hover {
-    background: #ffffff !important;
-    color: #111015 !important;
-}
-
-
-/* View all */
-
-html.dark-mode .prep-practice-view-link {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-practice-view-link i {
-    color: #ffffff !important;
-}
-
-
-/* LIVE TEST */
-
-html.dark-mode .prep-live-test {
-    background: #1d1926 !important;
-    border: 1px solid #ffffff !important;
-}
-
-html.dark-mode .prep-live-status {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-live-status span {
-    background: #ffffff !important;
-}
-
-html.dark-mode .prep-test-top>span {
-    color: #d0ccd5 !important;
-}
-
-html.dark-mode .prep-live-content h3 {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-live-content p {
-    color: #d5d2d9 !important;
-}
-
-html.dark-mode .prep-live-details {
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-live-details span {
-    color: #aaa5b0 !important;
-}
-
-html.dark-mode .prep-live-details strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-live-button {
-    background: #ffffff !important;
-    color: #111015 !important;
-    border: 1px solid #ffffff !important;
-}
-
-html.dark-mode .prep-live-button:hover {
-    background: #111015 !important;
-    color: #ffffff !important;
-}
-
-
-/* MOCK TEST */
-
-html.dark-mode .prep-mock-test {
-    background: #19171e !important;
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-mock-test::after {
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-mock-test .prep-test-top>span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-mock-icon {
-    background: #292630 !important;
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-mock-test h3 {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-mock-test>p {
-    color: #d5d2d9 !important;
-}
-
-html.dark-mode .prep-mock-stats {
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-mock-stats strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-mock-stats span {
-    color: #c8c4cd !important;
-}
-
-html.dark-mode .prep-mock-link {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-practice-note {
-    color: #d5d2d9 !important;
-}
-
-html.dark-mode .prep-practice-note i {
-    color: #ffffff !important;
-}
-
-
-/* =========================================================
-   SECTION 05 — DAILY STUDY PLANNER
-========================================================= */
-
-html.dark-mode .prep-planner-section {
-    background: #17151d !important;
-}
-
-html.dark-mode .prep-planner-heading h2,
-html.dark-mode .prep-planner-heading h2 span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-heading p {
-    color: #d8d5dd !important;
-}
-
-html.dark-mode .prep-planner-wrapper {
-    background: #19171e !important;
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-planner-date span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-date strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-intro h3 {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-intro>p {
-    color: #d5d2d9 !important;
-}
-
-html.dark-mode .prep-planner-progress-top span {
-    color: #c8c4cd !important;
-}
-
-html.dark-mode .prep-planner-progress-top strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-progress-bar {
-    background: #292630 !important;
-}
-
-html.dark-mode .prep-planner-progress-bar span {
-    background: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-schedule::before {
-    background: #393540 !important;
-}
-
-html.dark-mode .prep-planner-time strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-time span {
-    color: #aaa5b0 !important;
-}
-
-html.dark-mode .prep-planner-dot {
-    background: #111015 !important;
-    border-color: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-task {
-    background: #211e27 !important;
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-planner-task:hover {
-    background: #292630 !important;
-    border-color: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-task span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-task h4 {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-task p {
-    color: #d5d2d9 !important;
-}
-
-html.dark-mode .prep-planner-task>i {
-    background: #292630 !important;
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-tip {
-    background: #19171e !important;
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-planner-tip>i {
-    background: #ffffff !important;
-    color: #111015 !important;
-}
-
-html.dark-mode .prep-planner-tip strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-planner-tip span {
-    color: #d5d2d9 !important;
-}
-
-
-/* =========================================================
-   SECTION 06 — ANALYSE & IMPROVE
-========================================================= */
-
-html.dark-mode .prep-analysis-section {
-    background: #111015 !important;
-}
-
-html.dark-mode .prep-analysis-heading h2,
-html.dark-mode .prep-analysis-heading h2 span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-analysis-heading p {
-    color: #d8d5dd !important;
-}
-
-html.dark-mode .prep-analysis-dashboard {
-    background: #19171e !important;
-    border-color: #393540 !important;
-}
-
-
-/* Score panel */
-
-html.dark-mode .prep-analysis-score {
-    background: #1d1926 !important;
-    border-right: 1px solid #393540 !important;
-}
-
-html.dark-mode .prep-analysis-score-label {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-analysis-score-main strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-analysis-score-main span {
-    color: #aaa5b0 !important;
-}
-
-html.dark-mode .prep-analysis-score-status {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-analysis-score-meta {
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-analysis-score-meta span {
-    color: #aaa5b0 !important;
-}
-
-html.dark-mode .prep-analysis-score-meta strong {
-    color: #ffffff !important;
-}
-
-
-/* Analysis content */
-
-html.dark-mode .prep-analysis-content-head>div>span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-analysis-content-head h3 {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-analysis-date {
-    background: #292630 !important;
-    color: #ffffff !important;
-    border-color: #45414c !important;
-}
-
-html.dark-mode .prep-analysis-subject-info>div strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-analysis-subject-info>div span {
-    background: #292630 !important;
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-analysis-subject-info>strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-analysis-bar {
-    background: #292630 !important;
-}
-
-html.dark-mode .prep-analysis-bar span {
-    background: #ffffff !important;
-}
-
-html.dark-mode .prep-analysis-recommendation {
-    background: #211e27 !important;
-    border-color: #393540 !important;
-}
-
-html.dark-mode .prep-analysis-recommendation-icon {
-    background: #ffffff !important;
-    color: #111015 !important;
-}
-
-html.dark-mode .prep-analysis-recommendation span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-analysis-recommendation strong {
-    color: #ffffff !important;
-}
-
-
-/* Flow */
-
-html.dark-mode .prep-analysis-flow>div i {
-    background: #292630 !important;
-    color: #ffffff !important;
-    border-color: #45414c !important;
-}
-
-html.dark-mode .prep-analysis-flow>div span {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-analysis-flow>i {
-    color: #59545f !important;
-}
-
-
-/* =========================================================
-   FINAL CTA
-========================================================= */
-
-html.dark-mode .prep-final-cta-overlay {
-    background:
-        linear-gradient(90deg,
-            rgba(0, 0, 0, .90) 0%,
-            rgba(0, 0, 0, .78) 42%,
-            rgba(0, 0, 0, .55) 100%) !important;
-}
-
-html.dark-mode .prep-final-cta-content>span,
-html.dark-mode .prep-final-cta-content h2,
-html.dark-mode .prep-final-cta-content h2 strong {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-final-cta-content p {
-    color: #e0dde4 !important;
-}
-
-
-/* Primary button */
-
-html.dark-mode .prep-final-cta-primary {
-    background: #ffffff !important;
-    color: #111015 !important;
-    border: 1px solid #ffffff !important;
-}
-
-html.dark-mode .prep-final-cta-primary i {
-    color: #111015 !important;
-}
-
-html.dark-mode .prep-final-cta-primary:hover {
-    background: #111015 !important;
-    color: #ffffff !important;
-    border-color: #ffffff !important;
-}
-
-html.dark-mode .prep-final-cta-primary:hover i {
-    color: #ffffff !important;
-}
-
-
-/* Secondary button */
-
-html.dark-mode .prep-final-cta-secondary {
-    background: transparent !important;
-    color: #ffffff !important;
-    border-color: rgba(255, 255, 255, .65) !important;
-}
-
-html.dark-mode .prep-final-cta-secondary i {
-    color: #ffffff !important;
-}
-
-html.dark-mode .prep-final-cta-secondary:hover {
-    background: #ffffff !important;
-    color: #111015 !important;
-    border-color: #ffffff !important;
-}
-
-html.dark-mode .prep-final-cta-secondary:hover i {
-    color: #111015 !important;
-}
-
-
-/* =========================================================
-   PREPARATION HERO
-========================================================= */
-
-html.dark-mode .prep-banner .inner-page-hero-overlay {
-    background:
-        linear-gradient(90deg,
-            rgba(0, 0, 0, .88) 0%,
-            rgba(0, 0, 0, .70) 50%,
-            rgba(0, 0, 0, .55) 100%) !important;
-}
-
-html.dark-mode .prep-banner .inner-page-hero-content h1 {
-    color: #ffffff !important;
-}
 
 /* =========================================================
    CONTACT PAGE — DARK MODE
@@ -36073,1334 +35435,6 @@ html.dark-mode .plans-faq-contact:hover i {
     }
 }
 
-/* =========================================================
-   PREPARATION PAGE - FULL RESPONSIVE
-   Desktop CSS remains unchanged
-========================================================= */
-
-
-/* =========================================================
-   1199px - SMALL DESKTOP
-========================================================= */
-
-@media (max-width: 1199px) {
-
-    /* =========================
-       BUILD YOUR PLAN
-    ========================= */
-
-    .prep-plan-wrapper {
-        gap: 55px;
-    }
-
-    .prep-plan-image {
-        width: 90%;
-    }
-
-
-    /* =========================
-       STUDY FOCUS
-    ========================= */
-
-    .prep-focus-wrapper {
-        gap: 55px;
-    }
-
-    .prep-focus-visual-image {
-        width: 90%;
-    }
-
-
-    /* =========================
-       PRACTICE HUB
-    ========================= */
-
-    .prep-practice-pyq {
-        padding: 30px;
-    }
-
-    .prep-live-test,
-    .prep-mock-test {
-        padding: 28px;
-    }
-
-
-    /* =========================
-       PLANNER
-    ========================= */
-
-    .prep-planner-wrapper {
-        gap: 50px;
-        padding: 38px;
-    }
-
-
-    /* =========================
-       ANALYSIS
-    ========================= */
-
-    .prep-analysis-score {
-        padding: 40px;
-    }
-
-    .prep-analysis-content {
-        padding: 40px;
-    }
-}
-
-
-/* =========================================================
-   991px - TABLET / IPAD PRO
-========================================================= */
-
-@media (max-width: 991px) {
-
-    /* =========================
-       COMMON SECTION SPACING
-    ========================= */
-
-    .prep-plan-section,
-    .prep-focus-section,
-    .prep-practice-section,
-    .prep-planner-section,
-    .prep-analysis-section {
-        padding: 90px 0;
-    }
-
-
-    /* =========================
-       COMMON HEADINGS
-    ========================= */
-
-    .prep-plan-heading,
-    .prep-focus-heading,
-    .prep-practice-heading,
-    .prep-planner-heading,
-    .prep-analysis-heading {
-        margin-bottom: 50px;
-    }
-
-    .prep-plan-heading h2,
-    .prep-focus-heading h2,
-    .prep-practice-heading h2,
-    .prep-planner-heading h2,
-    .prep-analysis-heading h2 {
-        font-size: clamp(40px, 6vw, 58px);
-    }
-
-    .prep-plan-heading p,
-    .prep-focus-heading p,
-    .prep-practice-heading p,
-    .prep-planner-heading p,
-    .prep-analysis-heading p {
-        font-size: 16px;
-    }
-
-
-    /* =====================================================
-       BUILD YOUR PLAN
-    ===================================================== */
-
-    .prep-plan-wrapper {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .prep-plan-visual {
-        min-height: 500px;
-        max-width: 700px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .prep-plan-image {
-        width: 88%;
-        height: 500px;
-    }
-
-    .prep-plan-content {
-        max-width: 750px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-
-    /* =====================================================
-       STUDY FOCUS
-    ===================================================== */
-
-    .prep-focus-wrapper {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .prep-focus-visual {
-        min-height: 500px;
-        max-width: 700px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .prep-focus-visual-image {
-        width: 88%;
-        height: 500px;
-    }
-
-    .prep-focus-content {
-        max-width: 750px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-
-    /* =====================================================
-       PRACTICE HUB
-    ===================================================== */
-
-    .prep-practice-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .prep-practice-tests {
-        grid-template-rows: auto auto;
-        gap: 18px;
-    }
-
-    .prep-practice-pyq {
-        padding: 32px;
-    }
-
-    .prep-practice-pyq-content h3 {
-        font-size: 31px;
-    }
-
-
-    /* =====================================================
-       DAILY PLANNER
-    ===================================================== */
-
-    .prep-planner-wrapper {
-        grid-template-columns: 1fr;
-        gap: 45px;
-        padding: 35px;
-    }
-
-    .prep-planner-intro {
-        max-width: 650px;
-    }
-
-    .prep-planner-progress {
-        max-width: 100%;
-    }
-
-
-    /* =====================================================
-       ANALYSIS DASHBOARD
-    ===================================================== */
-
-    .prep-analysis-dashboard {
-        grid-template-columns: 1fr;
-    }
-
-    .prep-analysis-score {
-        min-height: 330px;
-        padding: 40px;
-    }
-
-    .prep-analysis-content {
-        padding: 40px;
-    }
-
-
-    /* =====================================================
-       FLOW
-    ===================================================== */
-
-    .prep-analysis-flow {
-        gap: 14px;
-    }
-
-
-    /* =====================================================
-       FINAL CTA
-    ===================================================== */
-
-    .prep-final-cta {
-        min-height: 540px;
-    }
-
-    .prep-final-cta-content {
-        max-width: 650px;
-        padding: 70px 0;
-    }
-
-    .prep-final-cta-content h2 {
-        font-size: clamp(44px, 7vw, 65px);
-    }
-}
-
-
-/* =========================================================
-   767px - TABLET / LARGE MOBILE
-========================================================= */
-
-@media (max-width: 767px) {
-
-    /* =========================
-       SECTION SPACING
-    ========================= */
-
-    .prep-plan-section,
-    .prep-focus-section,
-    .prep-practice-section,
-    .prep-planner-section,
-    .prep-analysis-section {
-        padding: 70px 0;
-    }
-
-
-    /* =========================
-       HEADINGS
-    ========================= */
-
-    .prep-plan-heading,
-    .prep-focus-heading,
-    .prep-practice-heading,
-    .prep-planner-heading,
-    .prep-analysis-heading {
-        margin-bottom: 40px;
-    }
-
-    .prep-plan-heading h2,
-    .prep-focus-heading h2,
-    .prep-practice-heading h2,
-    .prep-planner-heading h2,
-    .prep-analysis-heading h2 {
-        font-size: clamp(34px, 8vw, 50px);
-        line-height: 1.08;
-    }
-
-    .prep-plan-heading p,
-    .prep-focus-heading p,
-    .prep-practice-heading p,
-    .prep-planner-heading p,
-    .prep-analysis-heading p {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
-
-    /* =====================================================
-       BUILD YOUR PLAN
-    ===================================================== */
-
-    .prep-plan-wrapper {
-        gap: 38px;
-    }
-
-    .prep-plan-visual {
-        min-height: 430px;
-    }
-
-    .prep-plan-image {
-        width: 90%;
-        height: 430px;
-        border-radius: 22px 22px 22px 0;
-    }
-
-    .prep-plan-image-label {
-        width: 220px;
-        right: 0;
-        bottom: 18px;
-        padding: 18px;
-    }
-
-    .prep-plan-image-label strong {
-        font-size: 16px;
-    }
-
-    .prep-plan-item {
-        grid-template-columns: 43px 1fr;
-        gap: 16px;
-        padding: 22px 0;
-    }
-
-    .prep-plan-number {
-        width: 38px;
-        height: 38px;
-        font-size: 10px;
-    }
-
-    .prep-plan-item-content h3 {
-        font-size: 21px;
-    }
-
-    .prep-plan-item-content p {
-        font-size: 14px;
-        line-height: 1.65;
-    }
-
-
-    /* =====================================================
-       STUDY FOCUS
-    ===================================================== */
-
-    .prep-focus-wrapper {
-        gap: 38px;
-    }
-
-    .prep-focus-visual {
-        min-height: 430px;
-    }
-
-    .prep-focus-visual-image {
-        width: 90%;
-        height: 430px;
-        border-radius: 22px 22px 22px 0;
-    }
-
-    .prep-focus-visual-card {
-        width: 215px;
-        right: 0;
-        bottom: 18px;
-        padding: 18px;
-    }
-
-    .prep-focus-visual-card strong {
-        font-size: 16px;
-    }
-
-    .prep-focus-intro {
-        padding-bottom: 20px;
-    }
-
-    .prep-focus-intro h3 {
-        font-size: 27px;
-    }
-
-    .prep-focus-item {
-        grid-template-columns: 48px 1fr;
-        gap: 16px;
-        padding: 21px 0;
-    }
-
-    .prep-focus-icon {
-        width: 43px;
-        height: 43px;
-        font-size: 13px;
-    }
-
-    .prep-focus-item h4 {
-        font-size: 19px;
-    }
-
-    .prep-focus-item p {
-        font-size: 13px;
-        line-height: 1.65;
-    }
-
-
-    /* =====================================================
-       PRACTICE HUB
-    ===================================================== */
-
-    .prep-practice-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .prep-practice-pyq {
-        padding: 24px;
-        border-radius: 19px;
-    }
-
-    .prep-practice-pyq-top {
-        margin-bottom: 27px;
-    }
-
-    .prep-practice-pyq-icon {
-        width: 46px;
-        height: 46px;
-        font-size: 15px;
-    }
-
-    .prep-practice-pyq-content h3 {
-        font-size: 27px;
-    }
-
-    .prep-practice-pyq-content p {
-        font-size: 13px;
-        line-height: 1.65;
-    }
-
-    .prep-pyq-row {
-        padding: 12px;
-    }
-
-    .prep-pyq-row strong {
-        font-size: 12px;
-    }
-
-    .prep-pyq-row span {
-        font-size: 9px;
-    }
-
-    .prep-practice-tests {
-        gap: 15px;
-    }
-
-    .prep-live-test,
-    .prep-mock-test {
-        padding: 24px;
-        border-radius: 19px;
-    }
-
-    .prep-live-content h3 {
-        font-size: 26px;
-    }
-
-    .prep-live-content p,
-    .prep-mock-test>p {
-        font-size: 12px;
-    }
-
-    .prep-live-details {
-        gap: 7px;
-    }
-
-    .prep-live-details strong {
-        font-size: 12px;
-    }
-
-    .prep-mock-test h3 {
-        font-size: 24px;
-    }
-
-    .prep-mock-stats {
-        gap: 22px;
-    }
-
-    .prep-practice-note {
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    .prep-practice-note span {
-        font-size: 12px;
-    }
-
-
-    /* =====================================================
-       DAILY PLANNER
-    ===================================================== */
-
-    .prep-planner-wrapper {
-        gap: 35px;
-        padding: 25px;
-        border-radius: 20px;
-    }
-
-    .prep-planner-intro h3 {
-        font-size: 31px;
-    }
-
-    .prep-planner-intro>p {
-        font-size: 14px;
-    }
-
-    .prep-planner-progress {
-        margin-top: 30px;
-    }
-
-    .prep-planner-schedule::before {
-        left: 62px;
-    }
-
-    .prep-planner-row {
-        grid-template-columns: 48px 28px 1fr;
-        min-height: 105px;
-    }
-
-    .prep-planner-time strong {
-        font-size: 13px;
-    }
-
-    .prep-planner-time span {
-        font-size: 8px;
-    }
-
-    .prep-planner-dot {
-        width: 10px;
-        height: 10px;
-        border-width: 2px;
-    }
-
-    .prep-planner-task {
-        gap: 12px;
-        margin-left: 10px;
-        padding: 14px;
-    }
-
-    .prep-planner-task h4 {
-        font-size: 15px;
-    }
-
-    .prep-planner-task p {
-        font-size: 11px;
-    }
-
-    .prep-planner-task>i {
-        width: 34px;
-        height: 34px;
-        font-size: 11px;
-    }
-
-    .prep-planner-tip {
-        align-items: flex-start;
-        padding: 15px;
-    }
-
-
-    /* =====================================================
-       ANALYSIS
-    ===================================================== */
-
-    .prep-analysis-dashboard {
-        border-radius: 20px;
-    }
-
-    .prep-analysis-score {
-        min-height: 280px;
-        padding: 30px;
-    }
-
-    .prep-analysis-score-main strong {
-        font-size: 65px;
-    }
-
-    .prep-analysis-score-status {
-        margin-bottom: 28px;
-    }
-
-    .prep-analysis-content {
-        padding: 30px;
-    }
-
-    .prep-analysis-content-head {
-        flex-direction: column;
-        gap: 12px;
-        margin-bottom: 25px;
-    }
-
-    .prep-analysis-content-head h3 {
-        font-size: 26px;
-    }
-
-    .prep-analysis-date {
-        align-self: flex-start;
-    }
-
-    .prep-analysis-subject-info>div {
-        flex-wrap: wrap;
-        gap: 7px;
-    }
-
-    .prep-analysis-recommendation {
-        align-items: flex-start;
-    }
-
-    .prep-analysis-flow {
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 30px;
-    }
-
-    .prep-analysis-flow>i {
-        display: none;
-    }
-
-
-    /* =====================================================
-       FINAL CTA
-    ===================================================== */
-
-    .prep-final-cta {
-        min-height: 500px;
-    }
-
-    .prep-final-cta-overlay {
-        background:
-            linear-gradient(180deg,
-                rgba(23, 21, 29, 0.95) 0%,
-                rgba(23, 21, 29, 0.84) 100%);
-    }
-
-    .prep-final-cta-content {
-        max-width: 100%;
-        padding: 65px 0;
-        text-align: center;
-    }
-
-    .prep-final-cta-content h2 {
-        font-size: clamp(37px, 9vw, 55px);
-    }
-
-    .prep-final-cta-content p {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
-    .prep-final-cta-actions {
-        justify-content: center;
-    }
-}
-
-
-/* =========================================================
-   575px - MOBILE
-========================================================= */
-
-@media (max-width: 575px) {
-
-    /* =========================
-       SECTION SPACING
-    ========================= */
-
-    .prep-plan-section,
-    .prep-focus-section,
-    .prep-practice-section,
-    .prep-planner-section,
-    .prep-analysis-section {
-        padding: 55px 0;
-    }
-
-
-    /* =========================
-       HEADINGS
-    ========================= */
-
-    .prep-plan-heading h2,
-    .prep-focus-heading h2,
-    .prep-practice-heading h2,
-    .prep-planner-heading h2,
-    .prep-analysis-heading h2 {
-        font-size: 32px;
-    }
-
-    .prep-plan-heading p,
-    .prep-focus-heading p,
-    .prep-practice-heading p,
-    .prep-planner-heading p,
-    .prep-analysis-heading p {
-        font-size: 13px;
-    }
-
-
-    /* =====================================================
-       BUILD PLAN
-    ===================================================== */
-
-    .prep-plan-visual {
-        min-height: 350px;
-    }
-
-    .prep-plan-image {
-        width: 100%;
-        height: 350px;
-    }
-
-    .prep-plan-image-label {
-        width: 190px;
-        right: 8px;
-        bottom: 12px;
-        padding: 15px;
-    }
-
-    .prep-plan-image-label span {
-        font-size: 8px;
-    }
-
-    .prep-plan-image-label strong {
-        font-size: 14px;
-    }
-
-    .prep-plan-item {
-        grid-template-columns: 38px 1fr;
-        gap: 12px;
-    }
-
-    .prep-plan-number {
-        width: 34px;
-        height: 34px;
-        font-size: 9px;
-    }
-
-    .prep-plan-item-content>span {
-        font-size: 8px;
-    }
-
-    .prep-plan-item-content h3 {
-        font-size: 19px;
-    }
-
-    .prep-plan-item-content p {
-        font-size: 12px;
-    }
-
-    .prep-plan-note {
-        align-items: flex-start;
-        padding: 13px;
-    }
-
-    .prep-plan-note span {
-        font-size: 11px;
-    }
-
-
-    /* =====================================================
-       STUDY FOCUS
-    ===================================================== */
-
-    .prep-focus-visual {
-        min-height: 350px;
-    }
-
-    .prep-focus-visual-image {
-        width: 100%;
-        height: 350px;
-    }
-
-    .prep-focus-visual-card {
-        width: 185px;
-        right: 8px;
-        bottom: 12px;
-        padding: 15px;
-    }
-
-    .prep-focus-visual-card span {
-        font-size: 8px;
-    }
-
-    .prep-focus-visual-card strong {
-        font-size: 14px;
-    }
-
-    .prep-focus-intro h3 {
-        font-size: 24px;
-    }
-
-    .prep-focus-item {
-        grid-template-columns: 40px 1fr;
-        gap: 12px;
-    }
-
-    .prep-focus-icon {
-        width: 37px;
-        height: 37px;
-        font-size: 11px;
-    }
-
-    .prep-focus-item span {
-        font-size: 8px;
-    }
-
-    .prep-focus-item h4 {
-        font-size: 17px;
-    }
-
-    .prep-focus-item p {
-        font-size: 11px;
-    }
-
-
-    /* =====================================================
-       PRACTICE
-    ===================================================== */
-
-    .prep-practice-pyq {
-        padding: 19px;
-    }
-
-    .prep-practice-pyq-content h3 {
-        font-size: 24px;
-    }
-
-    .prep-practice-pyq-content p {
-        font-size: 12px;
-    }
-
-    .prep-live-test,
-    .prep-mock-test {
-        padding: 19px;
-    }
-
-    .prep-live-content h3 {
-        font-size: 23px;
-    }
-
-    .prep-live-content p,
-    .prep-mock-test>p {
-        font-size: 11px;
-    }
-
-    .prep-live-details {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .prep-live-details span {
-        font-size: 7px;
-    }
-
-    .prep-live-details strong {
-        font-size: 11px;
-    }
-
-    .prep-live-button,
-    .prep-mock-link {
-        font-size: 11px;
-    }
-
-    .prep-mock-test h3 {
-        font-size: 22px;
-    }
-
-    .prep-mock-stats {
-        gap: 15px;
-    }
-
-    .prep-mock-stats strong {
-        font-size: 16px;
-    }
-
-    .prep-mock-stats span {
-        font-size: 7px;
-    }
-
-
-    /* =====================================================
-       PLANNER
-    ===================================================== */
-
-    .prep-planner-wrapper {
-        padding: 19px;
-    }
-
-    .prep-planner-intro h3 {
-        font-size: 27px;
-    }
-
-    .prep-planner-intro>p {
-        font-size: 12px;
-    }
-
-    .prep-planner-schedule::before {
-        left: 51px;
-    }
-
-    .prep-planner-row {
-        grid-template-columns: 40px 22px 1fr;
-        min-height: 100px;
-    }
-
-    .prep-planner-time strong {
-        font-size: 11px;
-    }
-
-    .prep-planner-time span {
-        font-size: 7px;
-    }
-
-    .prep-planner-dot {
-        width: 9px;
-        height: 9px;
-    }
-
-    .prep-planner-task {
-        gap: 7px;
-        margin-left: 6px;
-        padding: 12px 10px;
-    }
-
-    .prep-planner-task h4 {
-        font-size: 13px;
-    }
-
-    .prep-planner-task p {
-        font-size: 9px;
-    }
-
-    .prep-planner-task>i {
-        width: 29px;
-        height: 29px;
-        font-size: 9px;
-    }
-
-    .prep-planner-tip {
-        gap: 10px;
-        padding: 13px;
-    }
-
-    .prep-planner-tip>i {
-        width: 31px;
-        height: 31px;
-        font-size: 11px;
-    }
-
-    .prep-planner-tip strong {
-        font-size: 11px;
-    }
-
-    .prep-planner-tip span {
-        font-size: 10px;
-    }
-
-
-    /* =====================================================
-       ANALYSIS
-    ===================================================== */
-
-    .prep-analysis-score {
-        min-height: 250px;
-        padding: 25px;
-    }
-
-    .prep-analysis-score-main strong {
-        font-size: 56px;
-    }
-
-    .prep-analysis-score-main span {
-        font-size: 15px;
-    }
-
-    .prep-analysis-score-meta {
-        gap: 12px;
-    }
-
-    .prep-analysis-content {
-        padding: 23px;
-    }
-
-    .prep-analysis-content-head h3 {
-        font-size: 23px;
-    }
-
-    .prep-analysis-subject-info>div strong {
-        font-size: 11px;
-    }
-
-    .prep-analysis-subject-info>strong {
-        font-size: 11px;
-    }
-
-    .prep-analysis-recommendation {
-        gap: 9px;
-        padding: 12px;
-    }
-
-    .prep-analysis-recommendation-icon {
-        width: 33px;
-        height: 33px;
-        font-size: 11px;
-    }
-
-    .prep-analysis-recommendation strong {
-        font-size: 11px;
-    }
-
-    .prep-analysis-flow {
-        justify-content: flex-start;
-        gap: 8px;
-    }
-
-    .prep-analysis-flow>div {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .prep-analysis-flow>div i {
-        width: 31px;
-        height: 31px;
-        font-size: 9px;
-    }
-
-    .prep-analysis-flow>div span {
-        font-size: 8px;
-    }
-
-
-    /* =====================================================
-       FINAL CTA
-    ===================================================== */
-
-    .prep-final-cta {
-        min-height: 430px;
-    }
-
-    .prep-final-cta-content {
-        padding: 55px 0;
-    }
-
-    .prep-final-cta-content>span {
-        font-size: 9px;
-    }
-
-    .prep-final-cta-content h2 {
-        font-size: 32px;
-    }
-
-    .prep-final-cta-content p {
-        font-size: 12px;
-    }
-
-    .prep-final-cta-actions {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 9px;
-    }
-
-    .prep-final-cta-primary,
-    .prep-final-cta-secondary {
-        width: 100%;
-    }
-}
-
-
-/* =========================================================
-   399px - SMALL MOBILE
-========================================================= */
-
-@media (max-width: 399px) {
-
-    /* =========================
-       HEADINGS
-    ========================= */
-
-    .prep-plan-heading h2,
-    .prep-focus-heading h2,
-    .prep-practice-heading h2,
-    .prep-planner-heading h2,
-    .prep-analysis-heading h2 {
-        font-size: 28px;
-    }
-
-
-    /* =========================
-       PLAN
-    ========================= */
-
-    .prep-plan-image {
-        height: 320px;
-    }
-
-    .prep-plan-visual {
-        min-height: 320px;
-    }
-
-    .prep-plan-image-label {
-        width: 170px;
-    }
-
-    .prep-plan-item-content h3 {
-        font-size: 17px;
-    }
-
-    .prep-plan-item-content p {
-        font-size: 11px;
-    }
-
-
-    /* =========================
-       FOCUS
-    ========================= */
-
-    .prep-focus-image,
-    .prep-focus-visual-image {
-        height: 320px;
-    }
-
-    .prep-focus-visual {
-        min-height: 320px;
-    }
-
-    .prep-focus-visual-card {
-        width: 165px;
-    }
-
-    .prep-focus-intro h3 {
-        font-size: 21px;
-    }
-
-    .prep-focus-item h4 {
-        font-size: 15px;
-    }
-
-
-    /* =========================
-       PRACTICE
-    ========================= */
-
-    .prep-practice-pyq-content h3 {
-        font-size: 21px;
-    }
-
-    .prep-live-content h3 {
-        font-size: 21px;
-    }
-
-    .prep-live-details strong {
-        font-size: 10px;
-    }
-
-    .prep-mock-test h3 {
-        font-size: 20px;
-    }
-
-    .prep-mock-stats {
-        gap: 10px;
-    }
-
-
-    /* =========================
-       PLANNER
-    ========================= */
-
-    .prep-planner-wrapper {
-        padding: 15px;
-    }
-
-    .prep-planner-intro h3 {
-        font-size: 24px;
-    }
-
-    .prep-planner-schedule::before {
-        left: 46px;
-    }
-
-    .prep-planner-row {
-        grid-template-columns: 35px 18px 1fr;
-    }
-
-    .prep-planner-task {
-        padding: 10px 8px;
-    }
-
-    .prep-planner-task h4 {
-        font-size: 12px;
-    }
-
-    .prep-planner-task p {
-        font-size: 8px;
-    }
-
-    .prep-planner-task>i {
-        display: none;
-    }
-
-
-    /* =========================
-       ANALYSIS
-    ========================= */
-
-    .prep-analysis-score {
-        padding: 20px;
-    }
-
-    .prep-analysis-score-main strong {
-        font-size: 50px;
-    }
-
-    .prep-analysis-content {
-        padding: 18px;
-    }
-
-    .prep-analysis-content-head h3 {
-        font-size: 21px;
-    }
-
-    .prep-analysis-subject-info {
-        gap: 8px;
-    }
-
-    .prep-analysis-subject-info>div {
-        display: block;
-    }
-
-    .prep-analysis-subject-info>div span {
-        display: inline-block;
-        margin-top: 4px;
-    }
-
-
-    /* =========================
-       CTA
-    ========================= */
-
-    .prep-final-cta {
-        min-height: 400px;
-    }
-
-    .prep-final-cta-content h2 {
-        font-size: 28px;
-    }
-
-    .prep-final-cta-content p {
-        font-size: 11px;
-    }
-}
-
-
-/* =========================================================
-   GLOBAL MOBILE OVERFLOW PROTECTION
-========================================================= */
-
-@media (max-width: 767px) {
-
-    .prep-plan-section,
-    .prep-focus-section,
-    .prep-practice-section,
-    .prep-planner-section,
-    .prep-analysis-section,
-    .prep-final-cta {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    .prep-plan-wrapper,
-    .prep-focus-wrapper,
-    .prep-practice-grid,
-    .prep-planner-wrapper,
-    .prep-analysis-dashboard {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .prep-plan-content,
-    .prep-focus-content,
-    .prep-planner-intro,
-    .prep-analysis-content {
-        min-width: 0;
-    }
-
-    .prep-plan-item-content,
-    .prep-focus-item>div:last-child,
-    .prep-planner-task>div,
-    .prep-analysis-recommendation>div:last-child {
-        min-width: 0;
-    }
-
-    .prep-plan-item-content p,
-    .prep-focus-item p,
-    .prep-planner-task p,
-    .prep-analysis-recommendation strong {
-        overflow-wrap: break-word;
-    }
-
-    .prep-final-cta-bg img {
-        min-width: 100%;
-    }
-}
 
 /* =========================================================
    CONTACT PAGE - FULL RESPONSIVE
