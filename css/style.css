@@ -39358,6 +39358,170 @@ html.dark-mode .home2-hero .home2-hero-label {
 }
 
 /* =========================================================
+   HOME 2 — BRAND BLUE DARK-MODE CONTRAST
+   Keep the original brand blue (#352A5E) wherever it is used
+   as text or an icon. These light surfaces provide sufficient
+   contrast without changing the brand colour in dark mode.
+========================================================= */
+
+html.dark-mode .home2-hero .home2-hero-label,
+html.dark-mode .home2-learning-heading h2 span,
+html.dark-mode .home2-journey-heading h2 span,
+html.dark-mode .home2-inside-content h2 span,
+html.dark-mode .home2-dashboard-content h2 span,
+html.dark-mode .home2-path-heading h2 span,
+html.dark-mode .home2-testimonial-heading h2 span {
+    display: inline-block;
+    padding: 0.04em 0.18em;
+    background: #f3eadb !important;
+    color: #352A5E !important;
+    -webkit-text-fill-color: #352A5E !important;
+    border-radius: 0.12em;
+}
+
+/* Compact cards that use blue typography in the light theme. */
+html.dark-mode .home2-performance-card,
+html.dark-mode .home2-live-card,
+html.dark-mode .home2-dashboard-stats > div,
+html.dark-mode .home2-dashboard-floating {
+    background: #f3eadb !important;
+    border-color: #d8c9b1 !important;
+    color: #352A5E !important;
+}
+
+html.dark-mode .home2-performance-card .home2-performance-top span,
+html.dark-mode .home2-performance-card .home2-performance-top i,
+html.dark-mode .home2-performance-card .home2-performance-score strong,
+html.dark-mode .home2-performance-card .home2-performance-score span,
+html.dark-mode .home2-performance-card .home2-performance-bottom span,
+html.dark-mode .home2-performance-card .home2-performance-bottom i,
+html.dark-mode .home2-live-card span,
+html.dark-mode .home2-live-card strong,
+html.dark-mode .home2-live-card i,
+html.dark-mode .home2-dashboard-stats span,
+html.dark-mode .home2-dashboard-stats strong,
+html.dark-mode .home2-dashboard-floating span,
+html.dark-mode .home2-dashboard-floating strong {
+    color: #352A5E !important;
+}
+
+html.dark-mode .home2-performance-card .performance-bar {
+    background: #d8c9b1 !important;
+}
+
+html.dark-mode .home2-performance-card .performance-bar span {
+    background: #352A5E !important;
+}
+
+/* Blue icons retain their colour on a light, clearly defined backing. */
+html.dark-mode .home2-learning-icon,
+html.dark-mode .home2-journey-icon,
+html.dark-mode .home2-inside-feature-icon,
+html.dark-mode .home2-dashboard-feature-icon,
+html.dark-mode .home2-path-icon,
+html.dark-mode .home2-floating-check,
+html.dark-mode .home2-cta-section .home2-cta-floating-icon {
+    background: #f3eadb !important;
+    border-color: #d8c9b1 !important;
+    color: #352A5E !important;
+}
+
+html.dark-mode .home2-learning-icon i,
+html.dark-mode .home2-journey-icon i,
+html.dark-mode .home2-inside-feature-icon i,
+html.dark-mode .home2-dashboard-feature-icon i,
+html.dark-mode .home2-path-icon i,
+html.dark-mode .home2-floating-check i,
+html.dark-mode .home2-cta-section .home2-cta-floating-icon i {
+    color: #352A5E !important;
+}
+
+html.dark-mode .home2-dashboard-test {
+    background: #f3eadb !important;
+    border-color: #d8c9b1 !important;
+}
+
+html.dark-mode .home2-dashboard-test span,
+html.dark-mode .home2-dashboard-test strong,
+html.dark-mode .home2-dashboard-test > i {
+    color: #352A5E !important;
+}
+
+/* Text links and small labels that are brand blue in the light design. */
+html.dark-mode .home2-text-link,
+html.dark-mode .home2-text-link i,
+html.dark-mode .home2-exam-strip > a,
+html.dark-mode .home2-exam-strip > a i,
+html.dark-mode .home2-exam-strip .home2-view-all,
+html.dark-mode .home2-learning-small-content > div:last-child > span,
+html.dark-mode .home2-journey-number,
+html.dark-mode .home2-journey-highlight strong,
+html.dark-mode .home2-journey-highlight-link,
+html.dark-mode .home2-inside-image-caption strong,
+html.dark-mode .home2-class-date strong,
+html.dark-mode .home2-class-card > i,
+html.dark-mode .home2-inside-link,
+html.dark-mode .home2-path-content > div > span,
+html.dark-mode .home2-path-arrow,
+html.dark-mode .home2-testimonial-quote,
+html.dark-mode .home2-testimonial-stars i {
+    color: #352A5E !important;
+}
+
+html.dark-mode .home2-exam-strip > a,
+html.dark-mode .home2-journey-number,
+html.dark-mode .home2-journey-highlight,
+html.dark-mode .home2-class-date,
+html.dark-mode .home2-path-arrow {
+    background: #f3eadb !important;
+    border-color: #d8c9b1 !important;
+}
+
+/* =========================================================
+   HEADER ACTION HEIGHT CONSISTENCY
+========================================================= */
+
+.header-actions .header-icon-btn,
+.header-actions .rtl-toggle,
+.header-actions .login-btn {
+    height: 40px;
+    min-height: 40px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1199px) {
+    .header-actions .header-icon-btn,
+    .header-actions .rtl-toggle,
+    .header-actions .login-btn {
+        height: 36px;
+        min-height: 36px;
+    }
+}
+
+/* Keep the Prepare For strip visually connected to the next section. */
+.home2-learning-section {
+    padding-top: 80px;
+}
+
+@media (max-width: 1199px) {
+    .home2-learning-section {
+        padding-top: 64px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home2-learning-section {
+        padding-top: 56px;
+    }
+}
+
+@media (max-width: 575px) {
+    .home2-learning-section {
+        padding-top: 48px;
+    }
+}
+
+/* =========================================================
    iPAD MINI - FULL COMPARISON TABLE / NO HORIZONTAL SCROLL
 ========================================================= */
 
@@ -39815,4 +39979,53 @@ html.dark-mode .home2-hero .home2-hero-label {
         row-gap: 24px !important;
     }
 
+}
+
+/* =========================================
+   FINAL CTA CONTENT ALIGNMENT
+========================================= */
+
+.final-cta-content,
+.home2-cta-content,
+.about-final-cta-content,
+.courses-final-cta-content,
+.faculty-final-cta-content,
+.results-final-cta-content,
+.plans-final-cta-content {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.final-cta-content > p,
+.home2-cta-content > p,
+.faculty-final-cta-content p,
+.results-final-cta-content p,
+.plans-final-cta-content p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.final-cta-buttons,
+.home2-cta-actions,
+.about-final-cta-actions,
+.courses-final-cta-actions,
+.faculty-final-cta-actions,
+.results-final-cta-actions,
+.plans-final-cta-actions {
+    justify-content: center;
+}
+
+/* Home 2 keeps its final CTA content left-aligned. */
+.home2-cta-content {
+    text-align: left;
+}
+
+.home2-cta-content > p {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.home2-cta-actions {
+    justify-content: flex-start;
 }
