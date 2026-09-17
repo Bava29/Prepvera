@@ -11,6 +11,7 @@
     --primary-color: #352A5E;
     --secondary-color: #E8DCC8;
     --site-header-height: 88px;
+    --header-action-height: 40px;
 
     --white: #ffffff;
     --black: #17151d;
@@ -838,9 +839,9 @@ body {
 ========================================= */
 
 .header-icon-btn {
-    width: 40px;
-    height: 40px;
-
+    width: 42px;
+    height: 45px;
+    min-height:45px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -869,9 +870,9 @@ body {
 ========================================= */
 
 .rtl-toggle {
-    width: 40px;
-    height: 40px;
-
+    width: 42px;
+    height: 45px;
+    min-height:45px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -915,7 +916,8 @@ body {
     align-items: center;
     justify-content: center;
 
-    min-height: 40px;
+    height: var(--header-action-height);
+    min-height: var(--header-action-height);
 
     padding: 9px 20px;
 
@@ -39382,7 +39384,7 @@ html.dark-mode .home2-testimonial-heading h2 span {
 /* Compact cards that use blue typography in the light theme. */
 html.dark-mode .home2-performance-card,
 html.dark-mode .home2-live-card,
-html.dark-mode .home2-dashboard-stats > div,
+html.dark-mode .home2-dashboard-stats>div,
 html.dark-mode .home2-dashboard-floating {
     background: #f3eadb !important;
     border-color: #d8c9b1 !important;
@@ -39443,32 +39445,32 @@ html.dark-mode .home2-dashboard-test {
 
 html.dark-mode .home2-dashboard-test span,
 html.dark-mode .home2-dashboard-test strong,
-html.dark-mode .home2-dashboard-test > i {
+html.dark-mode .home2-dashboard-test>i {
     color: #352A5E !important;
 }
 
 /* Text links and small labels that are brand blue in the light design. */
 html.dark-mode .home2-text-link,
 html.dark-mode .home2-text-link i,
-html.dark-mode .home2-exam-strip > a,
-html.dark-mode .home2-exam-strip > a i,
+html.dark-mode .home2-exam-strip>a,
+html.dark-mode .home2-exam-strip>a i,
 html.dark-mode .home2-exam-strip .home2-view-all,
-html.dark-mode .home2-learning-small-content > div:last-child > span,
+html.dark-mode .home2-learning-small-content>div:last-child>span,
 html.dark-mode .home2-journey-number,
 html.dark-mode .home2-journey-highlight strong,
 html.dark-mode .home2-journey-highlight-link,
 html.dark-mode .home2-inside-image-caption strong,
 html.dark-mode .home2-class-date strong,
-html.dark-mode .home2-class-card > i,
+html.dark-mode .home2-class-card>i,
 html.dark-mode .home2-inside-link,
-html.dark-mode .home2-path-content > div > span,
+html.dark-mode .home2-path-content>div>span,
 html.dark-mode .home2-path-arrow,
 html.dark-mode .home2-testimonial-quote,
 html.dark-mode .home2-testimonial-stars i {
     color: #352A5E !important;
 }
 
-html.dark-mode .home2-exam-strip > a,
+html.dark-mode .home2-exam-strip>a,
 html.dark-mode .home2-journey-number,
 html.dark-mode .home2-journey-highlight,
 html.dark-mode .home2-class-date,
@@ -39484,12 +39486,13 @@ html.dark-mode .home2-path-arrow {
 .header-actions .header-icon-btn,
 .header-actions .rtl-toggle,
 .header-actions .login-btn {
-    height: 40px;
-    min-height: 40px;
+    height: var(--header-action-height);
+    min-height: var(--header-action-height);
     box-sizing: border-box;
 }
 
 @media (max-width: 1199px) {
+
     .header-actions .header-icon-btn,
     .header-actions .rtl-toggle,
     .header-actions .login-btn {
@@ -39498,26 +39501,42 @@ html.dark-mode .home2-path-arrow {
     }
 }
 
-/* Keep the Prepare For strip visually connected to the next section. */
+/* Keep the Prepare For strip visually separate from the learning section. */
+.home2-exam-strip {
+    width: 100vw;
+    max-width: 100vw;
+    margin-bottom: 72px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
 .home2-learning-section {
-    padding-top: 80px;
+    padding-top: 120px;
 }
 
 @media (max-width: 1199px) {
     .home2-learning-section {
-        padding-top: 64px;
+        padding-top: 96px;
     }
 }
 
 @media (max-width: 767px) {
+    .home2-exam-strip {
+        margin-bottom: 48px;
+    }
+
     .home2-learning-section {
-        padding-top: 56px;
+        padding-top: 72px;
     }
 }
 
 @media (max-width: 575px) {
+    .home2-exam-strip {
+        margin-bottom: 36px;
+    }
+
     .home2-learning-section {
-        padding-top: 48px;
+        padding-top: 60px;
     }
 }
 
@@ -39997,8 +40016,8 @@ html.dark-mode .home2-path-arrow {
     text-align: center;
 }
 
-.final-cta-content > p,
-.home2-cta-content > p,
+.final-cta-content>p,
+.home2-cta-content>p,
 .faculty-final-cta-content p,
 .results-final-cta-content p,
 .plans-final-cta-content p {
@@ -40021,7 +40040,7 @@ html.dark-mode .home2-path-arrow {
     text-align: left;
 }
 
-.home2-cta-content > p {
+.home2-cta-content>p {
     margin-left: 0;
     margin-right: 0;
 }
