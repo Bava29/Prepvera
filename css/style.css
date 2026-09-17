@@ -20540,7 +20540,13 @@ html.dark-mode .exam-paths-title h2 span {
 }
 
 html.dark-mode .exam-paths-intro p {
-    color: rgba(255, 255, 255, 0.78) !important;
+    color: rgba(255, 255, 255, 0.92) !important;
+}
+
+html.dark-mode .exam-paths-intro .text-link,
+html.dark-mode .exam-paths-intro .text-link i {
+    color: #b9a9e8 !important;
+    -webkit-text-fill-color: #b9a9e8 !important;
 }
 
 
