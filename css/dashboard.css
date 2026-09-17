@@ -20776,6 +20776,7 @@ html.dark-mode .live-recorded-thumbnail {
 }
 
 html.dark-mode .live-recorded-thumbnail i {
+    background: #E8DCC8 !important;
     color: #352A5E !important;
 }
 
